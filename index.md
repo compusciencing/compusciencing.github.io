@@ -1,2 +1,3 @@
-http://anthonyjclark.com/
-http://jaredmmoore.com/
+[Anthony J. Clark](http://anthonyjclark.com/)
+
+[Jared M. Moore](http://jaredmmoore.com/)
