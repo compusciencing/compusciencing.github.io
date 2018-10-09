@@ -59,6 +59,10 @@ After you submit your post via a pull request, it will be reviewed and you might
 
 Once the review process is complete, you should delete the git branch you created to make your post.
 
+```bash
+git branch -d post-how-to-post
+```
+
 # Updating your local repository
 
 If you want to update your local repository (for example, to prepare to submit a new post), you should following these steps, which assume that you used the process above to clone and fork the repository.
