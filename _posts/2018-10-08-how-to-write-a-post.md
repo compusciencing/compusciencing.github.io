@@ -57,7 +57,9 @@ You have a few key things to remember:
 
 After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/) (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/)).
 
-Once the review process is complete, you should delete the git branch you created to make your post.
+Once the review process is complete, you should delete the git branch you created to make your post. You can delete your remote branch on GitHub by clicking the "Delete branch" button that appears on the pull request after it has been merged.
+
+You can delete your local branch with the following:
 
 ```bash
 git branch -d post-how-to-post
