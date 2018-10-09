@@ -44,6 +44,8 @@ In the above, you will need to replace:
 - `"Added a new post..."` with your commit message, and
 - `YOUR_USER` with your GitHub username
 
+You should be able to preview your post by pushing your markdown to your forked repository and viewing on GitHub, or you can look at the resources section below for more information.
+
 # Post template
 
 I have added a simple template post in the root directory named `post-template.md`. You can use this or base your post off of another post.
@@ -56,6 +58,29 @@ You have a few key things to remember:
 # Review process
 
 After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/) (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/)).
+
+Once the review process is complete, you should delete the git branch you created to make your post. You can delete your remote branch on GitHub by clicking the `Delete branch` button that appears on the pull request after it has been merged.
+
+You can delete your local branch with the following:
+
+```bash
+git branch -d post-how-to-post
+```
+
+# Updating your local repository
+
+If you want to update your local repository (for example, to prepare to submit a new post), you should follow these steps, which assume that you used the process above to clone and fork the repository.
+
+```bash
+# Fetch the updated files from the compusciencing repository
+git fetch origin/master
+
+# Checkout your local master branch and merge the origin files
+git checkout master
+git merge origin/master
+
+# Create a new branch (as described above) to create a new post
+```
 
 # Resources
 
