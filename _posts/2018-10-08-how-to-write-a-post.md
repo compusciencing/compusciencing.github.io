@@ -57,27 +57,6 @@ You have a few key things to remember:
 
 After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/) (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/)).
 
-Once the review process is complete, you should delete the git branch you created to make your post.
-
-```bash
-git branch -d post-how-to-post
-```
-
-# Updating your local repository
-
-If you want to update your local repository (for example, to prepare to submit a new post), you should follow these steps, which assume that you used the process above to clone and fork the repository.
-
-```bash
-# Fetch the updated files from the compusciencing repository
-git fetch origin/master
-
-# Checkout your local master branch and merge the origin files
-git checkout master
-git merge origin/master
-
-# Create a new branch (as described above) to create a new post
-```
-
 # Resources
 
 - [Jekyll Documentation on Posts](https://jekyllrb.com/docs/posts/)
