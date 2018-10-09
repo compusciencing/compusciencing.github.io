@@ -44,6 +44,8 @@ In the above, you will need to replace:
 - `"Added a new post..."` with your commit message, and
 - `YOUR_USER` with your GitHub username
 
+You should be able to preview your post by pushing your markdown to your forked repository and viewing on GitHub, or you can look at the resources section below for more information.
+
 # Post template
 
 I have added a simple template post in the root directory named `post-template.md`. You can use this or base your post off of another post.
