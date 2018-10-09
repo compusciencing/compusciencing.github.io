@@ -1,8 +1,8 @@
 # Adding a post
 
-Add a post to the `_posts` directory follwing the naming format (TBD -- https://jekyllrb.com/docs/posts/). We might want to put posts in individual directories so that they can be packaged with custom css and js.
+Here are instructions for [How to write a post](https://compusciencing.github.io/blog/travel/2018/10/08/how-to-write-a-post.html) for this blog. Anyone is allowed to write a post and submit it via a pull request.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Whenever a pull request is merged into this repository, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the site.
 
 # Features to add
 
@@ -13,3 +13,4 @@ We should also look at the themes found [here](https://talk.jekyllrb.com/t/jekyl
 # Things to do
 
 - [ ] Fix the RSS feed button (or remove it)
+- [ ] Add [Disqus](https://disqus.com/) for enabling comments on posts?
