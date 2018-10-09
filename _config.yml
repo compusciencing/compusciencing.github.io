@@ -5,3 +5,5 @@ description: A collection of posts from Drs. Clark and Moore and their students.
 show_excerpts: false
 
 theme: minima
+
+exclude: [post-template.md]
