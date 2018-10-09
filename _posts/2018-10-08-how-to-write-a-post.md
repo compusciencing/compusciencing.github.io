@@ -73,7 +73,7 @@ If you want to update your local repository (for example, to prepare to submit a
 
 ```bash
 # Fetch the updated files from the compusciencing repository
-git fetch origin/master
+git fetch origin
 
 # Checkout your local master branch and merge the origin files
 git checkout master
