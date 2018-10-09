@@ -59,6 +59,3 @@ After you submit your post via a pull-request, if will be reviewed and you might
 
 - [Jekyll Documentation on Posts](https://jekyllrb.com/docs/posts/)
 - [Markdown Documentation](https://daringfireball.net/projects/markdown/) (Markdown is the preferred format for writing posts)
-
-categories: [blog, travel]
-tags: [hot, summer]
