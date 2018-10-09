@@ -65,7 +65,7 @@ git branch -d post-how-to-post
 
 # Updating your local repository
 
-If you want to update your local repository (for example, to prepare to submit a new post), you should following these steps, which assume that you used the process above to clone and fork the repository.
+If you want to update your local repository (for example, to prepare to submit a new post), you should follow these steps, which assume that you used the process above to clone and fork the repository.
 
 ```bash
 # Fetch the updated files from the compusciencing repository
