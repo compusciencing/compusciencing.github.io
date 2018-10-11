@@ -3,11 +3,12 @@ layout: post
 title:  "How to write a post"
 categories: [blog, travel]
 tags: [hot, summer]
+author: "Anthony J. Clark"
 ---
 
 # How to write a post
 
-This is a short post describing the posting process for this blog. It will be updated as we find better methods or add new features.
+This is a short description of the posting process for this blog. It will be updated as we find better methods or add new features.
 
 Here is the summary:
 
@@ -44,7 +45,7 @@ In the above, you will need to replace:
 - `"Added a new post..."` with your commit message, and
 - `YOUR_USER` with your GitHub username
 
-You should be able to preview your post by pushing your markdown to your forked repository and viewing on GitHub, or you can look at the resources section below for more information.
+You should be able to preview your post by pushing your markdown to your forked repository and viewing on GitHub, or you can look at the resources section below for more information. In either case, though, you will not see the same formatting and it will not include any custom CSS or JS.
 
 # Post template
 
@@ -52,12 +53,12 @@ I have added a simple template post in the root directory named `post-template.m
 
 You have a few key things to remember:
 
-1. You must include [front matter](https://jekyllrb.com/docs/front-matter/) at the top of your post. You should include at least the following fields: `layout`, `title`, `categories`, and `tags`. For example, if you are writing this post for the Missouri State University CSC 596 course, at minimum you should include the category `"Missouri State University"` and the tag `csc596` (you should also include any other relevant categories and tags).
+1. You must include [front matter](https://jekyllrb.com/docs/front-matter/){:target="_blank"} at the top of your post. You should include at least the following fields: `layout`, `title`, `author`, `categories`, and `tags`. For example, if you are writing this post for the Missouri State University CSC 596 course, at minimum you should include the category `"Missouri State University"` and the tag `csc596` (you should also include any other relevant categories and tags).
 2. You should write your post in Markdown.
 
 # Review process
 
-After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/) (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/)).
+After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/){:target="_blank"} (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/){:target="_blank"}).
 
 Once the review process is complete, you should delete the git branch you created to make your post. You can delete your remote branch on GitHub by clicking the `Delete branch` button that appears on the pull request after it has been merged.
 
@@ -84,6 +85,6 @@ git merge origin/master
 
 # Resources
 
-- [Jekyll Documentation on Posts](https://jekyllrb.com/docs/posts/)
-- [Markdown Documentation](https://daringfireball.net/projects/markdown/) (Markdown is the preferred format for writing posts)
-- [Previewing Your Markdown Post](http://lmgtfy.com/?q=markdown+editor) (you can use any Markdown editor to view a version of your post locally before you submit; **the styling will be different though**)
+- [Jekyll Documentation on Posts](https://jekyllrb.com/docs/posts/){:target="_blank"}
+- [Markdown Documentation](https://daringfireball.net/projects/markdown/){:target="_blank"} (Markdown is the preferred format for writing posts)
+- [Previewing Your Markdown Post](http://lmgtfy.com/?q=markdown+editor){:target="_blank"} (you can use any Markdown editor to view a version of your post locally before you submit; **the styling will be different though**)
