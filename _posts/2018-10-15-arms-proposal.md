@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "ARMS CSC 596 Proposal"
-categories: ["Missouri State University"]
+categories: ["Missouri State University", "ARCS"]
 tags: ["self-study", "596", "robotics", "python"]
 author: "Dillon Flohr"
 ---
