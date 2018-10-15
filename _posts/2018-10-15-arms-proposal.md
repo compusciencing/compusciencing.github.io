@@ -8,7 +8,7 @@ author: "Dillon Flohr"
 
 # CSC 596 Proposal
 
-## ARMS (Autonomous Robot Markup Syntax) for ARCS
+### ARMS (Autonomous Robot Markup Syntax) for ARCS
 
 ### Student: Dillon Flohr
 
