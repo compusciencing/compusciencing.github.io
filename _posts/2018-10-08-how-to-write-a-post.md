@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "How to write a post"
-categories: [blog, travel]
-tags: [hot, summer]
+categories: ["How To", "Meta"]
+tags: ["blog", "posting"]
 author: "Anthony J. Clark"
 ---
 
