@@ -14,3 +14,4 @@ We should also look at the themes found [here](https://talk.jekyllrb.com/t/jekyl
 
 - [ ] Fix the RSS feed button (or remove it)
 - [ ] Add [Disqus](https://disqus.com/) for enabling comments on posts?
+- [ ] Add layouts for categories and tags?
