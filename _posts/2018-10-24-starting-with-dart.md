@@ -183,7 +183,7 @@ world->addSkeleton(ground);
 
 The main differences between the sphere and this ground plane is that the ground plane uses a `WeldJoint` to attach it to the world (since it does not move), and it uses a `BoxShape` instead of a `SphereShape`. *Note: DART does have a `PlaneShape`, but it is not supported by the default collision engine ([FCL](https://github.com/flexible-collision-library/fcl))--or at least DART doesn't support FCL's plane type yet.*
 
-# Simulating the Sphere
+## Simulating the Sphere
 
 Now that we have a sphere and a ground plane, all that is left is to run the simulation:
 
