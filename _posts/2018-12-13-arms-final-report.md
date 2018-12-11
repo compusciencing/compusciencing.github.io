@@ -2,7 +2,7 @@
 layout: post
 title:  "ARMS CSC 596 Final Report"
 categories: ["Missouri State University", "ARCS"]
-tags: ["self-study", "csc596", "robotics", "python", "proposal", ode, sdf]
+tags: ["self-study", "csc596", "robotics", "python", "proposal", "ode", "sdf"]
 author: "Dillon Flohr"
 ---
 
@@ -24,11 +24,12 @@ As the figure above illustrates, one file of about 60 lines of ARMS code can out
 
 The first and most important decision that was made about the design of ARMS was how we would like to write and parse it. It was initially decided that we were going to write our own syntax and parser so we could have maximum control over the syntax. Although, it was quickly found that writing a syntax, parser, and creating functionality all in one semester was not realistic.
 
-It was decided that having a working proof-of-concept was the highest priority to pursue first, so we decided to not write an original language and use an existing one that is well defined and supported. After some research, it was decided that TOML was the language that would support our needs and be the fasted to get started with.
+It was decided that having a working proof-of-concept was the highest priority to pursue first, so we decided to not write an original language but instead use an existing one that is well defined and supported. After some research, it was decided that TOML was the language that would support our needs and be the fasted to get started with.
 
 The key functionality that made TOML attractive was the concept of an 'Array of Tables' which provides us with syntax like this:
 
 ```
+#TOML
 [[sphere]]
 name = "wheel1"
 radius = 0.5
@@ -38,17 +39,33 @@ relative_position = [1.0, 1.0, 0.0]
 name = "wheel2"
 radius = 0.5
 relative_position = [1.0, -1.0, 0.0]
+
+#Equivalent Dictionary
+{
+    "sphere": [
+        {
+            "name": "wheel1"
+            "radius": 0.5
+            "relative_position": [1.0, 1.0, 0.0]
+        },
+        {
+            "name": "wheel2"
+            "radius": 0.5
+            "relative_position": [1.0, -1.0, 0.0]
+        }
+    ]
+}
 ```
 
 This code illustrates how TOML creates arrays of dictionaries. These two '[[sphere]]' objects will be stored in one array as dictionaries with the values below them being key-value pairs. This allows Armature to organize all objects of the same type in a convenient manner and handle all of the same type of object simultaneously.
 
-TOML has proven not to be perfect for our uses though. There are some use cases where we wish to write ARMS in a certain way that is simply not supported by TOML. For example, while specifying joints in ARMS, you must include a 'parent' and 'child' attribute to specify which shapes that joint connects. Because the code is written sequentially this results in situations where a joint between two objects could be many lines away from the shape it is actually in relation too. Therefore, we contemplated that idea of using indentation to show the relationship between a parent and child shape. i.e. A child shape would be made the child of another shape by being indented one tab underneath the parent shape. But, the benefits of creating our own syntax and parser would have to be weighed against the cost of doing so. I would estimate that one entire semester of work would have to be done by someone who has taken the Language and Machines course at MSU to catch that version up to where ARMS is now.
+Though, TOML has proven to not be perfect for our needs. There are some use cases where we wish to write ARMS in a certain way that is simply not supported by TOML. For example, while specifying joints in ARMS, you must include a 'parent' and 'child' attribute to specify which shapes that joint connects. Because the code is written sequentially this results in situations where a joint between two objects could be many lines away from the shape it is actually in relation too. Therefore, we contemplated that idea of using indentation to show the relationship between a parent and child shape. i.e. A child shape would be made the child of another shape by being indented one tab underneath the parent shape. TOML ignores indentation though, so this is impossible with TOML. But, the benefits of creating our own syntax and parser would have to be weighed against the cost of doing so. I would estimate that one entire semester of work would have to be done by someone who has taken the Language and Machines course at MSU to catch that version up to where ARMS is now.
 
-One great feature of the Creators is that they rely on having objects defined in a dictionary, but doesn't know of care about how that dictionary is made. So this potential future parser is completely decoupled from how the Creators create their files. The only limitation is the parser would have to create those dictionary objects in a way that the Creators understand.
+The core of Armature is the Creator interface. A creator is responsible for taking a dictionary created from a parsed ARMS file and outputing it's generated file. One important feature of the Creators, is that they rely on having objects defined in the dictionary, but it doesn't know or care about how that dictionary is made. So a potential future parser is completely decoupled from how the Creators create their files. The only limitation is the parser would have to create those dictionary objects in a way that the Creators understand.
 
 # Features of ARMS
 
-In the Fall 2018 semester ARMS was developed with very solid features base and is in a good state to be expanded upon. The core of the application revolves around 'Creators.' Each target format that ARMS will support will have an associated Creator with it. Armature takes in command line arguments, such as ```--sdf``` and ```--drawstuff``` and calls the ```create_file()``` method of the Creator that can handle that request. Each creator follows a Creator interface so ```main()``` does not care how a Creator creates it's associated file. It just knows it can and sends off the request and a dictionary with all the objects parsed from the ARMS TOML file. This allows future file formats to be easily added by following the patter established and also allow existing Creators to be edited without effecting the other Creators.
+In the Fall 2018 semester ARMS was developed with very solid features base and is in a good state to be expanded upon. Each target format that ARMS will support will have an associated Creator with it. Armature takes in command line arguments, such as ```--sdf``` and ```--drawstuff``` and calls the ```create_file()``` method of the Creator that can handle that request. Each creator follows a Creator interface so ```main()``` does not care how a Creator creates it's associated file. It just knows it can and sends off the request and a dictionary with all the objects parsed from the ARMS TOML file. This allows future file formats to be easily added by following the established pattern and also allow existing Creators to be edited without effecting the other Creators.
 
 The main features that ARMS supports are:
 * Spheres
@@ -70,11 +87,11 @@ The following is ideas on how the project could be futher developed.
 
 As discussed in the Syntax section of this post, a new syntax and parser that is created specifically for our needs would be a great addition to this project.
 
-#### Continued development of the SDF Creator:
+#### Continued Development of the SDF Creator:
 
 The SDF Creator is a top priority at the time this post was written as it is the format used by Gazebo, which is one of the most popular robotics simulation environments. The SDF creator is probably the best place to start when getting familiar with Armature.
 
-#### ODE struct support:
+#### ODE Struct Support:
 
 ODE was initially supported by creating a simulation and displaying it using DrawStuff, a simple graphics library used by ODE to display it's simulations. To use ODE in Dr. Clark's own visualizer. A C++ struct object is needed.
 
