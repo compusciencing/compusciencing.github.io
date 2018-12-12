@@ -1,14 +1,16 @@
 ---
 layout: post
 title:  "CSC 799 Final Report"
-categories: ["Missouri State University", "ARCS"]
+categories: ["Missouri State University"]
 tags: ["CSC 799", "topic modeling", "word embedding", "tone analyze", "t-test"]
 author: "Dipto Das"
 ---
 
 # CSC 799 Final Report
 
+
 **Student: Dipto Das**
+
 **Supervisor: Dr. Anthony J. Clark**
 
 My research can be described in the broad area of social media content classification. For this semester, I focused on text classification. Text classification is basically an NLP problem. Popular NLP techniques include stemming, stop word elimination, sentiment analysis, and etc. A very popular algorithm often used in text analysis is topic modeling.
@@ -28,7 +30,7 @@ Topic modeling or TF-IDF cannot recognize synonyms. So, what should we do to tea
 
 # Word Embedding Models
 
-Word embedding models are a modern approach of representing text in natural language processing. It is a way of representing a word in a dense vector space that is based on their meaning. It is an advancement on simple bag-of-words approach. Word embedding models are trained to be a fixed length dense and continuous valued vectors using a large corpus of text. Each word is represented by a point in the embedding space and these points are learned by moving around based on the words that usually surround that target word. In other words, a word is learned by the company it keeps that usually has "something" to do with the meanings of the words.
+Word embedding models are a modern approach of representing text in natural language processing (NLP). It is a way of representing a word in a dense vector space that is based on their meaning. It is an advancement on simple bag-of-words approach. Word embedding models are trained to be a fixed length dense and continuous valued vectors using a large corpus of text. Each word is represented by a point in the embedding space and these points are learned by moving around based on the words that usually surround that target word. In other words, a word is learned by the company it keeps that usually has "something" to do with the meanings of the words.
 
 Let's see a very popular example.
 
@@ -38,7 +40,14 @@ A standard word embedding model would suggest a like queen as the answer. Becaus
 
 Something like this: queen = (king - man) + woman
 
-Popular word embedding models include word2vec model by Google, GloVe by Stanford. There are some unconventional word embedding models available as well like urban dictionary model. The model that you need to use depends on the application that you have in mind.
+Popular word embedding models include word2vec model by Google, GloVe by Stanford. There are some unconventional word embedding models available as well like urban dictionary model.
+
+Download links for the pretrained
+* GoogleNews word2vec model:  https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
+* GloVe model: http://nlp.stanford.edu/data/glove.6B.zip
+* Urban Dictionary word2vec model: https://data.world/jaredfern/urban-dictionary-embedding
+
+The model that you need to use depends on the application that you have in mind.
 
 We can easily find already trained models for word2vec or Glove easily. However, you may need to develop/train the model from corpus at hand if you have a very specific application field in mind. For example, Google's word2vec model was trained with entire Wikipedia corpus. The basic idea is similar to n-gram approach that means we need a group of words at a time to get idea of the context of the use of the word. Here, I show a general step through approach for training your word embedding model in Gensim, a more matured natural language processing framework than natural language toolkit (NLTK) that comes readily with python.
 
@@ -193,7 +202,7 @@ In my research, I had text data of two different categories. I calculated the em
 
 # Student t-test
 
-Let me start by telling a story. There was a person named William Sealy Gosset. He worked at Guiness Brewery over a hundred years ago. He came up with a statistical test to show the difference between barley yield from two fields. When he wanted to publish the test, he was nervous, and instead of publishing it in his name, he used the pseudo name 'Student'. To this day, this test is known as Student's t-test instead of Gosset's t-test.
+Let me start by telling a story. There was a person named William Sealy Gosset. He worked at Guiness Brewery over one hundred years ago. He came up with a statistical test to show the difference between barley yield from two fields. When he wanted to publish the test, he was nervous, and instead of publishing it in his name, he used the pseudonym 'Student'. To this day, this test is known as Student's t-test instead of Gosset's t-test.
 
 # What is t-test?
 Imagine, you have two fields of same crops - field 1 and field 2. May be, you want to compare the productions of these two fields with respect to a certain criteria. However, obviously it's not wise to cut the crops from the whole fields for this. A test on samples from both these fields should be enough. Look at the following image:
