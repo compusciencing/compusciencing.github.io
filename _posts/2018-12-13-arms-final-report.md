@@ -48,7 +48,7 @@ One great feature of the Creators is that they rely on having objects defined in
 
 # Features of ARMS
 
-In the Fall 2018 semester ARMS was developed with very solid features base and is in a good state to be expanded upon. The core of the application revolves around 'Creators.' Each target format that ARMS will support will have an associated Creator with it. Armature takes in command line arguments, such as ```--sdf``` and ```--drawstuff``` and calls the ```create_file()``` method of the Creator that can handle that request. Each creator follows a Creator interface so ```main()``` does not care how a Creator creates it's associated file. It just knows it can and sends off the request and a dictionary with all the objects parsed from the ARMS TOML file. This allows future file formats to be easily added by following the patter established and also allow existing Creators to be edited without effecting the other Creators.
+In the Fall 2018 semester ARMS was developed with very solid features base and is in a good state to be expanded upon. The core of the application revolves around 'Creators.' Each target format that ARMS will support will have an associated Creator with it. Armature takes in command line arguments, such as `--sdf` and `--drawstuff` and calls the `create_file()` method of the Creator that can handle that request. Each creator follows a Creator interface so `main()` does not care how a Creator creates it's associated file. It just knows it can and sends off the request and a dictionary with all the objects parsed from the ARMS TOML file. This allows future file formats to be easily added by following the patter established and also allow existing Creators to be edited without effecting the other Creators.
 
 The main features that ARMS supports are:
 * Spheres
@@ -94,58 +94,61 @@ Other, more specific things that could be done can be found at the project [Trel
 
 ```
 [[model]]
-name = "box_and_sphere"
+name = "car"
+
+[[constants]]
+wheel_radius = 0.5
+
+#Macro Creation
+[[macro.wheel_and_axis]]
+parent_name = ""
+my_name = ""
+relative_child_position = []
+relative_joint_position = []
+joint_axis = []
+
+    [[macro.wheel_and_axis.sphere]]
+    name = "$my_name"
+    radius = "$wheel_radius"
+    relative_position = "$relative_child_position"
+
+    [[macro.wheel_and_axis.revolute]]
+    name = "$my_name"
+    axis = "$joint_axis"
+    relative_position = "$relative_joint_position"
+    parent = "$parent_name"
+    child = "$my_name"
 
 [[box]]
 name = "body"
 sides = [2.0, 1.0, 0.5]
 position = [0, 0, 0]
 
-[[sphere]]
-name = "wheel1"
-radius = 0.5
-relative_position = [1.0, 1.0, 0.0]
+[[wheel_and_axis]]
+parent_name = "body"
+my_name = "wheel1"
+relative_child_position = [1.0, 1.0, 0.0]
+relative_joint_position = [1, 0, 0]
+joint_axis = [0, 1, 0]
 
-[[sphere]]
-name = "wheel2"
-radius = 0.5
-relative_position = [1.0, -1.0, 0.0]
+[[wheel_and_axis]]
+parent_name = "body"
+my_name = "wheel2"
+relative_child_position = [1.0, -1.0, 0.0]
+relative_joint_position = [1, 0, 0]
+joint_axis = [0, 1, 0]
 
-[[sphere]]
-name = "wheel3"
-radius = 0.5
-relative_position = [-1.0, -1.0, 0.0]
+[[wheel_and_axis]]
+parent_name = "body"
+my_name = "wheel3"
+relative_child_position = [-1.0, -1.0, 0.0]
+relative_joint_position = [-1, 0, 0]
+joint_axis = [0, 1, 0]
 
-[[sphere]]
-name = "wheel4"
-radius = 0.5
-relative_position = [-1.0, 1.0, 0.0]
-
-[[revolute]]
-name = "rev_joint_1"
-axis = [0, 1, 0]
-relative_position = [1, 0, 0]
-parent = "body"
-child = "wheel1"
-
-[[revolute]]
-name = "rev_joint_2"
-axis = [0, 1, 0]
-relative_position = [1, 0, 0]
-parent = "body"
-child = "wheel2"
-
-[[revolute]]
-name = "rev_joint_3"
-axis = [0, 1, 0]
-relative_position = [-1, 0, 0]
-parent = "body"
-child = "wheel3"
-
-[[revolute]]
-name = "rev_joint_4"
-axis = [0, 1, 0]
-relative_position = [-1, 0, 0]
-parent = "body"
-child = "wheel4"
+[[wheel_and_axis]]
+parent_name = "body"
+my_name = "wheel4"
+relative_child_position = [-1.0, 1.0, 0.0]
+relative_joint_position = [-1, 0, 0]
+joint_axis = [0, 1, 0]
 ```
