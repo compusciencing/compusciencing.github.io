@@ -8,7 +8,7 @@ author: "Dipto Das"
 
 # Tone Analysis with IBM Tone Analyzer
 
-At first let's ask the question, what is the benefit of using Tone information instead of Sentiment information in text analysis or natural language processing?
+At first let's ask the question, what is the benefit of using **tone** information instead of **sentiment** information in text analysis or natural language processing?
 
 There are several popular sentiment analysis tools out there like Vader sentiment analyzer, TextBlob, and etc. They all have their own way to represent the sentiment of their own. For example, TextBlob sentiment analyzer gives a positive sentiment value and a negative sentiment value whereas Vader sentiment analyzer gives a positive, a negative, a neutral, and a compound (i.e. aggregated) sentiment score. All of these suggest the overall polarity of the sentiment. However, none of these has a way to distinguish among the positive emotions and negative emotions. For example, both sadness and anger are negative emotions, but there is an obvious distinction between them and they are often clearly distinguishable by human from written text. IBM Watson tone analyzer is a tool for estimating the emotional scores from text so that we can differentiate among emotions in negative sentiments and positive sentiments.
 
