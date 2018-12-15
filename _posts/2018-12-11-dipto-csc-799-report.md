@@ -2,7 +2,7 @@
 layout: post
 title:  "CSC 799 Final Report"
 categories: ["Missouri State University"]
-tags: ["CSC 799", "topic modeling", "word embedding", "tone analyze", "t-test"]
+tags: ["csc799", "topic modeling", "word embedding", "tone analyze", "t-test"]
 author: "Dipto Das"
 ---
 
@@ -71,30 +71,30 @@ Upto this point we have talking about how we can use words or synonyms of words 
 
 # Tone Analysis with IBM Tone Analyzer
 
-At first let's ask the question, what is the benefit of using Tone information instead of Sentiment information in text analysis or natural language processing?
+At first let's ask the question, what is the benefit of using **tone** information instead of Sentiment information in text analysis or natural language processing?
 
-There are several popular sentiment analysis tools out there like Vader sentiment analyzer, TextBlob, and etc. They all have their own way to represent the sentiment of their own. For example, TextBlob sentiment analyzer gives a positive sentiment value and a negative sentiment value whereas Vader sentiment analyzer gives a positive, a negative, a neutral, and a compound (i.e. aggregated) sentiment score. All of these suggest the overall polarity of the sentiment. However, none of these has a way to distinguish among the positive emotions and negative emotions. For example, both sadness and anger are negative emotions, but there is an obvious distinction between them and they are often clearly distinguishable by human from written text. IBM Watson tone analyzer is a tool for estimating the emotional scores from text so that we can differentiate among emotions in negative sentiments and positive sentiments.
+There are several popular sentiment analysis tools out there like [Vader sentiment analyzer](http://comp.social.gatech.edu/papers/icwsm14.vader.hutto.pdf), [TextBlob](https://textblob.readthedocs.io/en/dev/quickstart.html), and etc. They each have their own way to represent the sentiment. For example, TextBlob sentiment analyzer gives a positive sentiment value and a negative sentiment value whereas Vader sentiment analyzer gives a positive, a negative, a neutral, and a compound (i.e. aggregated) sentiment score. All of these suggest the overall polarity of the sentiment. However, none of these has a way to distinguish among the positive emotions and negative emotions. For example, both sadness and anger are negative emotions, but there is an obvious distinction between them and they are often clearly distinguishable by human from written text. IBM Watson tone analyzer is a tool for estimating the emotional scores from text so that we can differentiate among emotions in negative sentiments and positive sentiments.
 
-IBM tone analyzer gives a sentense-wise score in a scale of 0 to 1 representing different aspects of the text. What do I mean with different aspects? This tool gives values of three aspects - emotions, language, and social - for any sentence supplied to it. Isn't it fascinating? Huh! This tool is based on linguistic behavior and psychological theories.
+The IBM tone analyzer gives a sentence-wise score in a scale of 0 to 1 representing different aspects of the text. What do I mean with different aspects? This tool gives values of three aspects - emotions, language, and social - for any sentence supplied to it. Isn't it fascinating? Huh! This tool is based on linguistic behavior and psychological theories.
 
-The emotion score in IBM Tone Analyzer represents the likelihood of a sentence to convey one of the following five emotions: anger, fear, disgust, joy, and sadness. These are a subset of the seminal classification of emotions by Ekman and Plutchik. The score is derived from a stacked ensemble framework. That means it combines predictions from many lower level models under a high level hood to achieve better performance. Examples of these low level features include: n-grams (unigrams, bigrams, and trigrams), punctuations, emoticons, curse words, greetings, and last but not the least sentiment polarity scores as we get from Vader or TextBlob. The high level hood uses a constrained optimization approach that is designed to handle co-occurances of multiple emotions and noisy data. Thus, it becomes applicable for text we usually come across including on social media.
+The emotion score in the IBM Tone Analyzer represents the likelihood of a sentence to convey one of the following five emotions: anger, fear, disgust, joy, and sadness. These are a subset of the seminal classification of emotions by Ekman and Plutchik. The score is derived from a stacked ensemble framework. That means it combines predictions from many lower level models under a high level hood to achieve better performance. Examples of these low level features include: n-grams (unigrams, bigrams, and trigrams), punctuations, emoticons, curse words, greetings, and last but not the least sentiment polarity scores as we get from Vader or TextBlob. The high level hood uses a constrained optimization approach that is designed to handle co-occurances of multiple emotions and noisy data. Thus, it becomes applicable for text we usually come across including on social media.
 
-In the same way, language and social scores were calculated with analysis of learned features. Language scores evaluate three qualities in the words of a sentence: analytical, tentative, and confidence. As the names of the categories suggest, analytical scores represents the amount of reasoning and technical words in the sentences, tentaive scores shows the amount of doubt in text, and confidence scores represent the degree of certainity in the text. In order to test the system's performance, IBM tone analyzer used crowdsourcing on a platform named CrowdFlower. The system achieved F1-score of ~0.7 with respect to experts' annotations.
+In the same way, language and social scores were calculated with analysis of learned features. Language scores evaluate three qualities in the words of a sentence: analytical, tentative, and confidence. As the names of the categories suggest, analytical scores represents the amount of reasoning and technical words in the sentences, tentaive scores shows the amount of doubt in text, and confidence scores represent the degree of certainity in the text. In order to test the system's performance, IBM tone analyzer used crowdsourcing on a platform named CrowdFlower. The system achieved F1-score of ~0.7 with respect to experts' annotations. The high F1-score means balanced performance of the system for different classes unlike accuracy which might get biased in case of unbalanced dataset.
 
 The social scores indicate the likelihood of a sentence having the characteristics of the Big Five personality model: openness, conscientiousness, extraversion, emotional range, and agreeableness. Openness indicates the property of being open to new ideas; conscientiousness indicates the property of being methodical and organized; extraversion means the tendancy of finding stimulation with others; emotional range (a.k.a. neuroticism) represents the extent to which emotion conveyed 
 in the text shows sensitivity or stability; and lastly, agreeableness is the tendancy of being compassionate.
 
-So, important question is where we can use it? We can use this tool to analyze text where there is context involved. Well, those who advocate for n-grams can argue here that it is already done in their way. Let me give you an example.
+So, an important question is: where can we use it? We can use this tool to analyze text where there is context involved. Well, those who advocate for n-grams can argue here that it is already done in their way. Let me give you an example.
 
 Paragraph 1: It is a rainy day. Do I really need to out today?
 
-Paragraph 2: It is a rainy day. School going kids are happy that their classes got canacled.
+Paragraph 2: It is a rainy day. School going kids are happy that their classes got canceled.
 
 Paragraph 3: It is a rainy day. The humidity was very high and the large difference in atomspheric pressure flew the clouds towards the city causing the rain.
 
 Now, tell me does n-gram on first sentence give you enough information about the context?
 
-I rest my case here. To know more about the IBM tone analyzer their official documentaion is a good start. They got APIs in popular languages. And the best thing is, though it is a paid service, you get 3,000 API calls per month for free. That, I think, is enough for research purpose and for playing around with it.
+To know more about the IBM tone analyzer their official documentation is a good start. They got APIs in popular languages. And the best thing is, though it is a paid service, you get 3,000 API calls per month for free. That, I think, is enough for research purpose and for playing around with it.
 
 Let's get started by initializing tone analyzer.
 
@@ -205,11 +205,13 @@ In my research, I had text data of two different categories. I calculated the em
 Let me start by telling a story. There was a person named William Sealy Gosset. He worked at Guiness Brewery over one hundred years ago. He came up with a statistical test to show the difference between barley yield from two fields. When he wanted to publish the test, he was nervous, and instead of publishing it in his name, he used the pseudonym 'Student'. To this day, this test is known as Student's t-test instead of Gosset's t-test.
 
 # What is t-test?
-Imagine, you have two fields of same crops - field 1 and field 2. May be, you want to compare the productions of these two fields with respect to a certain criteria. However, obviously it's not wise to cut the crops from the whole fields for this. A test on samples from both these fields should be enough. Look at the following image:
+Imagine, you have two fields of same crops - field 1 and field 2. Maybe you want to compare the productions of these two fields with respect to a certain criteria. However, obviously it's not wise to cut the crops from the whole fields for this. A test on samples from both these fields should be enough. Look at the following image:
 
 ![Different distributions from two fields](/images/ttest.jpg)
 
-The top figure says that field 2 (indicated by blue line) has a higher mean than field 1 (indicated by green curve). But that just says a partial story. The fields can have different distributions as shown in other two figures. Depending on that, the crops from these two fields can have statistical differences or not. And that's where t-test becomes useful. We can see the t-value as a ratio between signal and noise. Signal means the numbers that can show the differences in two distributions, if any, and noise means the numbers that are just outliers. We can define signal as difference between group means and noise is the variability in the groups.
+*Image collected from: http://www.socialresearchmethods.net/kb/stat_t.htm*
+
+The top figure says that field 2 (indicated by blue line) has a higher mean than field 1 (indicated by green curve). But that just says a partial story. The fields can have different distributions as shown in the other two figures. Depending on that, the crops from these two fields can have statistical differences or not. And that's where t-test becomes useful. We can see the t-value as a ratio between signal and noise. Signal means the numbers that can show the differences in two distributions, if any, and noise means the numbers that are just outliers. We can define signal as difference between group means and noise is the variability in the groups.
 
 The formula that we are going to use:
 
@@ -221,12 +223,12 @@ The t-value here is 2.3 that means there is more signal than noise.
 
 If we had a null hypothesis: "There is no statistically significant difference between the samples." That means any difference we find is just by chance. Hence, we need a critical value. If the our t-value is less than that we cannot reject the null hypothesis however if it is higher, we can reject the hypothesis and accept the alternative hypothesis.
 
-Now, let's look at the t value table.
+Now, let's look at the t-value table.
 
 ![t-value table](/images/ttable.png)
 
 The degree of freedom is calculated as: df = count of samples from field 1 + count of samples from field 2 - 2 = 16 + 16 - 2 = 30 in our case. Generally, in inferential statistics, p = 0.05 is widely used. We are going to use that same value. Therefore, the critical value for us will be 2.042. Our t-value is greater than critical value, thus, we can reject the null hypothesis and accept the alternative hypothesis: There is statistically significant difference between the crops from two fields.
 
-We can use the function: ttest as well to calculate the p value directly that gives us p = 0.026 < 0.05 and we can accept alternate hypothesis.
+We can use the function: t-test as well to calculate the p value directly that gives us p = 0.026 < 0.05 and we can accept alternate hypothesis.
 
 What if the calculated p value is greater than 0.05? There is no significant difference. What if it is slightly greater like 0.06? There is nothing like provisionally rejected in t-test. It just says you that you might try to apply that as a feature to machine learning algorithm on them to classify. It might be helpful however it will not be decisive.
