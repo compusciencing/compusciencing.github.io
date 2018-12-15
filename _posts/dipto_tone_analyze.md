@@ -2,7 +2,7 @@
 layout: post
 title:  "Tone analysis of text!"
 categories: ["Missouri State University"]
-tags: ["CSC 799"]
+tags: ["csc799"]
 author: "Dipto Das"
 ---
 
