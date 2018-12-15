@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "a Transformable Wheel-Leg Hybrid for Adabot"
+title:  "A Transformable Wheel-Leg Hybrid for Adabot"
 categories: ["Missouri State University"]
 tags: ["uhc396"]
 author: "Eric McCullough"
 ---
 #A Transformable Wheel-Leg Hybrid for Adabot
 ####Introduction
-Transformable robots are robots that can adapt their physical bodies to better suit their environments.  Adabot is a 
+Transformable robots can adapt their bodies to better suit their environments.  Adabot is a 
 small-scale autonomous robotic rover intended for search and rescue and exploration. This semester, I worked on a 
 transformable wheel-leg hybrid to allow Adabot to more effectively adapt to its environment and overcome obstacles. 
 
