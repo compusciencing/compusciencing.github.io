@@ -38,17 +38,23 @@ Reducing friction also offers the added benefit of making the transformation pro
 on Adabot’s motor. 
 ####Design
 The resulting transformable wheel design consists of only three primary parts: an outer rim, an inner rim, and the 
-legs. The inner rim is a disk 35 mm in radius and 2 mm thick. It operates as the wheel, when Adabot is in wheel mode.
+legs. The inner rim is a disk 35 mm in radius and 2 mm thick. In Figure 1 and 2, the outer rim is the larger of the 
+two discs in the picture. It operates as the wheel, when Adabot is in wheel mode.
 On the outside of the inner rim are four brackets, upon which the legs can be hinged. These brackets extend outward 
 from the rim 5 mm, providing the legs room necessary to carry out their motion for the transformation.
 
-The outer rim is essentially a smaller version of the inner rim. It measures 15 mm across. In order to transform, a 
-motor on adabot can pull the outer rim in towards the inner rim, extending the legs out as it comes in.
+The outer rim is essentially a smaller version of the inner rim. It measures 15 mm across. In Figure 2, the outer rim 
+is illustrated as the smaller disc on the left side of the image. In order to transform into legged mode, the outer rim
+is retracted in towards the inner rim. 
 
 The legs are 30 mm long and 3 mm thick. They have two mounting areas: a 1 mm hole for attaching to the inner rim, and 
-a 1 mm thick slit running up the length of the leg. The slit is mounted to a bracket on the outer rim, allowing the 
-leg to both rotate and slide, extending into legged mode when the outer rim is retracted. 
+a 1 mm thick slit running up the length of the leg. Figure 1 and 2 illustrate how the legs are affixed to the rims. 
+The hole is attached to the outer rim via a pin, allowing for rotation at that point. The channel is attached via an 
+identical pin to the inner rim, allowing for the leg to both rotate around and slide over the pin. This allows the legs
+to glide outward or extend into legged mode, or inward, retracting into wheel mode. 
 
 ####Design Images
 ![Wheel leg hybrid side](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_side_view.PNG)
+Figure 1: side view of the wheel design
 ![Wheel leg hybrid corner](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.PNG)
+Figure 2: corner view of the wheel design
