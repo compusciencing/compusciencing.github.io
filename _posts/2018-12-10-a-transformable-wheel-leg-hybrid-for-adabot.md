@@ -50,5 +50,5 @@ a 1 mm thick slit running up the length of the leg. The slit is mounted to a bra
 leg to both rotate and slide, extending into legged mode when the outer rim is retracted. 
 
 ####Design Images
-![Wheel leg hybrid 1](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/Capture1.PNG)
-![Wheel leg hybrid 1](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/Capture2.PNG)
+![Wheel leg hybrid side](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_side_view.PNG)
+![Wheel leg hybrid corner](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.PNG)
