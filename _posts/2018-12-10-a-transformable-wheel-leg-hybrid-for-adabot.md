@@ -14,7 +14,7 @@ transformable wheel-leg hybrid to enable Adabot to more effectively adapt to its
 Wheel-leg hybrids are often used in transformable robots. The core idea is to have a wheel that can deploy spoke-like 
 legs that extend radially outward reducing their points of contact with the ground. This grants the robot utilizing
 the wheel-leg hybrid the best of both worlds: the speed and efficiency of a traditional wheel and the ability to 
-overcome rough terrain of legs. The rational for wheel-leg hybrids is fairly simple. The traditional wheel has been a 
+overcome rough terrain using legs. The rational for wheel-leg hybrids is fairly simple. The traditional wheel has been a 
  cornerstone of human vehicles since the beginning of technology for a reason. They are easy to make, provide 
 excellent speed and mobility, and are so energy efficient that their basic design has not had to be updated for 
 centuries. Legged movement apparatuses are more prone to failure and require far more energy per unit of travel than 
