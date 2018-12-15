@@ -8,7 +8,7 @@ author: "Dipto Das"
 
 # Word Embedding Models
 
-Word embedding models are a modern approach of representing text in natural language processing. It is a way of representing a word in a dense vector space that is based on their meaning. It is an advancement on simple bag-of-words approach. Word embedding models are trained to be a fixed length dense and continuous valued vectors using a large corpus of text. Each word is represented by a point in the embedding space and these points are learned by moving around based on the words that usually surround that target word. In other words, a word is learned by the company it keeps that usually has "something" to do with the meanings of the words.
+Word embedding models are a modern approach of representing text in natural language processing (NLP). It is a way of representing a word in a dense vector space that is based on their meaning. It is an advancement on simple bag-of-words approach. Word embedding models are trained to be a fixed length dense and continuous valued vectors using a large corpus of text. Each word is represented by a point in the embedding space and these points are learned by moving around based on the words that usually surround that target word. In other words, a word is learned by the company it keeps that usually has "something" to do with the meanings of the words.
 
 Let's see a very popular example.
 
