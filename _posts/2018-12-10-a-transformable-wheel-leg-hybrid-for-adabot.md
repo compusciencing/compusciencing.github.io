@@ -9,7 +9,7 @@ author: "Eric McCullough"
 ####Introduction
 Transformable robots can adapt their bodies to better suit their environments.  Adabot is a 
 small-scale autonomous robotic rover intended for search and rescue and exploration. This semester, I worked on a 
-transformable wheel-leg hybrid to allow Adabot to more effectively adapt to its environment and overcome obstacles. 
+transformable wheel-leg hybrid to enable Adabot to more effectively adapt to its environment and overcome obstacles. 
 
 Wheel-leg hybrids are often used in transformable robots. The core idea is to have a wheel that can deploy spoke-like 
 legs that extend their radius while reducing their points of connection to the ground. This grants the robot utilizing
