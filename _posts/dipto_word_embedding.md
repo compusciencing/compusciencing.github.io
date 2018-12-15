@@ -2,7 +2,7 @@
 layout: post
 title:  "Some nlp algorithms"
 categories: ["Missouri State University", "ARCS"]
-tags: ["CSC 799"]
+tags: ["csc799"]
 author: "Dipto Das"
 ---
 
