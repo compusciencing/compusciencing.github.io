@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tone analysis of text!"
-categories: ["Missouri State University", "ARCS"]
+categories: ["Missouri State University"]
 tags: ["CSC 799"]
 author: "Dipto Das"
 ---
