@@ -27,7 +27,7 @@ The t-value here is 2.3 that means there is more signal than noise.
 
 If we had a null hypothesis: "There is no statistically significant difference between the samples." That means any difference we find is just by chance. Hence, we need a critical value. If the our t-value is less than that we cannot reject the null hypothesis however if it is higher, we can reject the hypothesis and accept the alternative hypothesis.
 
-Now, let's look at the t value table.
+Now, let's look at the t-value table.
 
 ![t-value table](/images/ttable.png)
 
