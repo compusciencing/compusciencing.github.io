@@ -12,7 +12,7 @@ small-scale autonomous robotic rover intended for search and rescue and explorat
 transformable wheel-leg hybrid to enable Adabot to more effectively adapt to its environment and overcome obstacles. 
 
 Wheel-leg hybrids are often used in transformable robots. The core idea is to have a wheel that can deploy spoke-like 
-legs that extend their radius while reducing their points of connection to the ground. This grants the robot utilizing
+legs that extend radially outward reducing their points of contact with the ground. This grants the robot utilizing
 the wheel-leg hybrid the best of both worlds: the speed and efficiency of a traditional wheel and the ability to 
 overcome rough terrain of legs. The rational for wheel-leg hybrids is fairly simple. The traditional wheel has been a 
  cornerstone of human vehicles since the beginning of technology for a reason. They are easy to make, provide 
