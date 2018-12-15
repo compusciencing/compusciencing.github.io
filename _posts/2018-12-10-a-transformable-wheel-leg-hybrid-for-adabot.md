@@ -8,11 +8,11 @@ author: "Eric McCullough"
 #A Transformable Wheel-Leg Hybrid for Adabot
 ####Introduction
 Transformable robots can adapt their bodies to better suit their environments.  Adabot is a 
-small-scale autonomous robotic rover intended for search and rescue and exploration. This semester, I worked on a 
+small-scale autonomous robotic rover intended for search and rescue and exploration[1]. This semester, I worked on a 
 transformable wheel-leg hybrid to enable Adabot to more effectively adapt to its environment and overcome obstacles. 
 
 Wheel-leg hybrids are often used in transformable robots. The core idea is to have a wheel that can deploy spoke-like 
-legs that extend radially outward reducing their points of contact with the ground. This grants the robot utilizing
+legs that extend radially outward reducing their points of contact with the ground[2]. This grants the robot utilizing
 the wheel-leg hybrid the best of both worlds: the speed and efficiency of a traditional wheel and the ability to 
 overcome rough terrain using legs. The rational for wheel-leg hybrids is fairly simple. The traditional wheel has been a 
  cornerstone of human vehicles since the beginning of technology for a reason. They are easy to make, provide 
@@ -58,3 +58,11 @@ to glide outward or extend into legged mode, or inward, retracting into wheel mo
 Figure 1: side view of the wheel design
 ![Wheel leg hybrid corner](assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.PNG)
 Figure 2: corner view of the wheel design
+
+####References 
+[1] A. J. Clark, "Evolving adabot: A mobile robot with adjustable wheel extensions," 2017 IEEE Symposium Series on 
+Computational Intelligence (SSCI), Honolulu, HI, 2017, pp. 1-8.
+doi: 10.1109/SSCI.2017.8280979
+
+[2] A. Conduraru (Slătineanu) et al., "An Overview on the Design of Mobile Robots with Hybrid Locomotion", Advanced 
+Materials Research, Vol. 837, pp. 555-560, 2014
