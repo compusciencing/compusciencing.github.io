@@ -218,6 +218,8 @@ The formula that we are going to use:
 
 t-value = |mean of field 1 - mean of field 2|/(variance of field 1/sample count of field 1 + variance of field 2/sample count of field 2)^0.5
 
+$$\sum_{i=0}^n i$$
+
 A sample calculation is shown here:
 
 |                    	| field 1       	| field 2      	|
