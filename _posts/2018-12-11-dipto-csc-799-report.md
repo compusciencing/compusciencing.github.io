@@ -49,7 +49,7 @@ Download links for the pretrained
 
 The model that you need to use depends on the application that you have in mind.
 
-We can easily find already trained models for word2vec or Glove easily. However, you may need to develop/train the model from corpus at hand if you have a very specific application field in mind. For example, Google's word2vec model was trained with entire Wikipedia corpus. The basic idea is similar to n-gram approach that means we need a group of words at a time to get idea of the context of the use of the word. Here, I show a general step through approach for training your word embedding model in Gensim, a more matured natural language processing framework than natural language toolkit (NLTK) that comes readily with python.
+We can easily find already trained models for word2vec or Glove. However, you may need to develop/train the model from corpus at hand if you have a very specific application field in mind. For example, Google's word2vec model was trained with entire Wikipedia corpus. The basic idea is similar to n-gram approach that means we need a group of words at a time to get idea of the context of the use of the word. Here, I show a general step through approach for training your word embedding model in Gensim, a more matured natural language processing framework than natural language toolkit (NLTK) that comes readily with python.
 
 ```python
 sentences = 'This is a small corpora'	#assume we fit all our corpus in a variable in memory
@@ -67,7 +67,7 @@ model = Word2Vec.load('my_word_embedding_model')
 
 If we have a group of words meaning similar thing and we know only one or two meaning the opposite, word embedding models can find the similar words; that can even specialized for our problem context if we chose to train our own word embedding models.
 
-Upto this point we have talking about how we can use words or synonyms of words to perform natural language processing tasks. These sort of approaches work better with naive Bayes distribution model when the vocabulary for problem space is known and predefined. In case where we do not want our system to be limited by the EXACT words in the corpus rather we want to have an overall idea about the way of expression or conveying of information, we use sentiment analysis. Sentiment analysis being a popular technique comes readily with python NLTK library. Besides, a good number of resouces can be found on the internet about it. In this report, we will discuss a relatively new approach called tone analysis. 
+Upto this point I have talked about how we can use words or synonyms of words to perform natural language processing tasks. These sort of approaches work better with naive Bayes distribution model when the vocabulary for problem space is known and predefined. In case where we do not want our system to be limited by the EXACT words in the corpus rather we want to have an overall idea about the way of expression or conveying of information, we use sentiment analysis. Sentiment analysis being a popular technique comes readily with python NLTK library. Besides, a good number of resouces can be found on the internet about it. In this report, we will discuss a relatively new approach called tone analysis. 
 
 # Tone Analysis with IBM Tone Analyzer
 
@@ -217,7 +217,33 @@ The formula that we are going to use:
 
 t-value = |mean of field 1 - mean of field 2|/(variance of field 1/sample count of field 1 + variance of field 2/sample count of field 2)^0.5
 
-A sample calculation is shown in the following google sheet: https://docs.google.com/spreadsheets/d/1H8ajhRR5SOqkcx3pBPHjA1LY76j8-mtNDsnGajFBrXM/edit?usp=sharing
+A sample calculation is shown here:
+
+|                    	| field 1       	| field 2      	|
+|--------------------	|---------------	|--------------	|
+|                    	| 15.2          	| 15.9         	|
+|                    	| 15.3          	| 15.9         	|
+|                    	| 16            	| 15.2         	|
+|                    	| 15.8          	| 16.6         	|
+|                    	| 15.6          	| 15.2         	|
+|                    	| 14.9          	| 15.8         	|
+|                    	| 15            	| 15.8         	|
+|                    	| 15.4          	| 16.2         	|
+|                    	| 15.6          	| 15.6         	|
+|                    	| 15.7          	| 15.6         	|
+|                    	| 15.5          	| 15.8         	|
+|                    	| 15.2          	| 15.5         	|
+|                    	| 15.5          	| 15.5         	|
+|                    	| 15.1          	| 15.5         	|
+|                    	| 15.3          	| 14.9         	|
+|                    	| 15            	| 15.9         	|
+| mean               	| 15.38125      	| 15.68125     	|
+| standard deviation 	| 0.312449996   	| 0.4069705149 	|
+| variance           	| 0.097625      	| 0.165625     	|
+| count              	| 16            	| 16           	|
+|                    	|               	|              	|
+| t value calculated 	| 2.338821385   	|              	|
+| t value function   	| 0.02619805117 	|              	|
 
 The t-value here is 2.3 that means there is more signal than noise.
 
