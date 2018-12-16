@@ -18,7 +18,7 @@ My research can be described in the broad area of social media content classific
 
 # Topic Modeling
 
-In machine learning and natural language processing, topic modeling is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Latent Dirichlet Allocation (LDA) is a very popular algorithm to find the topic model of a collection of documents. [David Blei and Andrew Ng's pioneering paper on LDA](www.jmlr.org/papers/volume3/blei03a/blei03a.pdf) makes two basic assumptions:
+In machine learning and natural language processing, topic modeling is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Latent Dirichlet Allocation (LDA) is a very popular algorithm to find the topic model of a collection of documents. [David Blei and Andrew Ng's pioneering paper on LDA](http://www.jmlr.org/papers/volume3/blei03a/blei03a.pdf) makes two basic assumptions:
 
 1. There are a fixed number of patterns of word use, groups of terms that tend to occur together in documents. Call them topics.
 1. Each document in the corpus exhibits the topics to varying degree.
@@ -35,25 +35,26 @@ Word embedding models are a modern approach of representing text in natural lang
 
 Let's see a very popular example.
 
-If we know a pair of words that are from same group like (man, king) and we want to get a similar pair where we know one entry like this: (woman, ?).
+If we know a pair of words that are from same group like (man, king) and we want to get a similar pair where we know one entry like this: `(woman, ?)`.
 
 A standard word embedding model would suggest a like queen as the answer. Because it is the closest word that can replace king when woman replace the word man.
 
-Something like this: queen = (king - man) + woman
+Something like this: `queen = (king - man) + woman`
 
 Popular word embedding models include word2vec model by Google, GloVe by Stanford. There are some unconventional word embedding models available as well like urban dictionary model.
 
 Download links for the pretrained
-* GoogleNews word2vec model:  https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit
-* GloVe model: http://nlp.stanford.edu/data/glove.6B.zip
-* Urban Dictionary word2vec model: https://data.world/jaredfern/urban-dictionary-embedding
+* [GoogleNews word2vec model (Google Drive link)](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
+* [GloVe model (zip file)](http://nlp.stanford.edu/data/glove.6B.zip)
+* [Urban Dictionary word2vec model](https://data.world/jaredfern/urban-dictionary-embedding)
 
 The model that you need to use depends on the application that you have in mind.
 
 We can easily find already trained models for word2vec or Glove. However, you may need to develop/train the model from corpus at hand if you have a very specific application field in mind. For example, Google's word2vec model was trained with entire Wikipedia corpus. The basic idea is similar to n-gram approach that means we need a group of words at a time to get idea of the context of the use of the word. Here, I show a general step through approach for training your word embedding model in Gensim, a more matured natural language processing framework than natural language toolkit (NLTK) that comes readily with python.
 
 ```python
-sentences = 'This is a small corpora'	#assume we fit all our corpus in a variable in memory
+#assume we fit all our corpus in a variable in memory
+sentences = 'This is a small corpora'
 model = Word2Vec(sentences)
 
 words = list(model.wv.vocab)	#vocabulary of the corpora
@@ -87,11 +88,11 @@ in the text shows sensitivity or stability; and lastly, agreeableness is the ten
 
 So, an important question is: where can we use it? We can use this tool to analyze text where there is context involved. Well, those who advocate for n-grams can argue here that it is already done in their way. Let me give you an example.
 
-Paragraph 1: It is a rainy day. Do I really need to out today?
+> Paragraph 1: It is a rainy day. Do I really need to out today?
 
-Paragraph 2: It is a rainy day. School going kids are happy that their classes got canceled.
+> Paragraph 2: It is a rainy day. School going kids are happy that their classes got canceled.
 
-Paragraph 3: It is a rainy day. The humidity was very high and the large difference in atomspheric pressure flew the clouds towards the city causing the rain.
+> Paragraph 3: It is a rainy day. The humidity was very high and the large difference in atomspheric pressure flew the clouds towards the city causing the rain.
 
 Now, tell me does n-gram on first sentence give you enough information about the context?
 
@@ -115,88 +116,89 @@ Assuming we have all our documents as text entries in separate files, we can pas
 
 ```python
 def tone_analyze(fn, cls):
-	try:
-		with open(fn, 'r') as f:
-			text = f.read()
-		text = ''.join([i if ord(i) < 128 else ' ' for i in text])
-		tone_analysis = tone_analyzer.tone(
-	    	{'text': text},
-	    	'application/json')
-		# output = json.dumps(tone_analysis, indent=2)
-		filename = fn[:-4]+'_output'+fn[-4:]
-		json.dump(tone_analysis, open(filename, 'w'))
-		pre_process(cls, filename)		
-	except WatsonApiException as ex:
-	    print "Method failed with status code " + str(ex.code) + ": " + ex.message
+    try:
+        with open(fn, 'r') as f:
+            text = f.read()
+        text = ''.join([i if ord(i) < 128 else ' ' for i in text])
+        tone_analysis = tone_analyzer.tone(
+            {'text': text},
+            'application/json')
+        # output = json.dumps(tone_analysis, indent=2)
+        filename = fn[:-4]+'_output'+fn[-4:]
+        json.dump(tone_analysis, open(filename, 'w'))
+        pre_process(cls, filename)      
+    except WatsonApiException as ex:
+        print "Method failed with status code " + str(ex.code) + ": " + ex.message
 ```
+
 The above code snippet writes tone analysis result to a separate file named with '_output' suffix. We pass these files to be pre-processed. Here is the pre-processing code:
 
 ```python
 def pre_process(cls, filename):
-	global columns
-	output = json.load(open(filename))
+    global columns
+    output = json.load(open(filename))
 
-	pprint(output.keys())
+    pprint(output.keys())
 
-	# pprint(output['document_tone'])
+    # pprint(output['document_tone'])
 
-	tone_names = ['Analytical', 'Confident', 'Tentative',
-				'Anger', 'Joy', 'Sadness', 'Fear', 'Disgust',
-				'Agreeableness', 'Conscientiousness', 'Emotion Range', 'Extraversion', 'Openness']
+    tone_names = ['Analytical', 'Confident', 'Tentative',
+                'Anger', 'Joy', 'Sadness', 'Fear', 'Disgust',
+                'Agreeableness', 'Conscientiousness', 'Emotion Range', 'Extraversion', 'Openness']
 
 
-	column_names = []
-	for key in output.keys():
-		for tone in tone_names:
-			column_names.append(key+'_'+tone)
-	column_names.append('sentences_count')
-	column_names.append('class')
-	print(len(column_names))
-	columns = column_names
-	print(columns)
+    column_names = []
+    for key in output.keys():
+        for tone in tone_names:
+            column_names.append(key+'_'+tone)
+    column_names.append('sentences_count')
+    column_names.append('class')
+    print(len(column_names))
+    columns = column_names
+    print(columns)
 
-	row = []
+    row = []
 
-	for key in output.keys():
-		if key=='document_tone':
-			data = output['document_tone']['tones']
-			# pprint(data)
-			tone_dict = {}
-			for entry in data:
-				if entry['tone_name'] not in tone_dict.keys():
-					tone_dict[entry['tone_name']] = entry['score']
-				else:
-					tone_dict[entry['tone_name']] += entry['score']
-			for tone_name in tone_names:
-				# print(tone_name)
-				if tone_name in tone_dict.keys():
-					score = tone_dict[tone_name]
-				else:
-					score = 0
-				row.append(score)
+    for key in output.keys():
+        if key=='document_tone':
+            data = output['document_tone']['tones']
+            # pprint(data)
+            tone_dict = {}
+            for entry in data:
+                if entry['tone_name'] not in tone_dict.keys():
+                    tone_dict[entry['tone_name']] = entry['score']
+                else:
+                    tone_dict[entry['tone_name']] += entry['score']
+            for tone_name in tone_names:
+                # print(tone_name)
+                if tone_name in tone_dict.keys():
+                    score = tone_dict[tone_name]
+                else:
+                    score = 0
+                row.append(score)
 
-		if key=='sentences_tone':
-			tone_dict = {}
-			for sentence_idx in range(len(output['sentences_tone'])):
-				sentence = output['sentences_tone'][sentence_idx]
-				data = sentence['tones']
-				# pprint(data)
-				for entry in data:
-					if entry['tone_name'] not in tone_dict.keys():
-						tone_dict[entry['tone_name']] = entry['score']
-					else:
-						tone_dict[entry['tone_name']] += entry['score']
-			for tone_name in tone_names:
-				# print(tone_name)
-				if tone_name in tone_dict.keys():
-					score = tone_dict[tone_name]
-				else:
-					score = 0
-				row.append(score)
-			row.append(len(output['sentences_tone']))
-			row.append(cls)
-	print(len(row))
-	all_data.append(row)
+        if key=='sentences_tone':
+            tone_dict = {}
+            for sentence_idx in range(len(output['sentences_tone'])):
+                sentence = output['sentences_tone'][sentence_idx]
+                data = sentence['tones']
+                # pprint(data)
+                for entry in data:
+                    if entry['tone_name'] not in tone_dict.keys():
+                        tone_dict[entry['tone_name']] = entry['score']
+                    else:
+                        tone_dict[entry['tone_name']] += entry['score']
+            for tone_name in tone_names:
+                # print(tone_name)
+                if tone_name in tone_dict.keys():
+                    score = tone_dict[tone_name]
+                else:
+                    score = 0
+                row.append(score)
+            row.append(len(output['sentences_tone']))
+            row.append(cls)
+    print(len(row))
+    all_data.append(row)
 ```
 
 In my research, I had text data of two different categories. I calculated the emotions, language, and social scores of those documents using IBM Tone Analyzer. I used these scores to see if there is any statistical differences among the scores of the documents of different classes using Student's t-test.
@@ -210,13 +212,13 @@ Imagine, you have two fields of same crops - field 1 and field 2. Maybe you want
 
 ![Different distributions from two fields](/assets/2018-12-11-dipto-csc-799-report/ttest.jpg)
 
-*Image collected from: http://www.socialresearchmethods.net/kb/stat_t.htm*
+*Image collected from: [http://www.socialresearchmethods.net/kb/stat_t.htm](http://www.socialresearchmethods.net/kb/stat_t.htm)*
 
 The top figure says that field 2 (indicated by blue line) has a higher mean than field 1 (indicated by green curve). But that just says a partial story. The fields can have different distributions as shown in the other two figures. Depending on that, the crops from these two fields can have statistical differences or not. And that's where t-test becomes useful. We can see the t-value as a ratio between signal and noise. Signal means the numbers that can show the differences in two distributions, if any, and noise means the numbers that are just outliers. We can define signal as difference between group means and noise is the variability in the groups.
 
 The formula that we are going to use:
 
-$$t-value = \frac{\abs{mean of field 1 - mean of field 2}{\sqrt{\frac{variance of field 1}{sample count of field 1} + \frac{variance of field 2}{sample count of field 2}}}$$
+t-value = \frac{\abs{mean of field 1 - mean of field 2}{\sqrt{\frac{variance of field 1}{sample count of field 1} + \frac{variance of field 2}{sample count of field 2}}}
 
 A sample calculation is shown here:
 
