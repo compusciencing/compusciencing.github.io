@@ -18,7 +18,7 @@ My research can be described in the broad area of social media content classific
 
 # Topic Modeling
 
-In machine learning and natural language processing, topic modeling is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Latent Dirichlet Allocation (LDA) is a very popular algorithm to find the topic model of a collection of documents. From David Blei and Andrew Ng's pioneering paper on LDA [link](www.jmlr.org/papers/volume3/blei03a/blei03a.pdf), it makes two basic assumptions:
+In machine learning and natural language processing, topic modeling is a type of statistical model for discovering the abstract "topics" that occur in a collection of documents. Latent Dirichlet Allocation (LDA) is a very popular algorithm to find the topic model of a collection of documents. [David Blei and Andrew Ng's pioneering paper on LDA](www.jmlr.org/papers/volume3/blei03a/blei03a.pdf) makes two basic assumptions:
 
 1. There are a fixed number of patterns of word use, groups of terms that tend to occur together in documents. Call them topics.
 1. Each document in the corpus exhibits the topics to varying degree.
