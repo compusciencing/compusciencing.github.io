@@ -216,9 +216,7 @@ The top figure says that field 2 (indicated by blue line) has a higher mean than
 
 The formula that we are going to use:
 
-t-value = |mean of field 1 - mean of field 2|/(variance of field 1/sample count of field 1 + variance of field 2/sample count of field 2)^0.5
-
-$\frac{1}{2x}$
+$$t-value = \frac{\abs{mean of field 1 - mean of field 2}{\sqrt{\frac{variance of field 1}{sample count of field 1} + \frac{variance of field 2}{sample count of field 2}}}$$
 
 A sample calculation is shown here:
 
