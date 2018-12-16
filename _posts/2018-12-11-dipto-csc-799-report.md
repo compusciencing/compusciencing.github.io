@@ -4,6 +4,7 @@ title:  "CSC 799 Final Report"
 categories: ["Missouri State University"]
 tags: ["csc799", "topic modeling", "word embedding", "tone analyze", "t-test"]
 author: "Dipto Das"
+mathjax: true
 ---
 
 # CSC 799 Final Report
