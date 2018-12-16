@@ -6,6 +6,4 @@ show_excerpts: false
 
 theme: minima
 
-markdown: kramdown
-
 exclude: [post-template.md]
