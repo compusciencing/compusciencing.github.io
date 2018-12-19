@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Logging Strike and Dip"
+title: "Logging strike and dip"
 categories: ["Missouri State University"]
 tags: ["csc596", "arduino", "android"]
 author: "Michael Knapp"
