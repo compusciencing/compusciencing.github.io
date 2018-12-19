@@ -1,17 +1,15 @@
 ---
 layout: post
 title:  "Starting with ODE (Open Dynamics Engine)"
-categories: ["Simulation"]
-tags: [ode]
+categories: ["How To", "Simulation"]
+tags: ["ode"]
 author: "Anthony J. Clark"
 ---
-
-# Starting with ODE (Open Dynamics Engine)
 
 In this post I will be giving a minimal example of using [ODE (the Open Dynamics Engine)](https://www.ode-wiki.org/wiki/index.php?title=Main_Page). This is similar to [my last post about DART]({{ site.baseurl }}{% post_url 2018-10-24-starting-with-dart %}). The main purpose is to serve as a quick reference for setting up a simulation in ODE without all of the extra stuff included in the ODE examples (like the Drawstuff library).
 
 
-## Installing ODE
+# Installing ODE
 
 You can download the ODE source code from [odedevs](https://bitbucket.org/odedevs/ode/downloads/). For this post I am using version `0.15.2`.
 
@@ -34,7 +32,7 @@ cd ode/demo/
 ./demo_hinge
 ```
 
-## ODE In C++
+# ODE In C++
 
 In case you want to follow along as I step through building the sphere simulation, I will start by providing the includes, main function, and show how to compile.
 
@@ -74,7 +72,7 @@ target_link_libraries(sphere -lode)
 
 ODE is a fairly old-school C++ library that does not require all of the [extra steps required to build a project like DART]({{ site.baseurl }}{% post_url 2018-10-24-starting-with-dart %}#dart-in-c), but it also doesn't provide as many features (e.g., a plug-in interface for using different collision detection libraries).
 
-## A Falling Sphere
+# A Falling Sphere
 
 For this simple example, I am just going to have a sphere fall and then bounce on a static ground plane. The [source code can be found in this repository](https://github.com/anthonyjclark/ODE-examples), but I will be stepping through each part of the simple example here.
 
@@ -186,7 +184,7 @@ dGeomID ground_geom = dCreatePlane(space, 0, 1, 0, 0);
 
 The call to [`dCreatePlane`](https://www.ode-wiki.org/wiki/index.php?title=Manual:_All#Plane_Class) with the given arguments will create an x-z plane with a y value of zero.
 
-## Simulating the Sphere
+# Simulating the Sphere
 
 Now all that is left is to step through time.
 
@@ -210,7 +208,7 @@ The plot below shows the vertical position of the sphere through time.
 ![Falling Sphere, Position vs. Time](/assets/2018-11-18-starting-with-ode/sphere_chart_ode.png)
 
 
-## Cleanup
+# Cleanup
 
 Since ODE offers the C-API, it does require manual cleanup of all created objects. At minimum you should cleanup the following.
 

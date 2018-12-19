@@ -1,19 +1,16 @@
 ---
 layout: post
 title:  "Starting with DART (Dynamic Animation and Robotics Toolkit)"
-categories: ["Simulation"]
+categories: ["How To", "Simulation"]
 tags: ["dart"]
 author: "Anthony J. Clark"
 ---
-
-
-# Starting with DART (Dynamic Animation and Robotics Toolkit)
 
 In this post, I will be showing how to simulating a falling sphere using [DART](https://dartsim.github.io/). For this simple example, I will not be worrying about any form of visualization. This post is mostly intended to help me document and remember how to setup a simple simulation.
 
 I have used a variety of different simulation packages for my research, and I've never been overly satisfied with the two that I have used most often: [Open Dynamics Engine (ODE)](https://www.ode-wiki.org/wiki/) and [MATLAB/Simulink](https://www.mathworks.com/). ODE is open source and it works well, but it is a game engine with an emphasis on speed and not necessarily on accuracy. Simulink, on the other hand, requires you to pay for both it and MATLAB, and it focuses on numerical simulation (not physical simulation). I'll likely still use the tools going forward, however [Jean-Baptiste Mouret's](https://members.loria.fr/JBMouret/) talk at [SimER](http://cis.gvsu.edu/~moorejar/SimER/) this past July convinced me to give DART a try.
 
-## Installing DART
+# Installing DART
 
 On a mac, installing should be as simple as:
 
@@ -54,7 +51,7 @@ make install
 I installed DART into a non-standard local location so that I could easily delete it once I eventually get it installed using brew (once the issue has been fixed). Installing to a non-standard location does require a bit of extra working during compiling. Specifically, I had to add the lib folder to `DYLD_LIBRARY_PATH`.
 
 
-## DART In C++
+# DART In C++
 
 In case you want to follow along as I step through building the sphere simulation, I will start by providing the includes, main function, and show how to compile.
 
@@ -84,7 +81,7 @@ clang++ -std=c++14 -Wall -Wextra -Wl,-search_paths_first -Wl,-headerpad_max_inst
 ```
 
 
-## A Falling Sphere
+# A Falling Sphere
 
 For this simple example, I am just going to have a sphere fall and then bounce on a static ground plane. The [source can be found in this repository](https://github.com/anthonyjclark/DART-examples), but I will be stepping through each part of the simple example here.
 
@@ -157,7 +154,7 @@ world->addSkeleton(sphere);
 
 At this point, we could add a few calls to `world->step()` and everything should work as expected (the sphere would fall). However, since the sphere falling straight down for eternity (or for however many time steps you set) is not very interesting we are going to add a ground plane.
 
-## A Ground Plane
+# A Ground Plane
 
 Since most of this code is repetitive, I am not going to go through this step-by-step:
 
@@ -183,7 +180,7 @@ world->addSkeleton(ground);
 
 The main differences between the sphere and this ground plane is that the ground plane uses a `WeldJoint` to attach it to the world (since it does not move), and it uses a `BoxShape` instead of a `SphereShape`. *Note: DART does have a `PlaneShape`, but it is not supported by the default collision engine ([FCL](https://github.com/flexible-collision-library/fcl))--or at least DART doesn't support FCL's plane type yet.*
 
-## Simulating the Sphere
+# Simulating the Sphere
 
 Now that we have a sphere and a ground plane, all that is left is to run the simulation:
 
@@ -210,7 +207,7 @@ A few things to note in the above figure:
 - With a restitution value below 1.0, the sphere will start to bounce lower and lower.
 - With added drag, the sphere falls more slowly and bounces less high.
 
-## Notes
+# Notes
 
 DART is still under active development and I wouldn't quite consider it completely mature (the API is still subject to rapid changes). Even in this short example I found a few oddities. First, DART has a default constructor for `BodyNode` properties (that can be passed to `createJointAndBodyNodePair`) called `BodyNode::AspectProperties()`, but the corresponding `FreeJoint::AspectProperties()` cannot be passed to the same function. I'm sure this is my user error, but the naming convention leaves something to be desired.
 

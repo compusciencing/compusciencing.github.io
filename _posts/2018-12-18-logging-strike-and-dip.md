@@ -6,13 +6,6 @@ tags: ["csc596", "arduino", "android"]
 author: "Michael Knapp"
 ---
 
-# Logging Strike and Dip (CSC 596)
-
-**Student: Michael Knapp (with help from Ali Solomon)**
-
-**Supervisors: Anthony J. Clark (CSC), Matthew McKay (GGP)**
-
-
 This project dramatically improved my understanding of software development, not only in the software side of science but it pushed me to go beyond the keyboard, into areas of study that I found to be surprisingly interesting: *rocks*! This solidified my confidence in the field of computer science, and also gave me a new understanding of the importance of cross training with other degree fields to find innovative ways to apply current tech in new ways. This project pushed the limits of my ability in several areas from hardware development like Arduino and bread-boarding, while leveraging new-to-me programming languages like [Dart](https://www.dartlang.org/) and C. Also understanding how Bluetooth communication and serial communication work, and implementing these concepts with multiple out-of-the-box tools, programming languages, and libraries working in unison. To using a mobile application framework like [Flutter](https://flutter.io/) to help speed up the development of the smart phone application side of the project. 
 
 Flutter is a framework that helps by simplifying code using Dart prepackaged code modules called Widgets that are templates to build features such as buttons or easy layout designs for the smart phone application that is needed to interface with the hardware.
