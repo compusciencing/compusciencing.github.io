@@ -1,12 +1,10 @@
 ---
 layout: post
-title:  "How to write a post"
+title: "How to write a post"
 categories: ["How To", "Meta"]
-tags: ["blog", "posting"]
+tags: ["blog"]
 author: "Anthony J. Clark"
 ---
-
-# How to write a post
 
 This is a short description of the posting process for this blog. It will be updated as we find better methods or add new features.
 

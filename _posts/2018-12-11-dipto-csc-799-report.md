@@ -1,18 +1,11 @@
 ---
 layout: post
-title:  "CSC 799 Final Report"
+title:  "CSC 799 final report"
 categories: ["Missouri State University"]
 tags: ["csc799", "topic modeling", "word embedding", "tone analyze", "t-test"]
 author: "Dipto Das"
-mathjax: true
+include_mathjax: true
 ---
-
-# CSC 799 Final Report
-
-
-**Student: Dipto Das**
-
-**Supervisor: Dr. Anthony J. Clark**
 
 My research can be described in the broad area of social media content classification. For this semester, I focused on text classification. Text classification is basically an NLP problem. Popular NLP techniques include stemming, stop word elimination, sentiment analysis, and etc. A very popular algorithm often used in text analysis is topic modeling.
 
@@ -23,9 +16,9 @@ In machine learning and natural language processing, topic modeling is a type of
 1. There are a fixed number of patterns of word use, groups of terms that tend to occur together in documents. Call them topics.
 1. Each document in the corpus exhibits the topics to varying degree.
 
-For example: we have some newspaper articles on soccer club games update and some narrations with fan-theories on DC and marvel comics. LDA will go through these and separate the documents based on the topics they discuss in those. LDA does not have any semantic knowledge of words. Rather it observes the words that are more likely to co-occur more statistically. While doing so, the algorithm finds some noise. Noise in LDA means finding patterns in co-occurances of words that do not convey much useful information. For example, the words like articles, pronouns, negations, and etc. Removing such words is called stop word elimination. Another noise that often cause trouble to LDA topic modeling is that it might recognize "read", "reads", and "reading" as three different words. Hence, we can convert these words to their base form "read" and make LDA understand that these are all same words/topics. This step is called stemming.
+For example: we have some newspaper articles on soccer club games update and some narrations with fan-theories on DC and marvel comics. LDA will go through these and separate the documents based on the topics they discuss in those. LDA does not have any semantic knowledge of words. Rather it observes the words that are more likely to co-occur more statistically. While doing so, the algorithm finds some noise. Noise in LDA means finding patterns in co-occurrences of words that do not convey much useful information. For example, the words like articles, pronouns, negations, and etc. Removing such words is called stop word elimination. Another noise that often cause trouble to LDA topic modeling is that it might recognize "read", "reads", and "reading" as three different words. Hence, we can convert these words to their base form "read" and make LDA understand that these are all same words/topics. This step is called stemming.
 
-Even after we go through topic modeling after fundamental pre-processing, it might be affected due to idioms that requires a collection of words to make a complete sense, or all documents might have repetations of words for being from a specific domain that occurs so many times in these documents that they might not carry much information. In such case, we use TF-IDF that stands for term frequency-inverse document frequency. As the name suggests, it looks for the words that occur most in a document, however, it penalizes those words that not only occur more in a single document but occur in all documents. Kind of like the stop words, huh?
+Even after we go through topic modeling after fundamental preprocessing, it might be affected due to idioms that requires a collection of words to make a complete sense, or all documents might have repetitions of words for being from a specific domain that occurs so many times in these documents that they might not carry much information. In such case, we use TF-IDF that stands for term frequency-inverse document frequency. As the name suggests, it looks for the words that occur most in a document, however, it penalizes those words that not only occur more in a single document but occur in all documents. Kind of like the stop words, huh?
 
 Topic modeling or TF-IDF cannot recognize synonyms. So, what should we do to teach our system to recognize the words that mean the same thing?
 
@@ -43,10 +36,11 @@ Something like this: `queen = (king - man) + woman`
 
 Popular word embedding models include word2vec model by Google, GloVe by Stanford. There are some unconventional word embedding models available as well like urban dictionary model.
 
-Download links for the pretrained
-* [GoogleNews word2vec model (Google Drive link)](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
-* [GloVe model (zip file)](http://nlp.stanford.edu/data/glove.6B.zip)
-* [Urban Dictionary word2vec model](https://data.world/jaredfern/urban-dictionary-embedding)
+Download links for the pretrained models:
+
+- [GoogleNews word2vec model (Google Drive link)](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)
+- [GloVe model (zip file)](http://nlp.stanford.edu/data/glove.6B.zip)
+- [Urban Dictionary word2vec model](https://data.world/jaredfern/urban-dictionary-embedding)
 
 The model that you need to use depends on the application that you have in mind.
 
@@ -61,7 +55,7 @@ words = list(model.wv.vocab)	#vocabulary of the corpora
 model.wv.save_word2vec_format('my_word_embedding_model', binary = True)
 ```
 
-We can load a pre-trained model by using:
+We can load a pretrained model by using:
 
 ```python
 model = Word2Vec.load('my_word_embedding_model')
@@ -69,7 +63,7 @@ model = Word2Vec.load('my_word_embedding_model')
 
 If we have a group of words meaning similar thing and we know only one or two meaning the opposite, word embedding models can find the similar words; that can even specialized for our problem context if we chose to train our own word embedding models.
 
-Upto this point I have talked about how we can use words or synonyms of words to perform natural language processing tasks. These sort of approaches work better with naive Bayes distribution model when the vocabulary for problem space is known and predefined. In case where we do not want our system to be limited by the EXACT words in the corpus rather we want to have an overall idea about the way of expression or conveying of information, we use sentiment analysis. Sentiment analysis being a popular technique comes readily with python NLTK library. Besides, a good number of resouces can be found on the internet about it. In this report, we will discuss a relatively new approach called tone analysis. 
+Up to this point I have talked about how we can use words or synonyms of words to perform natural language processing tasks. These sort of approaches work better with naive Bayes distribution model when the vocabulary for problem space is known and predefined. In case where we do not want our system to be limited by the EXACT words in the corpus rather we want to have an overall idea about the way of expression or conveying of information, we use sentiment analysis. Sentiment analysis being a popular technique comes readily with python NLTK library. Besides, a good number of resources can be found on the Internet about it. In this report, we will discuss a relatively new approach called tone analysis. 
 
 # Tone Analysis with IBM Tone Analyzer
 
@@ -79,12 +73,12 @@ There are several popular sentiment analysis tools out there like [Vader sentime
 
 The IBM tone analyzer gives a sentence-wise score in a scale of 0 to 1 representing different aspects of the text. What do I mean with different aspects? This tool gives values of three aspects - emotions, language, and social - for any sentence supplied to it. Isn't it fascinating? Huh! This tool is based on linguistic behavior and psychological theories.
 
-The emotion score in the IBM Tone Analyzer represents the likelihood of a sentence to convey one of the following five emotions: anger, fear, disgust, joy, and sadness. These are a subset of the seminal classification of emotions by Ekman and Plutchik. The score is derived from a stacked ensemble framework. That means it combines predictions from many lower level models under a high level hood to achieve better performance. Examples of these low level features include: n-grams (unigrams, bigrams, and trigrams), punctuations, emoticons, curse words, greetings, and last but not the least sentiment polarity scores as we get from Vader or TextBlob. The high level hood uses a constrained optimization approach that is designed to handle co-occurances of multiple emotions and noisy data. Thus, it becomes applicable for text we usually come across including on social media.
+The emotion score in the IBM Tone Analyzer represents the likelihood of a sentence to convey one of the following five emotions: anger, fear, disgust, joy, and sadness. These are a subset of the seminal classification of emotions by Ekman and Plutchik. The score is derived from a stacked ensemble framework. That means it combines predictions from many lower level models under a high level hood to achieve better performance. Examples of these low level features include: n-grams (unigrams, bigrams, and trigrams), punctuations, emoticons, curse words, greetings, and last but not the least sentiment polarity scores as we get from Vader or TextBlob. The high level hood uses a constrained optimization approach that is designed to handle co-occurrences of multiple emotions and noisy data. Thus, it becomes applicable for text we usually come across including on social media.
 
-In the same way, language and social scores were calculated with analysis of learned features. Language scores evaluate three qualities in the words of a sentence: analytical, tentative, and confidence. As the names of the categories suggest, analytical scores represents the amount of reasoning and technical words in the sentences, tentaive scores shows the amount of doubt in text, and confidence scores represent the degree of certainity in the text. In order to test the system's performance, IBM tone analyzer used crowdsourcing on a platform named CrowdFlower. The system achieved F1-score of ~0.7 with respect to experts' annotations. The high F1-score means balanced performance of the system for different classes unlike accuracy which might get biased in case of unbalanced dataset.
+In the same way, language and social scores were calculated with analysis of learned features. Language scores evaluate three qualities in the words of a sentence: analytical, tentative, and confidence. As the names of the categories suggest, analytical scores represents the amount of reasoning and technical words in the sentences, tentative scores shows the amount of doubt in text, and confidence scores represent the degree of certainty in the text. In order to test the system's performance, IBM tone analyzer used crowd-sourcing on a platform named CrowdFlower. The system achieved F1-score of ~0.7 with respect to experts' annotations. The high F1-score means balanced performance of the system for different classes unlike accuracy which might get biased in case of unbalanced dataset.
 
-The social scores indicate the likelihood of a sentence having the characteristics of the Big Five personality model: openness, conscientiousness, extraversion, emotional range, and agreeableness. Openness indicates the property of being open to new ideas; conscientiousness indicates the property of being methodical and organized; extraversion means the tendancy of finding stimulation with others; emotional range (a.k.a. neuroticism) represents the extent to which emotion conveyed 
-in the text shows sensitivity or stability; and lastly, agreeableness is the tendancy of being compassionate.
+The social scores indicate the likelihood of a sentence having the characteristics of the Big Five personality model: openness, conscientiousness, extroversion, emotional range, and agreeableness. Openness indicates the property of being open to new ideas; conscientiousness indicates the property of being methodical and organized; extroversion means the tendency of finding stimulation with others; emotional range (a.k.a. neuroticism) represents the extent to which emotion conveyed 
+in the text shows sensitivity or stability; and lastly, agreeableness is the tendency of being compassionate.
 
 So, an important question is: where can we use it? We can use this tool to analyze text where there is context involved. Well, those who advocate for n-grams can argue here that it is already done in their way. Let me give you an example.
 
@@ -92,7 +86,7 @@ So, an important question is: where can we use it? We can use this tool to analy
 
 > Paragraph 2: It is a rainy day. School going kids are happy that their classes got canceled.
 
-> Paragraph 3: It is a rainy day. The humidity was very high and the large difference in atomspheric pressure flew the clouds towards the city causing the rain.
+> Paragraph 3: It is a rainy day. The humidity was very high and the large difference in atmospheric pressure flew the clouds towards the city causing the rain.
 
 Now, tell me does n-gram on first sentence give you enough information about the context?
 
@@ -112,7 +106,7 @@ tone_analyzer = ToneAnalyzerV3(
 )
 ```
 
-Assuming we have all our documents as text entries in separate files, we can pass them to the tone anlyzer.
+Assuming we have all our documents as text entries in separate files, we can pass them to the tone analyzer.
 
 ```python
 def tone_analyze(fn, cls):
@@ -131,7 +125,7 @@ def tone_analyze(fn, cls):
         print "Method failed with status code " + str(ex.code) + ": " + ex.message
 ```
 
-The above code snippet writes tone analysis result to a separate file named with '_output' suffix. We pass these files to be pre-processed. Here is the pre-processing code:
+The above code snippet writes tone analysis result to a separate file named with `_output` suffix. We pass these files to be preprocessed. Here is the preprocessing code:
 
 ```python
 def pre_process(cls, filename):
@@ -144,7 +138,8 @@ def pre_process(cls, filename):
 
     tone_names = ['Analytical', 'Confident', 'Tentative',
                 'Anger', 'Joy', 'Sadness', 'Fear', 'Disgust',
-                'Agreeableness', 'Conscientiousness', 'Emotion Range', 'Extraversion', 'Openness']
+                'Agreeableness', 'Conscientiousness', 'Emotion Range', 
+                'Extraversion', 'Openness']
 
 
     column_names = []
@@ -205,9 +200,10 @@ In my research, I had text data of two different categories. I calculated the em
 
 # Student t-test
 
-Let me start by telling a story. There was a person named William Sealy Gosset. He worked at Guiness Brewery over one hundred years ago. He came up with a statistical test to show the difference between barley yield from two fields. When he wanted to publish the test, he was nervous, and instead of publishing it in his name, he used the pseudonym 'Student'. To this day, this test is known as Student's t-test instead of Gosset's t-test.
+Let me start by telling a story. There was a person named William Sealy Gosset. He worked at Guinness Brewery over one hundred years ago. He came up with a statistical test to show the difference between barley yield from two fields. When he wanted to publish the test, he was nervous, and instead of publishing it in his name, he used the pseudonym 'Student'. To this day, this test is known as Student's t-test instead of Gosset's t-test.
 
 # What is t-test?
+
 Imagine, you have two fields of same crops - field 1 and field 2. Maybe you want to compare the productions of these two fields with respect to a certain criteria. However, obviously it's not wise to cut the crops from the whole fields for this. A test on samples from both these fields should be enough. Look at the following image:
 
 ![Different distributions from two fields](/assets/2018-12-11-dipto-csc-799-report/ttest.jpg)
@@ -218,7 +214,7 @@ The top figure says that field 2 (indicated by blue line) has a higher mean than
 
 The formula that we are going to use:
 
-t-value = \frac{\abs{mean of field 1 - mean of field 2}{\sqrt{\frac{variance of field 1}{sample count of field 1} + \frac{variance of field 2}{sample count of field 2}}}
+$$t_{value} = \frac{\abs{field1_{mean} - field2_{mean}}}{\sqrt{\frac{field1_{var}}{field1_{count}} + \frac{field2_{var}}{field2_{count}}}}$$
 
 A sample calculation is shown here:
 
