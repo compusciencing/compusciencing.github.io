@@ -1,6 +1,6 @@
 # Adding a post
 
-Here are instructions for [How to write a post](https://compusciencing.github.io/blog/travel/2018/10/08/how-to-write-a-post.html) for this blog. Anyone is allowed to write a post and submit it via a pull request.
+Here are instructions for [How to write a post](https://compusciencing.github.io/how-to-write-a-post.html) for this blog. Anyone is allowed to write a post and submit it via a pull request.
 
 Whenever a pull request is merged into this repository, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the site.
 
