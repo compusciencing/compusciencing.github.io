@@ -6,6 +6,6 @@ show_excerpts: false
 
 theme: minima
 
-exclude: [post-template.md]
+exclude: [post-template.md, CONTRIBUTING.md]
 
 permalink: /:title:output_ext
