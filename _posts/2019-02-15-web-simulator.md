@@ -13,9 +13,9 @@ The simulator will have numerous features, including: input and update functiona
 As previously established with Dr. Clark, we intend to meet every Tuesday at 11:30 AM. In the meeting, we discuss about progress over the week, issues faced, any possible queries, and expectations for the next week.
 
 
-* https://www.indiegogo.com/projects/nybble-world-s-cutest-open-source-robotic-kitten#/
-* https://www.typescriptlang.org
-* https://github.com/jorgebucaran/hyperapp
-* https://parceljs.org
-* https://threejs.org
-* http://www.cannonjs.org
+* [Nybble](https://www.indiegogo.com/projects/nybble-world-s-cutest-open-source-robotic-kitten#/)
+* [TypeScript](https://www.typescriptlang.org)
+* [HyperApp](https://github.com/jorgebucaran/hyperapp)
+* [Parcel](https://parceljs.org)
+* [three.js](https://threejs.org)
+* [cannon.js](http://www.cannonjs.org)
