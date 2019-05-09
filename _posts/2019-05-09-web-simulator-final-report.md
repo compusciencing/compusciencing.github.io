@@ -18,13 +18,13 @@ Working with Dr. Clark, my research can be defined as the development of a web i
 
 With no prior experience in the generation of computer graphics, it was initially quite diffcult to wrap my head around how threejs and cannonjs worked. Spending the first few weeks watching tutorials and reading through the extensive documentation both libraries provided, the next step was to actually render a world that we could further populate with other graphic objects. Leveraging numerous functions from cannonjs, a world that was bounded by [Newton's laws of classical mechanics](https://en.wikipedia.org/wiki/List_of_equations_in_classical_mechanics#Kinematics) was created with relative ease. However, given that cannonjs is nothing but a physics engine, the graphical aspect of our simulation still needed to be handled - threejs was used to render the graphics of a ground plane. Next, by copying the position of the cannonjs objects to the threejs objects with each time step, our generated graphics were now bounded by Newtonian physics as defined by the engine, thereby allowing us to simulate real-world interactions between graphical objects.
 
-![Initial threejs ground plane](/assets/2019-05-09-web-simulator-final-report/world)
+![Initial threejs ground plane](/assets/2019-05-09-web-simulator-final-report/world.jpeg)
 
 #Rendering the Nybble
 
 Having created a proper graphical environment for our other objects to interact in, the next step was to render the Nybble itself. Studying this [video](https://youtu.be/ZX17mcpGfp8) carefully I began by modelling the graphics for the body, followed by the four limbs - each comprising an upper and lower limb. Rendering the individual pieces was not difficult as the body was simply a cuboid and the limbs were cylinders. What proved challenging however, was figuring out the requisite constraints so that the eight cylinders and a cuboid could be assembled into the shape of a quadruped. Resolving this issue took a while, and there was a week of essentially no progress. Finally, Dr. Clark's technical expertise came to the rescue as he provided me with an example limb - two cylinders actuated with motors and a hinge constraint. Examining the code carefully, I was able to replicate it to produce four limbs and then use the hinge constraint logic to attach them to our cat body. The final rendition of our Nybble graphic object was as follows:
 
-![Nybble graphic object](/assets/2019-05-09-web-simulator-final-report/default)
+![Nybble graphic object](/assets/2019-05-09-web-simulator-final-report/default.jpeg)
 
 # Rendering the Gait
 
@@ -34,7 +34,7 @@ With all the hinges set up properly, the next step was to simulate motion in our
 
 As the primary purpose of this project is to serve as an educational tool for simulation of quadruped gait patterns we focused on accomplishing certain UI features as well. Initial tasks were to add buttons to toggle play/pause, reset camera, and the ability to exit the simulation. Completing the first two was quick, issues with the exit button too were resolved by refreshing the page on click and allowing grabage collection to destroy cannonjs/threejs objects. I alos added other simple features such as maintaing canvas size on window resize and orbit controls to navigate. I then began work on building a dialog box with functionality to update Nybble's upper and lower arm lengths, torso dimensions, and max limb angles. 
 
-![Dialog Box for input parameters](/assets/2019-05-09-web-simulator-final-report/ui)
+![Dialog Box for input parameters](/assets/2019-05-09-web-simulator-final-report/ui.jpeg)
 
 Having coompleted this, currently the user is presented with the dialog box wherein the user selects input values to render the simulation. For example, selecting the input as -
 
@@ -44,9 +44,8 @@ Lower Limb Height: 0.5
 Torso Length: 2.0
 Torso Width: 1.5
 Torso Height: 0.6
-
 ```
 
 gives us the following simulation for Nybble:
 
-![Example with different parameters](assets/2019-05-09-web-simulator-final-report/ui)
+![Example with different parameters](assets/2019-05-09-web-simulator-final-report/example.jpeg)
