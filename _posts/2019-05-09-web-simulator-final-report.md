@@ -24,7 +24,7 @@ With no prior experience in the generation of computer graphics, it was initiall
 
 Having created a proper graphical environment for our other objects to interact in, the next step was to render the Nybble itself. Studying this [video](https://youtu.be/ZX17mcpGfp8) carefully I began by modeling the graphics for the body, followed by the four limbs - each comprising an upper and lower limb. Rendering the individual pieces was not difficult as the body was simply a cuboid and the limbs were cylinders. What proved challenging, however, was figuring out the requisite constraints so that the eight cylinders and a cuboid could be assembled into the shape of a quadruped. Resolving this issue took a while, and there was a week of essentially no progress. Finally, Dr. Clark's technical expertise came to the rescue as he provided me with an example limb - two cylinders actuated with motors and a hinge constraint. Examining the code carefully, I was able to replicate it to produce four limbs and then use the hinge constraint logic to attach them to our cat body. The final rendition of our Nybble graphic object was as follows:
 
-![Nybble graphic object](/assets/2019-05-09-web-simulator-final-report/default.jpeg)
+![Nybble graphic object](/assets/2019-05-09-web-simulator-final-report/default.jpg)
 
 # Rendering the Gait
 
@@ -34,7 +34,7 @@ With all the hinges set up properly, the next step was to simulate motion in our
 
 As the primary purpose of this project is to serve as an educational tool for simulation of quadruped gait patterns we focused on accomplishing certain UI features as well. Initial tasks were to add buttons to toggle play/pause, reset camera, and the ability to exit the simulation. Completing the first two took little time, issues with the exit button too were eventually resolved by simply refreshing the page on click and allowing grabage collection to destroy cannonjs/threejs objects. I also added other features such as maintaining canvas size on window resize and orbit controls to navigate. Next, I began work on building a dialog box with functionality to update Nybble's upper and lower arm lengths, torso dimensions, and max limb angles. 
 
-![Dialog Box for input parameters](/assets/2019-05-09-web-simulator-final-report/ui.jpeg)
+![Dialog Box for input parameters](/assets/2019-05-09-web-simulator-final-report/ui.jpg)
 
 Having coompleted this, currently the user is first presented with the dialog box wherein the user selects input values to render the simulation. For example, selecting the input as 
 ```
@@ -46,4 +46,4 @@ Torso Height: 0.6
 ```
 renders the following simulation for Nybble:
 
-![Example with different parameters](/assets/2019-05-09-web-simulator-final-report/example.jpeg)
+![Example with different parameters](/assets/2019-05-09-web-simulator-final-report/example.jpg)
