@@ -20,7 +20,7 @@ With no prior experience in the generation of computer graphics, it was initiall
 
 ![Initial threejs ground plane](/assets/2019-05-09-web-simulator-final-report/world.jpeg)
 
-#Rendering the Nybble
+# Rendering the Nybble
 
 Having created a proper graphical environment for our other objects to interact in, the next step was to render the Nybble itself. Studying this [video](https://youtu.be/ZX17mcpGfp8) carefully I began by modelling the graphics for the body, followed by the four limbs - each comprising an upper and lower limb. Rendering the individual pieces was not difficult as the body was simply a cuboid and the limbs were cylinders. What proved challenging however, was figuring out the requisite constraints so that the eight cylinders and a cuboid could be assembled into the shape of a quadruped. Resolving this issue took a while, and there was a week of essentially no progress. Finally, Dr. Clark's technical expertise came to the rescue as he provided me with an example limb - two cylinders actuated with motors and a hinge constraint. Examining the code carefully, I was able to replicate it to produce four limbs and then use the hinge constraint logic to attach them to our cat body. The final rendition of our Nybble graphic object was as follows:
 
