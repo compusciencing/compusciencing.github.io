@@ -6,7 +6,7 @@ tags: ["csc596", "robotics", "threejs", "cannonjs"]
 author: "Saket Roy"
 ---
 
-#Websimulator for Nybble
+# Websimulator for Nybble
 
 Working with Dr. Clark, my research can be defined as the development of a web interface for quadruped gait simulation. Specifically, the aim of the research was to simulate a variety of gait patterns for the [Nybble](https://www.indiegogo.com/projects/nybble-world-s-cutest-open-source-robotic-kitten#/), an open-source robotic kitten. The simulation is rendered in pure HTML and JavaScript, leveraging the use of the following libraries:
 
@@ -14,7 +14,7 @@ Working with Dr. Clark, my research can be defined as the development of a web i
 
 - [cannon.js](http://www.cannonjs.org): A rigid body simulation library written in Javascript used to make objects move and interact in a realistic way. 
 
-#Rendering the World
+# Rendering the World
 
 With no prior experience in the generation of computer graphics, it was initially quite diffcult to wrap my head around how threejs and cannonjs worked. Spending the first few weeks watching tutorials and reading through the extensive documentation both libraries provided, the next step was to actually render a world that we could further populate with other graphic objects. Leveraging numerous functions from cannonjs, a world that was bounded by [Newton's laws of classical mechanics](https://www.encyclopedia.com/science/science-magazines/physics-newtonian-physics) was created with relative ease. However, given that cannonjs is nothing but a physics engine, the graphical aspect of our simulation still needed to be handled - threejs was used to render the graphics of a ground plane. Next, by copying the position of the cannonjs objects to the threejs objects with each time step, our generated graphics were now bounded by Newtonian physics as defined by the engine, thereby allowing us to simulate real-world interactions between graphical objects.
 
@@ -26,11 +26,11 @@ Having created a proper graphical environment for our other objects to interact 
 
 ![Nybble graphic object](/assets/2019-05-09-web-simulator-final-report/default)
 
-#Rendering the Gait
+# Rendering the Gait
 
 With all the hinges set up properly, the next step was to simulate motion in our static cat object. This was perhaps the hardest part of the project, for, while it was not difficult to simulate motion, it was not of the desired type. Hours were dedicated into research - watching [simulations on gait pattern](https://www.youtube.com/watch?v=dRthdBr46cs), reading [scholarly articles](https://www.frontiersin.org/articles/10.3389/fncom.2014.00027/full), and experimenting with different gait patterns (Trot v. Creep). Dr. Clark further assisted me by providing me with code of a limb actuated to replicate knee-bend motion. Unfortunately, I was unable to convert those resources into a viable gait pattern; instead, we switched focus to developing the UI and as a result a gait pattern was never developed for Nybble and it remains a static object. 
 
-#Rendering the UI
+# Rendering the UI
 
 As the primary purpose of this project is to serve as an educational tool for simulation of quadruped gait patterns we focused on accomplishing certain UI features as well. Initial tasks were to add buttons to toggle play/pause, reset camera, and the ability to exit the simulation. Completing the first two was quick, issues with the exit button too were resolved by refreshing the page on click and allowing grabage collection to destroy cannonjs/threejs objects. I alos added other simple features such as maintaing canvas size on window resize and orbit controls to navigate. I then began work on building a dialog box with functionality to update Nybble's upper and lower arm lengths, torso dimensions, and max limb angles. 
 
