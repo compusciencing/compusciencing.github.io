@@ -8,7 +8,7 @@ author: "Saket Roy"
 
 # Websimulator for Nybble
 
-Working with Dr. Clark, my research can be defined as the development of a web interface for quadruped gait simulation. Specifically, the aim of the research is to simulate a variety of gait patterns for the [Nybble](https://www.indiegogo.com/projects/nybble-world-s-cutest-open-source-robotic-kitten#/), an open-source robotic kitten. Hosted on [Github Pages](https://roy-05.github.io/websimulator/), the project is developed in pure HTML and JavaScript and leverages the use of the following libraries:
+Working with Dr. Clark, my research can be defined as the development of a web based interface for quadruped gait simulation. Specifically, the aim of the research is to simulate a variety of gait patterns for the [Nybble](https://www.indiegogo.com/projects/nybble-world-s-cutest-open-source-robotic-kitten#/), an open-source robotic kitten. Hosted on [Github Pages](https://roy-05.github.io/websimulator/), the project is developed in pure HTML and JavaScript and leverages the use of the following libraries:
 
 - [three.js](https://threejs.org): A lightweight cross-browser JavaScript library/API used to create and display animated 3D computer graphics on a Web browser.
 
@@ -36,8 +36,7 @@ As the primary purpose of this project is to serve as an educational tool for si
 
 ![Dialog Box for input parameters](/assets/2019-05-09-web-simulator-final-report/ui.jpeg)
 
-Having coompleted this, currently the user is first presented with the dialog box wherein the user selects input values to render the simulation. For example, selecting the input as -
-
+Having coompleted this, currently the user is first presented with the dialog box wherein the user selects input values to render the simulation. For example, selecting the input as 
 ```
 Upper Limb Height: 0.5
 Lower Limb Height: 0.5
@@ -45,7 +44,6 @@ Torso Length: 2.0
 Torso Width: 1.5
 Torso Height: 0.6
 ```
-
 renders the following simulation for Nybble:
 
-![Example with different parameters](assets/2019-05-09-web-simulator-final-report/example.jpeg)
+![Example with different parameters](/assets/2019-05-09-web-simulator-final-report/example.jpeg)
