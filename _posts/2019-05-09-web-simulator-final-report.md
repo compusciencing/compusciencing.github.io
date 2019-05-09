@@ -18,7 +18,7 @@ Working with Dr. Clark, my research can be defined as the development of a web b
 
 With no prior experience in the generation of computer graphics, it was initially quite difficult to wrap my head around how threejs and cannonjs worked. Spending the first few weeks watching [tutorials](https://www.youtube.com/watch?v=YKzyhcyAijo&t=560s) and reading through the extensive documentation both libraries provided, the next step was to actually render a world that we could further populate with other graphic objects. Leveraging numerous functions from cannonjs, a world that was bounded by [Newton's laws of classical mechanics](https://en.wikipedia.org/wiki/List_of_equations_in_classical_mechanics#Kinematics) was created with relative ease. However, given that cannonjs is nothing but a physics engine, the graphical aspect of our simulation still needed to be handled - threejs was used to render the graphics of a ground plane. Next, by copying the position of the cannonjs objects to the threejs objects with each time step, our generated graphics were now bounded by the Newtonian physics defined in our engine, thereby allowing us to simulate real-world interactions between graphical objects.
 
-![Initial threejs ground plane](/assets/2019-05-09-web-simulator-final-report/world.jpeg)
+![Initial threejs ground plane](/assets/2019-05-09-web-simulator-final-report/world.jpg)
 
 # Rendering the Nybble
 
