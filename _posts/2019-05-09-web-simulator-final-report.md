@@ -37,6 +37,7 @@ As the primary purpose of this project is to serve as an educational tool for si
 ![Dialog Box for input parameters](/assets/2019-05-09-web-simulator-final-report/ui.jpg)
 
 Having coompleted this, currently the user is first presented with the dialog box wherein the user selects input values to render the simulation. For example, selecting the input as 
+
 ```
 Upper Limb Height: 0.5
 Lower Limb Height: 0.5
@@ -44,6 +45,7 @@ Torso Length: 2.0
 Torso Width: 1.5
 Torso Height: 0.6
 ```
+
 renders the following simulation for Nybble:
 
 ![Example with different parameters](/assets/2019-05-09-web-simulator-final-report/example.jpg)
