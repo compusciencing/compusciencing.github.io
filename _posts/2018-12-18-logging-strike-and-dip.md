@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Logging strike and dip"
+title: "Report: Logging Strike and Dip"
 tags: ["csc596", "arduino", "android", "report", "msu"]
 author: "Michael Knapp"
 ---

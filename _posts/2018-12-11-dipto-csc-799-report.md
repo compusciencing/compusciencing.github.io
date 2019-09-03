@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "CSC 799 final report"
+title:  "Report: Social Media Content Classification"
 tags: ["csc799", "topic modeling", "word embedding", "tone analyze", "t-test", "report", "msu"]
 author: "Dipto Das"
 include_mathjax: true

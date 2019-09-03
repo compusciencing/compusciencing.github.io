@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "ARMS CSC 596 final report"
+title:  "Report: Autonomous Robot Markup Syntax (ARMS)"
 tags: ["csc596", "robotics", "report", "simulation", "msu", "arcs"]
 author: "Dillon Flohr"
 ---

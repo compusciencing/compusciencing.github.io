@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Web Simulator for Nybble"
-tags: ["csc596", "JavaScript", "simulation", "msu"]
+title: "Proposal: Web Simulator for Nybble"
+tags: ["csc596", "javascript", "simulation", "msu", "proposal"]
 author: "Saket Roy"
 ---
 

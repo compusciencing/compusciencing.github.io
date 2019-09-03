@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Deep Sea Robotics"
+title: "Proposal: Deep Sea Robotics"
 tags: ["csc197", "deep sea", "simulation", "robotics", "proposal", "msu"]
 author: "Fiona Wu"
 ---

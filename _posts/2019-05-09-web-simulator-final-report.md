@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "Web Simulator for Nybble"
+title: "Report: Web Simulator for Nybble"
 tags: ["csc596", "robotics", "threejs", "cannonjs", "report", "msu", "simulation"]
 author: "Saket Roy"
 ---
-
-# Websimulator for Nybble
 
 Working with Dr. Clark, I can define my research as the development of a web-based interface for quadruped gait simulation. Specifically, the aim of the research is to simulate a variety of gait patterns for the [Nybble](https://www.indiegogo.com/projects/nybble-world-s-cutest-open-source-robotic-kitten#/), an open-source robotic kitten. Hosted on [Github Pages](https://roy-05.github.io/websimulator/), I developed the project in pure HTML and JavaScript and used of the following libraries:
 

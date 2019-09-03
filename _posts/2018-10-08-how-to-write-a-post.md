@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to write a post"
+title: "How to Write a Post"
 tags: ["blog", "how to"]
 author: "Anthony J. Clark"
 ---

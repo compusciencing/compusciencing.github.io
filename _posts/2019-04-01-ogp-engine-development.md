@@ -1,13 +1,12 @@
 ---
 layout: post
-title: "OGP Engine Development Proposal"
+title: "Proposal: OGP Engine Development"
 tags: ["csc596", "game engine", "simulation", "omega gaming project", "proposal", "msu"]
 author: "Gage Coates"
-include_mathjax: false
-
 ---
 
 # Overview
+
 I plan on working through the design and implementation of game systems, mechanics, and optimizations in the current game engine for the [Omega Gaming Project (OGP)](https://www.omega-gaming-project.org). The foundation of the engine is largely complete, allowing for modular systems, assets and game entities to be designed, tested and iterated upon. The largest takeaway of this self-study from a learning perspective is understanding how to pragmatically and efficiently implement these systems in such a way that the end goal of the project is satisfied. In addition to this, I will better understand how to provide a good user experience within the game environment. While the course will help fulfill CS credit requirements, it also provides structured development that enforces deadlines that would otherwise not exist. Having this opportunity to work on a project that I am passionate about in a professional setting is delightful and should be very productive.
 
 ## Specific Goals

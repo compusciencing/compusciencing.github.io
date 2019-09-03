@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A transformable wheel-leg hybrid for Adabot"
+title: "Report: A Transformable Wheel-Leg Hybrid for Adabot"
 tags: ["uhc396", "robotics", "msu", "report"]
 author: "Eric McCullough"
 ---
