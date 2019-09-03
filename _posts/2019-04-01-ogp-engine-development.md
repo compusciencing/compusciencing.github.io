@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "OGP Engine Development Proposal"
-categories: ["Missouri State University"]
-tags: ["csc590", "game engine", "simulation", "omega gaming project","proposal"]
+tags: ["csc596", "game engine", "simulation", "omega gaming project", "proposal", "msu"]
 author: "Gage Coates"
 include_mathjax: false
 

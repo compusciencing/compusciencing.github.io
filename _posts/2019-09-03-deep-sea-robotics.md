@@ -1,10 +1,8 @@
 ---
 layout: post
 title: "Deep Sea Robotics"
-categories: ["Missouri State University"]
-tags: ["csc197", "deep sea", "simulation", "robotics","proposal", "self-study"]
+tags: ["csc197", "deep sea", "simulation", "robotics", "proposal", "msu"]
 author: "Fiona Wu"
-include_mathjax: false
 ---
 
 While the deep sea is a field of exploration that is slowly growing, it has a long way to go before reaching the level of understanding humans have on the land and in the sky. The goal of this self-study course is to simulate a robot that can withstand deep sea conditions and possibly navigate it with a localization technique, such as electrolocation, using Gazebo Simulator.

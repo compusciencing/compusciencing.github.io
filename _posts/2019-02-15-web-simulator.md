@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Web Simulator for Nybble"
-categories: ["Missouri State University"]
-tags: ["csc596", "JavaScript"]
+tags: ["csc596", "JavaScript", "simulation", "msu"]
 author: "Saket Roy"
 ---
 

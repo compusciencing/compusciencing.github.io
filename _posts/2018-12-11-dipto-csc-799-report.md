@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "CSC 799 final report"
-categories: ["Missouri State University"]
-tags: ["csc799", "topic modeling", "word embedding", "tone analyze", "t-test"]
+tags: ["csc799", "topic modeling", "word embedding", "tone analyze", "t-test", "report", "msu"]
 author: "Dipto Das"
 include_mathjax: true
 ---

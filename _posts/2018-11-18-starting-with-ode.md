@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Starting with ODE (Open Dynamics Engine)"
-categories: ["How To", "Simulation"]
-tags: ["ode"]
+tags: ["ode", "simulation", "how to"]
 author: "Anthony J. Clark"
 ---
 

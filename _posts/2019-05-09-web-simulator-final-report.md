@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Web Simulator for Nybble"
-categories: ["Missouri State University"]
-tags: ["csc596", "robotics", "threejs", "cannonjs"]
+tags: ["csc596", "robotics", "threejs", "cannonjs", "report", "msu", "simulation"]
 author: "Saket Roy"
 ---
 

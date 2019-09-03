@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "Starting with DART (Dynamic Animation and Robotics Toolkit)"
-categories: ["How To", "Simulation"]
-tags: ["dart"]
+tags: ["dart", "simulation", "how to"]
 author: "Anthony J. Clark"
 ---
 

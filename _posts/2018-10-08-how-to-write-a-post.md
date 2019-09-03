@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "How to write a post"
-categories: ["How To", "Meta"]
-tags: ["blog"]
+tags: ["blog", "how to"]
 author: "Anthony J. Clark"
 ---
 

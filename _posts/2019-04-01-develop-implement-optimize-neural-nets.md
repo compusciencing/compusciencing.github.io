@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Design, Implementation, and Optimization of Neural Networks Proposal"
-categories: ["missouri state university", "proposal"]
-tags: ["csc596", "ai", "neural networks", "c++"]
+tags: ["csc596", "ai", "neural networks", "proposal", "msu"]
 author: "Anthony Harris"
 ---
 

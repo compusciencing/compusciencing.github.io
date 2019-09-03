@@ -1,8 +1,7 @@
 ---
 layout: post
 title:  "ARMS CSC 596 final report"
-categories: ["Missouri State University", "ARCS"]
-tags: ["self-study", "csc596", "robotics", "python", "proposal", "ode", "sdf"]
+tags: ["csc596", "robotics", "report", "simulation", "msu", "arcs"]
 author: "Dillon Flohr"
 ---
 
