@@ -35,3 +35,13 @@ layout: default
   {%- endif -%}
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.7.2/simple-jekyll-search.min.js" integrity="sha256-DsgE6Y6cI5eAZoTg8tJ5VBxFs+rnL8smPwt/u8tyAYo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json'
+  })
+</script>
