@@ -7,7 +7,7 @@ author: "Dillon Flohr"
 
 This post outlines the development of **ARMS** (Automated Robotic Markup Syntax) in the Fall 2018 semester at Missouri State University. ARMS is a TOML syntax that is parsed by a Python program called Armature. The purpose of ARMS is to consolidate the specification of robotic parts and joints into one file, while Armature takes that file and outputs the selected target simulation code. For example, currently Armature can output both SDF and C++ code to generate the same robot in both Gazebo and ODE simulation environments respectively.
 
-![Lines of code comparison.](/assets/2018-12-13-arms-final-report/lines_of_code.png)
+![Lines of code comparison.](/assets/2018-12-13-report-arms/lines_of_code.png)
 
 As the figure above illustrates, one file of about 60 lines of ARMS code can output hundreds of lines of working code in other languages. This allows the user to more quickly experiment and tweak the design of a robot, while giving them the source code of that robot to allow them to further fine tune the details to their liking. If the user is working in one simulation environment and it is not working quite how they expect it should, they can run Armature with their ARMS file and instantly have the new environments code without having to write any new code themselves.
 
@@ -102,7 +102,7 @@ Other, more specific things that could be done can be found at the project [Trel
 
 # Example model and associated ARMS code
 
-![Picture of example ARMS creation](/assets/2018-12-13-arms-final-report/example_created_shape.png)
+![Picture of example ARMS creation](/assets/2018-12-13-report-arms/example_created_shape.png)
 
 ```
 [[model]]

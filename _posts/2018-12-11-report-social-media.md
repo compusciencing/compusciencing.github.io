@@ -205,7 +205,7 @@ Let me start by telling a story. There was a person named William Sealy Gosset. 
 
 Imagine, you have two fields of same crops - field 1 and field 2. Maybe you want to compare the productions of these two fields with respect to a certain criteria. However, obviously it's not wise to cut the crops from the whole fields for this. A test on samples from both these fields should be enough. Look at the following image:
 
-![Different distributions from two fields](/assets/2018-12-11-dipto-csc-799-report/ttest.jpg)
+![Different distributions from two fields](/assets/2018-12-11-report-social-media/ttest.jpg)
 
 *Image collected from: [http://www.socialresearchmethods.net/kb/stat_t.htm](http://www.socialresearchmethods.net/kb/stat_t.htm)*
 
@@ -249,7 +249,7 @@ If we had a null hypothesis: "There is no statistically significant difference b
 
 Now, let's look at the t-value table.
 
-![t-value table](/assets/2018-12-11-dipto-csc-799-report/ttable.png)
+![t-value table](/assets/2018-12-11-report-social-media/ttable.png)
 
 The degree of freedom is calculated as: df = count of samples from field 1 + count of samples from field 2 - 2 = 16 + 16 - 2 = 30 in our case. Generally, in inferential statistics, p = 0.05 is widely used. We are going to use that same value. Therefore, the critical value for us will be 2.042. Our t-value is greater than critical value, thus, we can reject the null hypothesis and accept the alternative hypothesis: There is statistically significant difference between the crops from two fields.
 

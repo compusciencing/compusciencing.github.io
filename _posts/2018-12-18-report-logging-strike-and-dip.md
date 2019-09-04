@@ -17,7 +17,7 @@ We first used an older [Arduino](https://www.arduino.cc/) as the main board for 
 
 For me I wanted to point out that I found it especially difficult to picture the layout or the sequence of the project beforehand without much expertise in either geology, hardware design and implementation or mobile application design. I luckily had some advice given to me from the team members that had some expertise in these areas which helped me overcome these limitations. One thing that I had not used in the past that helped visualize the whole layout of the hardware was helped by the [Fitzing](http://fritzing.org/home/) diagram that Dr. Clark made. 
 
-![Breadboard Diagram](/assets/2018-12-18-logging-strike-and-dip/layout-v1_bb.jpg)
+![Breadboard Diagram](/assets/2018-12-18-report-logging-strike-and-dip/layout-v1_bb.jpg)
 
 I have never used this software before, but this helped in understanding the project and speeding up the process of soldering the hardware to the breadboard.
 
