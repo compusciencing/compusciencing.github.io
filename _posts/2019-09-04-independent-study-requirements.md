@@ -35,7 +35,7 @@ Proposals must be completed before the end of the first week of the semester. Pr
 
 I meet with all of my independent study students weekly (we can meet less frequently if you are working on a project for 1 or 2 credit hours). These meetings can take anywhere from five minutes to one hour. We can occasionally skip a meeting or meet more frequently if you need quicker feedback.
 
-To prepare for the meetings, I require all students to submit a weekly update the night before we meet. The update helps me prepare for questions and issues. Weekly updates should be emailed to me and they should follow this template (you would delete all text inside square brackets):
+To prepare for the meetings, I require all students to **submit a weekly update the night before we meet**. The update helps me prepare for questions and issues. Weekly updates should be emailed to me (or we can use Slack) and they should follow this template (you would delete all text inside square brackets):
 
 #### ACTIVITIES
 
@@ -63,15 +63,10 @@ To prepare for the meetings, I require all students to submit a weekly update th
 
 # Grade Justification
 
-I require all students completing an independent study project to give me a grade justification at the middle of the semester and at the end of the semester. Justifications are typically 1 to 5 sentences and they include a letter grade.
+I require all students completing an independent study project to give me a grade justification at the middle of the semester and at the end of the semester. Justifications are typically 1 to 5 sentences and they include a letter grade. These short conversations ensure that we are on the same page with your effort.
 
 # Report
 
 I require all students to complete a final report at the end of the semester. Final reports should be roughly 350 words per credit hours, and I much prefer it if your post includes images, videos, code snippets, etc. Final reports should also [be submitted as a pull-request](https://compusciencing.github.io/how-to-write-a-post.html). I like to have final reports submitted before Tuesday of finals week.
 
-- poster
-- presentation
-
-
-
-slack
+Along with the final report, I highly encourage students to give a presentation to the Computer Science Club (also known as the ACM), create a poster to hang in the CS hallway, submit a paper to [LOGOS](https://www.missouristate.edu/logos/), and/or present a poster at the [CNAS Undergraduate Research Day](https://science.missouristate.edu/Undergraduate-Research-Day.htm).
