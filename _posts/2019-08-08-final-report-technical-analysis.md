@@ -45,7 +45,7 @@ at for the current day.
 
 
 ###Results
-![Nybble graphic object](/assets/2019-08-08-report-technical-analysis/StockGraph.png)
+![Predicted and Real Stock Price in Dollars vs Time in Days](/assets/2019-08-08-report-technical-analysis/StockGraph.png)
 
 Training for 15 days to predict the next day using only one layer, which is a simple regression model, yielded accuracy
 around 70 to 90 percent. One thing that still confuses me is that the number of Epochs, or number of times the model is 
