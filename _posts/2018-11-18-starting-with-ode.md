@@ -5,7 +5,7 @@ tags: ["ode", "simulation", "how to"]
 author: "Anthony J. Clark"
 ---
 
-In this post I will be giving a minimal example of using [ODE (the Open Dynamics Engine)](https://www.ode-wiki.org/wiki/index.php?title=Main_Page). This is similar to [my last post about DART]({{ site.baseurl }}{% post_url 2018-10-24-starting-with-dart %}). The main purpose is to serve as a quick reference for setting up a simulation in ODE without all of the extra stuff included in the ODE examples (like the Drawstuff library).
+In this post I will be giving a minimal example of using [ODE (the Open Dynamics Engine)](https://www.ode.org/wiki/index.php?title=Main_Page). This is similar to [my last post about DART]({{ site.baseurl }}{% post_url 2018-10-24-starting-with-dart %}). The main purpose is to serve as a quick reference for setting up a simulation in ODE without all of the extra stuff included in the ODE examples (like the Drawstuff library).
 
 
 # Installing ODE
@@ -181,7 +181,7 @@ And now add a ground plane to the same collision space.
 dGeomID ground_geom = dCreatePlane(space, 0, 1, 0, 0);
 ```
 
-The call to [`dCreatePlane`](https://www.ode-wiki.org/wiki/index.php?title=Manual:_All#Plane_Class) with the given arguments will create an x-z plane with a y value of zero.
+The call to [`dCreatePlane`](http://ode.org/wiki/index.php?title=Manual) with the given arguments will create an x-z plane with a y value of zero.
 
 # Simulating the Sphere
 

@@ -58,7 +58,7 @@ You have a few key things to remember:
 
 # Review process
 
-After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/){:target="_blank"} (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/){:target="_blank"}).
+After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/en/articles/about-pull-requests){:target="_blank"} (see also [Creating a Pull Request](https://help.github.com/en/articles/creating-a-pull-request){:target="_blank"}).
 
 Once the review process is complete, you should delete the git branch you created to make your post. You can delete your remote branch on GitHub by clicking the `Delete branch` button that appears on the pull request after it has been merged.
 
