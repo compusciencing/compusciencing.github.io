@@ -23,7 +23,7 @@ I wanted to work with TensorFlow but found the library was too cumbersome and te
 
 # Results
 
-![Predicted and Real Stock Price in Dollars vs Time in Days](/assets/2019-08-08-report-technical-analysis/StockGraph.png)
+![Predicted and Real Stock Price in Dollars vs Time in Days](/assets/2019-08-16-report-stock-analysis/StockGraph.png)
 
 Training for 15 days to predict the next day using only one layer, which is a simple regression model, yielded accuracy around 70 to 90 percent. One thing that still confuses me is that the number of Epochs, or number of times the model is trained, had no impact on the accuracy. I played with adding layers to the model to make it a neural network but the improvements were trivial. The only thing that I found that gave me consistently better results was using the Adam optimization technique, described in [this paper](https://arxiv.org/abs/1412.6980v8) instead of the Stochastic Gradient Descent optimization approach. I would be lying if I said I really understood the difference between the two but I wanted to play with how the model was being optimized to see what results I could get. After researching it appears that maybe this technique is more computationally taxing, and that is why it provides better results.
 
