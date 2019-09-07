@@ -13,3 +13,7 @@ Look at the themes found [here](https://talk.jekyllrb.com/t/jekyll-theme-showcas
 - Fix the RSS feed button (or remove it)
 - Add key to delete current search (`esc`)
 - Add key to start a search (`/`)
+
+# Other
+
+- https://www.brokenlinkcheck.com/
