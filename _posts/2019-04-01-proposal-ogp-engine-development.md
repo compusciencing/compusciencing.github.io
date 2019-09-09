@@ -45,8 +45,8 @@ content (textures, 3D models, etc.) is subject to change
 
 An erosion and water advection algorithm is passed over a noise generated heightmap giving rise to emergent terrain features like rivers and lakes
 
-![Some erosion](https://www.omega-gaming-project.org/img/screenshot0.jpg)
+![Some erosion](/assets/2019-04-01-proposal-ogp-engine-development/screenshot0.jpg)
 
 Supports instanced geometry and multiple level of detail (LOD) assets that can be imported from the portable FBX file format, or generated from within the engine
 
-![Instanced geometry](https://www.omega-gaming-project.org/img/screenshot7.jpg)
+![Instanced geometry](/assets/2019-04-01-proposal-ogp-engine-development/screenshot7.jpg)
