@@ -12,7 +12,7 @@ Pedagogy for Computer Science is still a young area of research where many contr
 ## Project Milestones
 
 * Develop a good hypothesis
-    * Does a tactile demonstration for a theoretical computer science concept increase student understanding of the concept?
+    * Does a tactile demonstration for a theoretical computer science concept increase student understanding of the concept? For example, would students better understand a sorting algorithm if they performed each step of the algorithm with a set of playing cards?
 * Develop an expirement to test the hypothesis
     * Use 4 sections: 2 test sections and 2 control sections
     * Teach the concept of Turing Machines to all 4 sections
