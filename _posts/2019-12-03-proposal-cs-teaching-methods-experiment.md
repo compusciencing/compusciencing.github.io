@@ -7,7 +7,7 @@ author: "Nathan Hartzler"
 
 # Overview
 
-Pedagogy for Computer Science is still a young area of research where many contributions can be made. I would like to conduct research on a multi-sectioned Missouri State Univeristy Department of Computer Science course in the Fall 2020 semester. I will use this proposed Spring 2020 CSC696 course to develop a hypothesis and build an expirment for the Fall 2020 semester.
+Pedagogy for Computer Science is still a young area of research where many contributions can be made. I would like to conduct research on a multi-sectioned Missouri State University Department of Computer Science course in the Fall 2020 semester. I will use this proposed Spring 2020 CSC696 course to develop a hypothesis and build an experiment for the Fall 2020 semester.
 
 ## Project Milestones
 
