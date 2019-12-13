@@ -45,11 +45,58 @@ Hay
 
 ## Plant Simulation
 
-A basic plant simulation controls plant growth, genes, and reproduction. Every update tick calculates each plant's external resources. Resource transformations then convert Light and water into sugar which the plant uses to either grow or generate seeds. There are several types of leaves that exhibit different performance characteristics with respect to temperature.
+A basic plant simulation controls plant growth, genes, and reproduction. Every update tick calculates each plant's external resources, including: sunlight, water, temperature, and soil depth. Resource transformations then convert Light and water into sugar which the plant uses to either grow or generate seeds. There are several types of leaves that exhibit different performance characteristics with respect to temperature.
+
+`Leaf performance as a function of temperature`
+![Leaf performance as a function of temperature](/assets/2019-12-12-report-ogp-engine-development/leaf_functions.png)
+
+`Plants`
+![Plants](/assets/2019-12-12-report-ogp-engine-development/plants.png)
+
+`Leaf specialization correlated to elevation`
+![Leaf specialization correlated to elevation](/assets/2019-12-12-report-ogp-engine-development/plant_specialization.png)
+
+## Simple Artificial Agents
+
+As an experiment, simple neural nets were evolved using the NeuroEvolution of Augmenting Topologies (NEAT) method. Agents (red boxes) were given angle and distance to the nearest target (green spheres), while the fitness was determined by summing the number of collected targets.
+
+`Population and agent fitness over time`
+![Population and agent fitness over time](/assets/2019-12-12-report-ogp-engine-development/fitness.png)
+
+`Agents`
+![Agents](/assets/2019-12-12-report-ogp-engine-development/agents.jpg)
+
+## Basic Tool Mechanics
+
+For interactions between tools and resources to be modelled in a semi-realistic manner, a material representation was created to support common strength qualities of different materials.
+
+`Material definition as seen in the OGP Asset Manager`
+![`Material definition as seen in the OGP Asset Manager](/assets/2019-12-12-report-ogp-engine-development/material.png)
+
+Every object in the world will have an associated material, and objects that have a mass lower than an agent's carrying capacity can be held. Tools are incidentally just the name given to the items that are held by agents - functionally there is no difference between a tool and an ordinary object in the world.
+
+`Using a rock against a large plant`
+![Using a rock against a large plant](/assets/2019-12-12-report-ogp-engine-development/tools.jpg)
+
+## Mesh Slicing
+
+As an attempt to further proceduralize tool interactions, work was made to develop a mesh slicing algorithm that can be used as a tool action. This mechanic is especially useful for cutting down trees and subdividing large resources into carryable sections.
+
+`Slicing a complex mesh`
+![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice2.png)
+![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice1.png)
+
+## Code Cleanup
+
+Systems are this engine's bread and butter, so it makes sense for these areas to be concise and efficient. With the help of C++ Macros, it was possible to reduce code duplication in some key areas.
+
+`Before`
+![Before](/assets/2019-12-12-report-ogp-engine-development/systems_messy.png)
 
 
+`After`
 
-## Improved Data Access Patterns
+![After](/assets/2019-12-12-report-ogp-engine-development/systems_clean.png)
 
 The Idea in a nutshell is that you have a query signature composed of a Read mask, Write mask, and Region set. When a thread executes a task, it grabs a lock on this signature; if there are read/write conflicts the Region set is checked for intersection to determine if there really is a conflict. When a signature is released, all other blocked threads are notified and attempt to grab a lock on their signature
 Read mask and Write mask
@@ -57,8 +104,5 @@ A 64 bit integer, where each bit is a flag for a specific component type, be it 
 Region set
 An unordered set of regions, where each region is a unique predefined spatial grid square within the world (right now they are 64m x 64m)
 Example usage:
-
-
-
 
 # Future Work
