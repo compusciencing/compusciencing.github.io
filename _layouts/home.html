@@ -17,7 +17,7 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
         {%- if post.author -%}
-          • <span class="post-meta">{{ post.author | escape }}</span>
+         &nbsp;•&nbsp;<span class="post-meta">{{ post.author | escape }}</span>
         {%- endif -%}
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">
@@ -35,3 +35,15 @@ layout: default
   {%- endif -%}
 
 </div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-jekyll-search/1.7.2/simple-jekyll-search.min.js" integrity="sha256-DsgE6Y6cI5eAZoTg8tJ5VBxFs+rnL8smPwt/u8tyAYo=" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+  var sjs = SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: '/search.json',
+    searchResultTemplate: '<li><a href="{url}">{title} by {author} ({date})</a></li>',
+    fuzzy: false
+  })
+</script>

@@ -6,12 +6,10 @@ Whenever a pull request is merged into this repository, GitHub Pages will automa
 
 # Features to add
 
-I'd like to add either full-text search (e.g., [Lunr](https://lunrjs.com/)) or fuzzy searching on the tags (e.g., [Fuse.js](http://fusejs.io/)).
-
-We should also look at the themes found [here](https://talk.jekyllrb.com/t/jekyll-theme-showcase-share-your-jekyll-themes/1382/15), [here](https://github.com/topics/jekyll-theme), and [here](https://github.com/jekyll/jekyll/wiki/Themes).
+Look at the themes found [here](https://talk.jekyllrb.com/t/jekyll-theme-showcase-share-your-jekyll-themes/1382/15), [here](https://github.com/topics/jekyll-theme), and [here](https://github.com/jekyll/jekyll/wiki/Themes).
 
 # Things to do
 
-- [ ] Fix the RSS feed button (or remove it)
-- [ ] Add [Disqus](https://disqus.com/) for enabling comments on posts?
-- [ ] Add layouts for categories and tags? (https://jekyllrb.com/docs/step-by-step/09-collections/)
+- Fix the RSS feed button (or remove it)
+- Add key to delete current search (`esc`)
+- Add key to start a search (`/`)

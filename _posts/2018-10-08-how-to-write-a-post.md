@@ -1,62 +1,64 @@
 ---
 layout: post
-title: "How to write a post"
-categories: ["How To", "Meta"]
-tags: ["blog"]
+title: "How to Write a Post"
+tags: ["blog", "how to"]
 author: "Anthony J. Clark"
 ---
 
 This is a short description of the posting process for this blog. It will be updated as we find better methods or add new features.
 
-Here is the summary:
+You can of course use whatever method suits you best, but here is an example of using the command line to submit a new post:
 
 ```bash
 # Clone the repository
 git clone https://github.com/compusciencing/compusciencing.github.io.git
 cd compusciencing.github.io/
 
-# Checkout a new branch to work on (standard GitHub practice)
-git checkout -b post-how-to-post
+# Checkout a new branch to work on (standard git practice)
+# - Replace <YOUR_POST_NAME> with something related to your post's title
+git checkout -b post-<YOUR_POST_NAME>
 
 # Create a new post (see resources below)
-touch _posts/2018-10-08-how-to-write-a-post.md
+# - Replace <DATE> with the current date in YYYY-MM-DD format
+# - Replace <YOUR_POST_NAME> with the same value as above
+touch _posts/<DATE>-<YOUR_POST_NAME>.md
 
-# <Edit the post>
+# Edit the post using whatever text editor you prefer
 
 # Add post to repository and commit
-git add _posts/2018-10-08-how-to-write-a-post.md
-git commit -m "Added a new post..."
+# - Replace <DATE> with the current date in YYYY-MM-DD format
+# - Replace <YOUR_POST_NAME> with the same value as above
+# - Replace <YOUR_COMMIT_MESSAGE> with a brief description of your post
+git add _posts/<DATE>-<YOUR_POST_NAME>.md
+git commit -m "<YOUR_COMMIT_MESSAGE>"
 
-# <Fork this repository on GitHub> or use https://hub.github.com/
+# Fork this repository on GitHub (or use https://hub.github.com/)
 
 # Add your remote and push your changes
-git remote add YOUR_USER https://github.com/YOUR_USER/compusciencing.github.io.git
-git push YOUR_USER post-how-to-post
+# - Replace <YOUR_USER> with your GitHub username
+# - Replace <YOUR_POST_NAME> with the same value as above
+git remote add <YOUR_USER> https://github.com/<YOUR_USER>/compusciencing.github.io.git
+git push <YOUR_USER> post-<YOUR_POST_NAME>
 
-# <Submit a pull request on GitHub> or use https://hub.github.com/
+# Submit a pull request on GitHub (or use https://hub.github.com/)
 ```
 
-In the above, you will need to replace:
+For project proposals and reports, `<YOUR_POST_NAME>` should start with "Proposal:" or "Report:", respectively.
 
-- `post-how-to-post` with `post-<YOUR_POST_NAME>`,
-- `2018-10-08-how-to-write-a-post.md` with `<DATE>-<YOUR_POST_NAME>`,
-- `"Added a new post..."` with your commit message, and
-- `YOUR_USER` with your GitHub username
-
-You should be able to preview your post by pushing your markdown to your forked repository and viewing on GitHub, or you can look at the resources section below for more information. In either case, though, you will not see the same formatting and it will not include any custom CSS or JS.
+You should be able to preview your post by pushing your markdown to your forked repository and viewing on GitHub, or you can look at the resources section below for more information. In either case, though, you will not see the same formatting and it will not include any custom CSS or JS included in the blog template.
 
 # Post template
 
-I have added a simple template post in the root directory named `post-template.md`. You can use this or base your post off of another post.
+I have added a simple template post in the root directory named [`post-template.md`](https://raw.githubusercontent.com/compusciencing/compusciencing.github.io/master/post-template.md). You can use this or base your post off of another post.
 
 You have a few key things to remember:
 
-1. You must include [front matter](https://jekyllrb.com/docs/front-matter/){:target="_blank"} at the top of your post. You should include at least the following fields: `layout`, `title`, `author`, `categories`, and `tags`. For example, if you are writing this post for the Missouri State University CSC 596 course, at minimum you should include the category `"Missouri State University"` and the tag `csc596` (you should also include any other relevant categories and tags).
+1. You must include [front matter](https://jekyllrb.com/docs/front-matter/){:target="_blank"} at the top of your post. You should include at least the following fields: `layout`, `title`, `tags`, and `author`. See the current posts for examples of reasonable values.
 2. You should write your post in Markdown.
 
 # Review process
 
-After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/articles/about-pull requests/){:target="_blank"} (see also [Creating a Pull Request](https://help.github.com/articles/creating-a-pull-request/){:target="_blank"}).
+After you submit your post via a pull request, it will be reviewed and you might be asked to fix grammar or some of your text. This will be done using the [GitHub pull request functionality](https://help.github.com/en/articles/about-pull-requests){:target="_blank"} (see also [Creating a Pull Request](https://help.github.com/en/articles/creating-a-pull-request){:target="_blank"}).
 
 Once the review process is complete, you should delete the git branch you created to make your post. You can delete your remote branch on GitHub by clicking the `Delete branch` button that appears on the pull request after it has been merged.
 

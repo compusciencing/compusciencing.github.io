@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "A transformable wheel-leg hybrid for Adabot"
-categories: ["Missouri State University"]
-tags: ["uhc396"]
+title: "Report: A Transformable Wheel-Leg Hybrid for Adabot"
+tags: ["uhc396", "robotics", "msu", "report"]
 author: "Eric McCullough"
 ---
 
@@ -26,10 +25,10 @@ The legs are 30 mm long and 3 mm thick. They have two mounting areas: a 1 mm hol
 
 # Design Images
 
-![Wheel leg hybrid side](/assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_side_view.PNG)
+![Wheel leg hybrid side](/assets/2018-12-10-report-transformable-wheel-leg-hybrid-for-adabot/wheel_side_view.PNG)
 Figure 1: side view of the wheel design
 
-![Wheel leg hybrid corner](/assets/2018-12-10-a-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.PNG)
+![Wheel leg hybrid corner](/assets/2018-12-10-report-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.PNG)
 Figure 2: corner view of the wheel design
 
 # References

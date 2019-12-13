@@ -1,14 +1,13 @@
 ---
 layout: post
 title:  "Starting with DART (Dynamic Animation and Robotics Toolkit)"
-categories: ["How To", "Simulation"]
-tags: ["dart"]
+tags: ["dart", "simulation", "how to"]
 author: "Anthony J. Clark"
 ---
 
 In this post, I will be showing how to simulating a falling sphere using [DART](https://dartsim.github.io/). For this simple example, I will not be worrying about any form of visualization. This post is mostly intended to help me document and remember how to setup a simple simulation.
 
-I have used a variety of different simulation packages for my research, and I've never been overly satisfied with the two that I have used most often: [Open Dynamics Engine (ODE)](https://www.ode-wiki.org/wiki/) and [MATLAB/Simulink](https://www.mathworks.com/). ODE is open source and it works well, but it is a game engine with an emphasis on speed and not necessarily on accuracy. Simulink, on the other hand, requires you to pay for both it and MATLAB, and it focuses on numerical simulation (not physical simulation). I'll likely still use the tools going forward, however [Jean-Baptiste Mouret's](https://members.loria.fr/JBMouret/) talk at [SimER](http://cis.gvsu.edu/~moorejar/SimER/) this past July convinced me to give DART a try.
+I have used a variety of different simulation packages for my research, and I've never been overly satisfied with the two that I have used most often: [Open Dynamics Engine (ODE)](https://www.ode.org/wiki/) and [MATLAB/Simulink](https://www.mathworks.com/). ODE is open source and it works well, but it is a game engine with an emphasis on speed and not necessarily on accuracy. Simulink, on the other hand, requires you to pay for both it and MATLAB, and it focuses on numerical simulation (not physical simulation). I'll likely still use the tools going forward, however [Jean-Baptiste Mouret's](https://members.loria.fr/JBMouret/) talk at [SimER](http://cis.gvsu.edu/~moorejar/SimER/) this past July convinced me to give DART a try.
 
 # Installing DART
 

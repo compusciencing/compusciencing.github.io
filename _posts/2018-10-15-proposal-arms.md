@@ -1,8 +1,7 @@
 ---
 layout: post
-title:  "ARMS, CSC 596 proposal"
-categories: ["Missouri State University", "ARCS"]
-tags: ["self-study", "csc596", "robotics", "python", "proposal"]
+title:  "Proposal: Autonomous Robot Markup Syntax (ARMS)"
+tags: ["csc596", "robotics", "proposal", "arcs", "msu"]
 author: "Dillon Flohr"
 ---
 
