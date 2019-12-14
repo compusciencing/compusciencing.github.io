@@ -29,19 +29,16 @@ Conventional A.I. systems are simple decision trees that require attention to de
 
 ## Terrain Strata
 
-The terrain is represented by a 2D array of floating point values that represent the height of each vertex in the terrain mesh. This data structure was extended to maintain a strata of materials, namely grass, dirt, and stone.
+The terrain is represented by a 2D array of floating point values that represent the height of each vertex in the terrain mesh. This data structure was extended to maintain a strata of materials, namely snow, grass, dirt, and stone. Other systems can interact with the terrain through this strata to create more realisitic behavior - examples include the plant system which uses soil depth, and the rendering system which renders the top strata with an appropriate texture.
 
 ## Construction Mechanics
 
-Agents (including the player) are able to manipulate objects by picking them up and placing them in or above the ground. Placing items in the ground will anchor them in place.
+Agents (including the player) are able to manipulate objects by picking them up and placing them in or ontop of other objects. Placing items in the ground will anchor them in place.
 
-## New Content
+`Construction`
+![Construction](/assets/2019-12-12-report-ogp-engine-development/construction.jpg)
 
-Sticks
-
-Small stone
-
-Hay
+This mechanic is not limited to static structures, as it is possible to combine objects into one composite "tool" that can be carried. The simulation of tool interactions is covered later in this report.
 
 ## Plant Simulation
 
@@ -53,7 +50,7 @@ A basic plant simulation controls plant growth, genes, and reproduction. Every u
 `Plants`
 ![Plants](/assets/2019-12-12-report-ogp-engine-development/plants.png)
 
-`Leaf specialization correlated to elevation`
+`Leaf specialization correlated to elevation. The atmosphere system generates a temperature variance across elevation, e.g. lower temperatures at higher elevations.`
 ![Leaf specialization correlated to elevation](/assets/2019-12-12-report-ogp-engine-development/plant_specialization.png)
 
 ## Simple Artificial Agents
@@ -86,23 +83,47 @@ As an attempt to further proceduralize tool interactions, work was made to devel
 ![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice2.png)
 ![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice1.png)
 
+`Slicing a large boulder. Texture coordinates have not been calculated, leaving a monocolor surface`
+![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice3.jpg)
 ## Code Cleanup
 
+### System Registration
 Systems are this engine's bread and butter, so it makes sense for these areas to be concise and efficient. With the help of C++ Macros, it was possible to reduce code duplication in some key areas.
 
 `Before`
 ![Before](/assets/2019-12-12-report-ogp-engine-development/systems_messy.png)
 
-
 `After`
 
 ![After](/assets/2019-12-12-report-ogp-engine-development/systems_clean.png)
 
-The Idea in a nutshell is that you have a query signature composed of a Read mask, Write mask, and Region set. When a thread executes a task, it grabs a lock on this signature; if there are read/write conflicts the Region set is checked for intersection to determine if there really is a conflict. When a signature is released, all other blocked threads are notified and attempt to grab a lock on their signature
-Read mask and Write mask
-A 64 bit integer, where each bit is a flag for a specific component type, be it Position, Movement, Plant, etc.
-Region set
-An unordered set of regions, where each region is a unique predefined spatial grid square within the world (right now they are 64m x 64m)
-Example usage:
+### Data Access
+
+As systems access entity components, synchronization mechanisms must be im place to ensure thread safety when locking these resources for use. The primary locking pattern has been enhanced to include a set of regions - regions are large (64m x 64m) square spatial subdivisions of the world that do not overlap. In a nutshell, there is a query signature composed of a Read mask, Write mask, and Region set. When a thread executes a task, it grabs a lock on this signature; if there are read/write conflicts, the region set is checked for intersection to determine if there really is a conflict. When a signature is released, all other blocked threads are notified and attempt to grab a lock on their signature. Read and write masks are 64 bit integers, where each bit is a flag for a specific component type, be it Position, Movement, Plant, etc.
+The region set is an unordered set of integer region IDs. 
+
+`Example usage:`
+![Example usage](/assets/2019-12-12-report-ogp-engine-development/data_access.png)
+
+The advantage of adding this spatial component to the lock signature is increased parallelism. Due to the localized nature of all world systems, there is never a case where a system update requires a query that spans more than one region away. To illustrate this concept, consider the following diagrams.
+
+`This grid represents regional subdivisions, where the red region is being written to by a system update, and the blue regions are only being read from.`
+![Kernel](/assets/2019-12-12-report-ogp-engine-development/data_access_kernel.png)
+
+Since it is possible to read the same memory location concurrently from multiple threads, the above "kernel" can be run concurrently with only one read region between. Given one thread per kernel, the number of global synchronizations that must take place is only 4.
+
+`Pass 0`
+![Example usage](/assets/2019-12-12-report-ogp-engine-development/data_access_0.png)
+
+`Pass 1`
+![Example usage](/assets/2019-12-12-report-ogp-engine-development/data_access_1.png)
+
+`Pass 2`
+![Example usage](/assets/2019-12-12-report-ogp-engine-development/data_access_2.png)
+
+`Pass 3`
+![Example usage](/assets/2019-12-12-report-ogp-engine-development/data_access_3.png)
 
 # Future Work
+
+OGP is an ongoing passion project that I will continue to pour time into when I can. The [website](https://www.omega-gaming-project.org) remains the most up to date source of information and will be the home of all available installations of the project. If you or anyone you know is interested in contributing, please send an email to <omega.gaming.project@gmail.com>.
