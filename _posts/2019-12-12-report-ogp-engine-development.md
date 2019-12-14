@@ -1,17 +1,17 @@
 ---
 layout: post
 title: "Report: OGP Engine Development"
-tags: ["csc596", "game engine", "simulation", "omega gaming project","report"]
+tags: ["csc596", "game engine", "simulation", "omega gaming project", "report"]
 author: "Gage Coates"
 ---
 
 # Omega Gaming Project Overview
 
-The [Omega Gaming Project (OGP)](https://www.omega-gaming-project.org) provides a large number of possible domains to work in, especially those suited for 3D graphics and simulation. As such, the developments in this report vary widely and are in no way representative of a final version of the project.  
+The [Omega Gaming Project (OGP)](https://www.omega-gaming-project.org) provides many domains to work in, especially those suited for 3D graphics and simulation. As such, the developments in this report vary widely and are in no way representative of a final version of the project.  
 
 ## Game
 
-As a game, the player can explore a uniquely different world as often as they like. This world contains a single continent (~4km x 4km) that is populated with dynamically simulated plants, animals, and A.I. controlled NPCs. When a world is created, the initial continent is passed through millions of years of erosion, and gradually populated with evolving plant and animal life. A seed number is used to derive this initial continent, allowing players to start over with the same initial conditions. Once the player interacts with the world, a unique state will emerge that is distinctly unique from any other
+As a game, the player can explore a uniquely different world as often as they like. This world contains a single continent (~4km x 4km) that is populated with dynamically simulated plants, animals, and A.I. controlled NPCs. When a world is created, the initial continent is passed through millions of years of erosion, and gradually populated with evolving plant and animal life. A seed number is used to derive this initial continent, allowing players to start over with the same initial conditions. Once the player interacts with the world, a unique state will emerge.
 
 ## Procedural Content
 
@@ -23,17 +23,17 @@ Rather than generating the game world at astronomical scales, our approach is to
 
 ## Artificial Intelligence
 
-Conventional A.I. systems are simple decision trees that require attention to detail and careful consideration of edge cases. These types of A.I. are predictable and can only handle one type of environment. We aim to provide a more general purpose A.I. that interacts with the game and player in a believable and un-planned manner. Since a designer is not explicitly prescribing content, the narrative is primarily driven by each player's experience and decisions.
+Most conventional A.I. systems are simple decision trees that require attention to detail and careful consideration of edge cases. These types of A.I. are predictable and can only handle one type of environment. We aim to provide a more general purpose A.I. that interacts with the game and player in a believable and un-planned manner. Since a designer is not explicitly prescribing content, the narrative is primarily driven by each player's experience and decisions.
 
 # Key Developments
 
 ## Terrain Strata
 
-The terrain is represented by a 2D array of floating point values that represent the height of each vertex in the terrain mesh. This data structure was extended to maintain a strata of materials, namely snow, grass, dirt, and stone. Other systems can interact with the terrain through this strata to create more realisitic behavior - examples include the plant system which uses soil depth, and the rendering system which renders the top strata with an appropriate texture.
+The terrain is represented by a 2D array of floating-point values that represent the height of each vertex in the terrain mesh. This data structure was extended to maintain a strata of materials, namely snow, grass, dirt, and stone. Other systems can interact with the terrain through this strata to create more realisitic behavior - examples include the plant system which uses soil depth, and the rendering system which renders the top strata with an appropriate texture.
 
 ## Construction Mechanics
 
-Agents (including the player) are able to manipulate objects by picking them up and placing them in or ontop of other objects. Placing items in the ground will anchor them in place.
+Agents (including the player) are able to manipulate objects by picking them up and placing them in or on top of other objects. Placing items in the ground will anchor them in place.
 
 `Construction`
 ![Construction](/assets/2019-12-12-report-ogp-engine-development/construction.jpg)
@@ -88,6 +88,7 @@ As an attempt to further proceduralize tool interactions, work was made to devel
 ## Code Cleanup
 
 ### System Registration
+
 Systems are this engine's bread and butter, so it makes sense for these areas to be concise and efficient. With the help of C++ Macros, it was possible to reduce code duplication in some key areas.
 
 `Before`
@@ -99,13 +100,14 @@ Systems are this engine's bread and butter, so it makes sense for these areas to
 
 ### Data Access
 
-As systems access entity components, synchronization mechanisms must be im place to ensure thread safety when locking these resources for use. The primary locking pattern has been enhanced to include a set of regions - regions are large (64m x 64m) square spatial subdivisions of the world that do not overlap. In a nutshell, there is a query signature composed of a Read mask, Write mask, and Region set. When a thread executes a task, it grabs a lock on this signature; if there are read/write conflicts, the region set is checked for intersection to determine if there really is a conflict. When a signature is released, all other blocked threads are notified and attempt to grab a lock on their signature. Read and write masks are 64 bit integers, where each bit is a flag for a specific component type, be it Position, Movement, Plant, etc.
+As systems access entity components, synchronization mechanisms must be im place to ensure thread safety when locking these resources for use. I have enhanced the primary locking pattern to include a set of regions—regions are large (64m by 64m) square spatial subdivisions of the world that do not overlap. In a nutshell, there is a query signature composed of a Read mask, Write mask, and Region set. When a thread executes a task, it grabs a lock on this signature; if there are read/write conflicts, the region set is checked for intersection to determine if there really is a conflict. When a signature is released, all other blocked threads are notified and attempt to grab a lock on their signature. Read and write masks are 64-bit integers, where each bit is a flag for a specific component type, be it Position, Movement, Plant, etc.
+
 The region set is an unordered set of integer region IDs. 
 
 `Example usage:`
 ![Example usage](/assets/2019-12-12-report-ogp-engine-development/data_access.png)
 
-The advantage of adding this spatial component to the lock signature is increased parallelism. Due to the localized nature of all world systems, there is never a case where a system update requires a query that spans more than one region away. To illustrate this concept, consider the following diagrams.
+The advantage of adding this spatial component to the lock signature is increased parallelism. Because of the localized nature of all world systems, there is never a case where a system update requires a query that spans more than one region away. To illustrate this concept, consider the following diagrams.
 
 `This grid represents regional subdivisions, where the red region is being written to by a system update, and the blue regions are only being read from.`
 ![Kernel](/assets/2019-12-12-report-ogp-engine-development/data_access_kernel.png)
@@ -126,4 +128,4 @@ Since it is possible to read the same memory location concurrently from multiple
 
 # Future Work
 
-OGP is an ongoing passion project that I will continue to pour time into when I can. The [website](https://www.omega-gaming-project.org) remains the most up to date source of information and will be the home of all available installations of the project. If you or anyone you know is interested in contributing, please send an email to <omega.gaming.project@gmail.com>.
+OGP is an ongoing passion project that I will continue to pour time into when I can. The [website](https://www.omega-gaming-project.org) remains the most up-to-date source of information and will be the home of all available installations of the project. If you or anyone you know is interested in contributing, please email <omega.gaming.project@gmail.com>.
