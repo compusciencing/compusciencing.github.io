@@ -38,7 +38,7 @@ Agents (including the player) are able to manipulate objects by picking them up 
 `Construction`
 ![Construction](/assets/2019-12-12-report-ogp-engine-development/construction.jpg)
 
-This mechanic is not limited to static structures, as it is possible to combine objects into one composite "tool" that can be carried. The simulation of tool interactions is covered later in this report.
+We do not limit this mechanic to static structures, as it is possible to combine objects into one composite "tool" that can be carried. I cover later the simulation of tool interactions in this report.
 
 ## Plant Simulation
 
@@ -65,19 +65,19 @@ As an experiment, simple neural nets were evolved using the NeuroEvolution of Au
 
 ## Basic Tool Mechanics
 
-For interactions between tools and resources to be modelled in a semi-realistic manner, a material representation was created to support common strength qualities of different materials.
+To model interactions between tools and resources in a semi-realistic manner, I created a material representation to support common strength qualities of different materials.
 
 `Material definition as seen in the OGP Asset Manager`
 ![`Material definition as seen in the OGP Asset Manager](/assets/2019-12-12-report-ogp-engine-development/material.png)
 
-Every object in the world will have an associated material, and objects that have a mass lower than an agent's carrying capacity can be held. Tools are incidentally just the name given to the items that are held by agents - functionally there is no difference between a tool and an ordinary object in the world.
+Every object in the world will have an associated material, and objects that have a mass lower than an agent's carrying capacity can be held. Tools are incidentally just the name given to the items that are held by agents—functionally there is no difference between a tool and an ordinary object in the world.
 
 `Using a rock against a large plant`
 ![Using a rock against a large plant](/assets/2019-12-12-report-ogp-engine-development/tools.jpg)
 
 ## Mesh Slicing
 
-As an attempt to further proceduralize tool interactions, work was made to develop a mesh slicing algorithm that can be used as a tool action. This mechanic is especially useful for cutting down trees and subdividing large resources into carryable sections.
+As an attempt to further proceduralize tool interactions, I developed a mesh slicing algorithm that can be used as a tool action. This mechanic is especially useful for cutting down trees and subdividing large resources into carryable sections.
 
 `Slicing a complex mesh`
 ![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice2.png)
@@ -85,6 +85,7 @@ As an attempt to further proceduralize tool interactions, work was made to devel
 
 `Slicing a large boulder. Texture coordinates have not been calculated, leaving a monocolor surface`
 ![Slicing a complex mesh](/assets/2019-12-12-report-ogp-engine-development/slice3.jpg)
+
 ## Code Cleanup
 
 ### System Registration
