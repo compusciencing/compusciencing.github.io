@@ -12,24 +12,34 @@ I plan on working through the design and implementation of game systems, mechani
 ## Specific Goals
 
 * Construction mechanics
-  *	Initial iterations
-    * Allow the conversion of inventory resources to instanced geometry that is physically interactable – think prefabricated structures
-  *	Late iterations 
-    * May include modular construction systems that allow for more building permutations
+    *	Initial iterations
+        * Allow the conversion of inventory resources to instanced geometry that is physically interactable – think prefabricated structures
+    *	Late iterations 
+        * May include modular construction systems that allow for more building permutations
 * Resource gathering
-  *	Initial iterations
-    * Basic tools
-    * will allow the user to harvest mineral, timber, and water resources from the environment
-    * Harvested resources are transformed into inventory resources
-  * Late iterations
-    * Physical interactions between tools and resources can be modelled to allow for more accurate tool effectiveness
-    * If tool design is A.I. controlled, possibly come close to some sort of tool evolution?
+    *	Initial iterations
+        * Basic tools
+        * will allow the user to harvest mineral, timber, and water resources from the environment
+        * Harvested resources are transformed into inventory resources
+    * Late iterations
+        * Physical interactions between tools and resources can be modelled to allow for more accurate tool effectiveness
+        * If tool design is A.I. controlled, possibly come close to some sort of tool evolution?
 * Plant simulation
-  * Initial iterations
-    * Basic spreading and growth function based on available resources
-  * Late iterations
-    * A genetic model for defining all plant life
-    * Use of Genetic Algorithms to simulate evolution of plants
+    * Initial iterations
+        * Basic spreading and growth function based on available resources
+    * Late iterations
+        * A genetic model for defining all plant life
+        * Use of Genetic Algorithms to simulate evolution of plants
+* Atmosphere simulation
+    * Initial iterations
+        * Low resolution global simulation
+        * Temperature advection (heat moving towards cold areas)
+        * Humidity advection
+    * Late iterations
+        * High resolution localized simulation
+        * Condensation
+        * Evaporation
+
 
 <blockquote> 
 It is required that all systems that handle user input are also easily capable of handling input from an artificial agent
