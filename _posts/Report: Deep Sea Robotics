@@ -21,7 +21,8 @@ After downloading Gazebo, my first step was to create or find a suitable underwa
 I tested the buoyancy of the simulator by making sure objects sunk when denser.
 ![bouyancysinking](https://livemissouristate-my.sharepoint.com/personal/gwd9024_live_missouristate_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids%2FScreenshot%20from%202019%2D12%2D13%2009%2D28%2D08%2Epng&parent=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids)
 
-Going into the research, I knew I wanted to make my focus more about the deep sea. Because of this, I would have to alter the default depth of the simulator. To do this, I expanded the pose and collision of each of the each of the 'walls' of the sea.
+Going into the research, I knew I wanted to make my focus more about the deep sea. Because of this, I would have to alter the default depth of the simulator. To do this, I expanded the pose and collision of each of the "walls" of the sea.
+
 ![pose](https://livemissouristate-my.sharepoint.com/personal/gwd9024_live_missouristate_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids%2FScreenshot%20from%202019%2D12%2D13%2009%2D30%2D41%2Epng&parent=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids)
 ![pose2newvsoriginal](https://livemissouristate-my.sharepoint.com/:i:/r/personal/gwd9024_live_missouristate_edu/Documents/2019%20fall/robot/final%20pics,%20vids/Screenshot%20from%202019-12-13%2011-21-01.png?csf=1&e=Md2BX0)
 
