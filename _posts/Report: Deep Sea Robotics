@@ -18,7 +18,7 @@ With no previous experience using Gazebo and Linux, I devoted a lot of my time i
 
 After downloading Gazebo, my first step was to create or find a suitable underwater environment. Unlike most other environments, Gazebo does not have a very in-depth default underwater environment, so I used the UUV simulator. The UUV simulator is a "set of packages with Gazebo plugins and ROS modules to enable simulation of underwater vehicles" [(Manhães 2018)](https://roscon.ros.org/2018/presentations/ROSCon2018_uuvsimulator.pdf) . After installing the simulator and the proper ROS distributions, I played around with the provided environments; I settled with using the empty_underwater_world as the base. 
 
-I tested the bouyancy of the simulator by making sure objects sunk when denser.
+I tested the buoyancy of the simulator by making sure objects sunk when denser.
 ![bouyancysinking](https://livemissouristate-my.sharepoint.com/personal/gwd9024_live_missouristate_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids%2FScreenshot%20from%202019%2D12%2D13%2009%2D28%2D08%2Epng&parent=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids)
 
 Going into the research, I knew I wanted to make my focus more about the deep sea. Because of this, I would have to alter the default depth of the simulator. To do this, I expanded the pose and collision of each of the each of the 'walls' of the sea.
