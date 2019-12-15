@@ -1,10 +1,8 @@
-+---
+---
 layout: post
 title: "Report: Deep Sea Robotics"
-categories: ["Missouri State University"]
 tags: ["csc197", "deep sea", "simulation", "robotics", "report", "self-study"]
 author: "Fiona Wu"
-include_mathjax: false
 ---
 
 I define my research as the development of underwater environments and models using Gazebo Simulator. Specifically, the aim of my research was to create a robot model that could withstand deep sea pressures. However, as the semester went by and technical difficulties arose, my research devolved into more of an exploration of the [UUV simulator](https://uuvsimulator.github.io/) while learning how to use new software and operating systems such as [Gazebo Simulator](http://gazebosim.org/), [Github](https://github.com/), [Blender](https://www.blender.org/), and Linux. Although I did not get as far as I had hoped on my research, I developed an initial prototype to the model and altered the existing [UUV simulator environment](https://uuvsimulator.github.io/). 
