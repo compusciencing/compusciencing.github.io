@@ -19,20 +19,22 @@ With no previous experience using Gazebo and Linux, I devoted a lot of my time i
 After downloading Gazebo, my first step was to create or find a suitable underwater environment. Unlike most other environments, Gazebo does not have a very in-depth default underwater environment, so I used the UUV simulator. The UUV simulator is a "set of packages with Gazebo plugins and ROS modules to enable simulation of underwater vehicles" [(Manhães 2018)](https://roscon.ros.org/2018/presentations/ROSCon2018_uuvsimulator.pdf) . After installing the simulator and the proper ROS distributions, I played around with the provided environments; I settled with using the empty_underwater_world as the base. 
 
 I tested the buoyancy of the simulator by making sure objects sunk when denser.
-![bouyancysinking](https://livemissouristate-my.sharepoint.com/personal/gwd9024_live_missouristate_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids%2FScreenshot%20from%202019%2D12%2D13%2009%2D28%2D08%2Epng&parent=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids)
+
+![bouyancysinking](/assets/2019-12-13-report-deep-sea-robotics/buoyancysinking.png)
 
 Going into the research, I knew I wanted to make my focus more about the deep sea. Because of this, I would have to alter the default depth of the simulator. To do this, I expanded the pose and collision of each of the "walls" of the sea.
 
-![pose](https://livemissouristate-my.sharepoint.com/personal/gwd9024_live_missouristate_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids%2FScreenshot%20from%202019%2D12%2D13%2009%2D30%2D41%2Epng&parent=%2Fpersonal%2Fgwd9024%5Flive%5Fmissouristate%5Fedu%2FDocuments%2F2019%20fall%2Frobot%2Ffinal%20pics%2C%20vids)
-![pose2newvsoriginal](https://livemissouristate-my.sharepoint.com/:i:/r/personal/gwd9024_live_missouristate_edu/Documents/2019%20fall/robot/final%20pics,%20vids/Screenshot%20from%202019-12-13%2011-21-01.png?csf=1&e=Md2BX0)
+![pose](/assets/2019-12-13-report-deep-sea-robotics/pose.png)
+![pose2newvsoriginal](/assets/2019-12-13-report-deep-sea-robotics/pose2newvsoriginal.png)
 
 
 # BUILDING INITIAL MODEL
 
 To create my initial mode, I used Blender. Never having used Blender before, it took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I learned a lot about different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. Some interesting things that I came upon included the pressure. 
-![blenderpartofmodel](https://livemissouristate-my.sharepoint.com/:i:/r/personal/gwd9024_live_missouristate_edu/Documents/2019%20fall/robot/final%20pics,%20vids/Screenshot%20from%202019-12-13%2011-07-41.png?csf=1&e=Nor5W7)
 
-![sinkingvehicle](https://livemissouristate-my.sharepoint.com/:v:/r/personal/gwd9024_live_missouristate_edu/Documents/2019%20fall/robot/final%20pics,%20vids/sinking%20protot.mp4?csf=1&e=AybkXW)
+![blenderpartofmodel](/assets/2019-12-13-report-deep-sea-robotics/blenderpartofmodel.png)
+
+![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehicle.mp4)
 
 
 # GOING FORWARD
