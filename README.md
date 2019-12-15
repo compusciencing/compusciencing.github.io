@@ -8,11 +8,16 @@ Whenever a pull request is merged into this repository, GitHub Pages will automa
 
 Look at the themes found [here](https://talk.jekyllrb.com/t/jekyll-theme-showcase-share-your-jekyll-themes/1382/15), [here](https://github.com/topics/jekyll-theme), and [here](https://github.com/jekyll/jekyll/wiki/Themes).
 
+This one seems OK: https://github.com/artemsheludko/flexible-jekyll
+
 # Things to do
 
 - Fix the RSS feed button (or remove it)
 - Add key to delete current search (`esc`)
 - Add key to start a search (`/`)
+- Arrow keys to cycle through searched posts
+- Enter to go to post
+- Add tag list that, when an item is clicked, will populate the search box
 
 # Other
 
