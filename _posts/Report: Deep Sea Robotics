@@ -10,7 +10,8 @@ include_mathjax: false
 I define my research as the development of underwater environments and models using Gazebo Simulator. Specifically, the aim of my research was to create a robot model that could withstand deep sea pressures. However, as the semester went by and technical difficulties arose, my research devolved into more of an exploration of the [UUV simulator](https://uuvsimulator.github.io/) while learning how to use new software and operating systems such as [Gazebo Simulator](http://gazebosim.org/), [Github](https://github.com/), [Blender](https://www.blender.org/), and Linux. Although I did not get as far as I had hoped on my research, I developed an initial prototype to the model and altered the existing [UUV simulator environment](https://uuvsimulator.github.io/). 
 
 
-#SETTING UP
+# SETTING UP
+
 With no previous experience using Gazebo and Linux, a lot of my time in the first few weeks were devoted to downloading and differentiating between Linux Systems. After experimenting with [Ubuntu](https://ubuntu.com/) and [Linux Mint](https://linuxmint.com/), both of which are Linux distros, I opted to use Ubuntu which proved much easier to download and run Gazebo. 
 
 #ENVIRONMENT CHANGES/UNDERSTANDING UUV SIMULATOR
