@@ -34,7 +34,7 @@ To create my initial mode, I used Blender. Never having used Blender before, it 
 
 ![blenderpartofmodel](/assets/2019-12-13-report-deep-sea-robotics/blenderpartofmodel.png)
 
-![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehicle.gif)
+![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehiclegif.gif)
 
 
 # GOING FORWARD
