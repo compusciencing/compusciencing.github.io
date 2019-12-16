@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Transformable Wheel Robot Game To Teach Kids About Research
+title: "Report: Robotics Game"
 tags: ["csc596", "robotics", "game", "javascript", "report", "matter.js"]
 author: Normandy Rivver
 include_mathjax: false
