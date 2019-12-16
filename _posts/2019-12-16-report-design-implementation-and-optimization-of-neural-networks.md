@@ -5,7 +5,6 @@ tags: ["csc596", "artificial neural networks", "genetic algorithms", "tank game"
 author: "Anthony Harris"
 ---
 
-# Introduction
 
 Artificial Neural Networks (ANNs) are a form of artificial intelligence (AI) that are widely used in supervised learning tasks; they, as well as their variants, excel in tasks such as image and voice recognition. I intend to use them in a slightly different manner.
 
