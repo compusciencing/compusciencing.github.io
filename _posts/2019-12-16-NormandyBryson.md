@@ -6,7 +6,7 @@ author: Normandy Rivver
 include_mathjax: false
 ---
 
-## THE BEGINNING
+# THE BEGINNING
 
 CSC 596 is a life changing course and I know what you must be thinking “how can a course impact you this much..”Well I am here to share this journey and hopefully show how one course can provide a big boost to not only me but probably any student studying computer science.  One of the issues, or maybe fears, I’ve had with computer science is not knowing what to build, what to try and code, where to start, how to break the problem down, how to find answers to my problems which do not rely on teachers or teaching assistants.  This is a long list of issues and yet CSC 596 not only makes you confront them but helps you overcome them.
 
