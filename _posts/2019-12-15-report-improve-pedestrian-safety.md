@@ -5,8 +5,6 @@ tags: ["smartphones", "walking", "crossing", "pedestrian", "autonomous", "vehicl
 author: "Mark Raymond Jr."
 ---
 
-# Overview
-
 DARPA’s Grand Challenge in the early 2000’s kick-started an aggressive pursuit (by technology and automotive companies alike) of driverless cars. These vehicles face a myriad of challenges in urban settings however, chief among them are ensuring safe interactions with pedestrians. Most state-of-the-art autonomous vehicles use a combination of radar, LIDAR, and cameras to detect and track pedestrians. A significant amount of work has focused on inferring pedestrian intent (e.g., predicting when a person will attempt to cross a roadway) using machine learning-based computer vision techniques. One issue with these approaches is that sensors they rely upon may be unusable in certain weather and lighting conditions. Autonomous systems should always be built with redundancy in mind, by utilizing an array of techniques and sensors to ensure safety and reliability. To that end, this work discusses a novel algorithm for predicting a pedestrian's intent to cross a roadway. This algorithm would be capable of running on modern smartphones and broadcasting pedestrian intent information to nearby vehicles. When incorporated with existing techniques for pedestrian crossing inference, this new approach produces would lead to a more robust pedestrian inference system for autonomous vehicles.
 
 # Introduction
@@ -23,13 +21,11 @@ The area sees very little rainfall and “…also has relatively low winds and a
 
 Android and iOS devices support basic human activity detection. That is, the ability to discern if a user is stationary, walking, running, driving, etc. Our goal here is similar. We attempted to develop a neural network that could discern if a user was exhibiting crossing behaviors orthogonal to their previous activity. We make the assumption that in most cases the user starts stationary at a destination and begins walking towards their destination. We hypothesize that the common behaviors pedestrians exhibit before crossing can be picked by the inertial sensors in a smartphone.
 
-# Data Collection
+# Data Collection and Features
 
 We began by collecting data one of the following features/behaviors that pedestrian would likely exhibit before crossing the street.
 
-## Feature Overview
-
-### Looking Both Ways Before Crossing
+## Looking Both Ways Before Crossing
 
 As a kid you were likely taught (or quickly learned) this basic behavior. Everyone should slow down and look both ways before crossing the street. We can visualize this by plotting the accelerometer readings for a short walk. 
 
@@ -38,7 +34,7 @@ Figure 2 – Looking Both Ways Before Crossing Visualization
 
 As we begin walking there is an initial acceleration from a stationary position. Then we get into our normal stride, but as we get close to the intersection (roughly the center of the image above), we slow down to look (and in some cases may even be stationary for a few seconds) then speed back up to get across the street safely. This pattern diverges slightly from your normal walking pattern and therefore combined with GPS data to confirm proximity to an intersection, and/or another of the behaviors below, is a key indicator of crossing.
 
-### Curb Your Enthusiasm
+## Curb Your Enthusiasm
 
 ![axis_device](../assets/2019-12-15-report-improve-pedestrian-safety/axis_device.png)
 Figure 3- Android Device Axis
@@ -46,11 +42,11 @@ Source: https://developer.android.com/reference/android/hardware/SensorEvent
 
 Jaywalking pedestrians are by definition not crossing at the crosswalk. They are likely crossing at another point in the road, and likely stepping off the curb to do so. This quick bit of acceleration in the vertical Y-axis could also be easily picked up by an accelerometer. Specifically, stepping down from the curb produces a change in the Y-component, while you get a slight acceleration in the Z-component as one moves forward.
 
-### About Face
+## About Face
 
 As a pedestrian approaches a crosswalk, they may need to turn to face the street/crosswalk. This feature would require data from the gyroscopic along with GPS and compass data to confirm a pedestrian’s heading.
 
-## Methodology
+# Methodology
 
 ![image-20191215162359134](../assets/2019-12-15-report-improve-pedestrian-safety/image-20191215162359134.png)
 Figure 4- Labeled Feature

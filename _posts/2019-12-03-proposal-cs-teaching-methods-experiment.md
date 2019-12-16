@@ -5,11 +5,9 @@ tags: ["csc696", "teaching", "pedagogy", "experiment preparation", "msu"]
 author: "Nathan Hartzler"
 ---
 
-# Overview
-
 Pedagogy for Computer Science is still a young area of research where many contributions can be made. I would like to conduct research on a multi-sectioned Missouri State University Department of Computer Science course in the Fall 2020 semester. I will use this proposed Spring 2020 CSC696 course to develop a hypothesis and build an experiment for the Fall 2020 semester.
 
-## Project Milestones
+# Project Milestones
 
 * Develop a good hypothesis
     * Does a tactile demonstration for a theoretical computer science concept increase student understanding of the concept? For example, would students better understand a sorting algorithm if they performed each step of the algorithm with a set of playing cards?
@@ -27,6 +25,6 @@ Pedagogy for Computer Science is still a young area of research where many contr
 * By April 6th, 2020
     * Present the proposed research to the instructors of a multi-sectioned course
 
-## Meetings and Work
+# Meetings and Work
 
 Meetings would be held about once a week for the duration of the Spring 2020 semester. In addition to working towards the above project milestones, I would also use the semester to read STEM Pedagogy methods and Computer Science Pedagogy research papers. The hope would be that this research can be repeated in future semesters.

@@ -5,7 +5,7 @@ tags: ["csc596", "robotics", "game", "javascript", "report", "matter.js"]
 author: Normandy Rivver
 ---
 
-# THE BEGINNING
+# The Beginning
 
 CSC 596 is a life changing course and I know what you must be thinking “how can a course impact you this much..” Well I am here to share this journey and hopefully show how one course can provide a big boost to not only me but probably any student studying computer science.  One of the issues, or maybe fears, I’ve had with computer science is not knowing what to build, what to code, where to start, how to break the problem down, how to find answers to my problems without relying on teachers or teaching assistants.  This is a long list of issues and yet CSC 596 not only makes you confront them but helps you overcome them.
 
@@ -13,7 +13,7 @@ When Dr.  Clark told me he wanted a robot game in JavaScript I was hesitant for 
 
 Despite my reservations I decided to take the plunge, after all if I am going to do programming well I might as well do it.  First things first, learning the framework.  For this project we used [matter.js](https://brm.io/matter-js/), after some initial trial and errors, I was somewhat taken back by how much upfront effort goes into just learning a framework.  I started this project in July and probably spent close to two months just understanding the framework, reading up on it and trying little things here and there, before I felt comfortable with really implementing things.  [Here is my first wheel](https://youtu.be/LAWlVSrMpFs).  This was when I thought things were going to be easy. 
 
-# THE STRUGGLE IS REAL
+# The Struggle Is Real
 
 The first real struggle in the project came when trying to insert the limbs into the wheel.  The car example provided by matter.js was not usable for us because we needed the vehicle to extend/retract limbs and to grow/shrink in size.  You notice [in this video] (https://youtu.be/sh5Ya6LHlhI) that there are limbs within the wheels and we can rotate the object, but it is not near enough compared to what was required to be functional for the game. In [this video](https://youtu.be/yZxBLcUBJKY) you can see the robot is close to be functional in how it moves but the limbs inside the wheel are not correct.
 
@@ -25,7 +25,7 @@ After finally getting the limbs inside the wheels we have something which looks 
 
 SVGs would prove to be the next issue mainly because I decided on using them for terrain generation.  Basically I could draw an SVG image and import it as a terrain into the game and while this caused an increase in load times I believed it would simplify creating terrains, reduce the bouncing effect, and allow for easier to make terrains which were different from each other.  While I could get one terrain loaded and working successfully getting more terrains which were usable proved not successful.  This lack of success was despite drawing an SVG image directly under the original workable svg image and loading it into the program, changing a number of settings to try and see if this helped, and flipping the original terrain in different directions.
 
-# LOOKING AHEAD
+# Looking Ahead
 
 This isn’t to say the project did produce a working prototype but the issues still present and the lack of usable terrain means I would probably go back and just make a randomly generated coded terrain with or just make a few terrains with puzzles to solve by hand.  The final project can be played at the link provided by scrolling down to the bottom of [this page](https://github.com/normandyr/csc596) and clicking the link.  Really this class and this one project is just one small example of how 596 has helped me to be a better programmer.  CSC 596 has mainly helped to give me confidence to solve my programming problems, develop a mindset which approaches problems in a more constructive manner, show how to approach problems to begin with, and to push me toward building my own projects.
 

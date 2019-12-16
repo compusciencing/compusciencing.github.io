@@ -5,8 +5,6 @@ tags: ["csc596", "regression", "keras", "tensorflow", "msu"]
 author: "Alex Wilson"
 ---
 
-# Purpose and Data Set
-
 I worked with stock data because I thought it would be interesting to use machine learning techniques with data that is already primarily in a numerical format. I was inspired by youtubers who used advanced machine learning techniques and automated trading to make money from currencies in video games, crypto currencies, and foreign currency exchanges.
 
 # Data Prepossessing
