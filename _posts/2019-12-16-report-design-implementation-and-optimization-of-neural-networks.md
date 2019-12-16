@@ -12,7 +12,7 @@ Using data abstraction and other process minimization techniques, my goal was to
 
 All project development was done in C#, using the Visual Studio 2019 IDE and GitHub for source control.
 
-## Project Outline
+# Project Outline
 
 The project can be divided into 3 major categories:
 * Tank Game Development
