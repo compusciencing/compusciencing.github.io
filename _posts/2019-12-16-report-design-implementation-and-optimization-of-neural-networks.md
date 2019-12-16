@@ -126,7 +126,7 @@ My implementation of the GA focuses on rapid evolution, largely due to the small
 
 At the time of this post, the game that contains the most fit individual from the population is rendered to the screen. This slows down the iterations considerably, but offers a visual representation of the progress being made. I have a means of only rendering every n iterations, but that n is currently set to 1. Increasing n drastically increases the number of iterations per second, as there is then no extra overhead.
 
-#### Crossing Over
+## Crossing Over
 
 As with the standard implementation of GAs, I implemented a crossover function that crossed the traits of 2 "parent" ANNs and produced an offspring. My implementation is somewhat different, however, in that it biases the offspring toward the traits of the more fit parent. That is, when crossing the parents, I define the topology of the offspring to match the topology of the more fit parent, and then each matching edge is a 60/40 contribution split in favor of the same parent. I did this in the hopes of maintaining an acceptable level of diversity, while simultaneously reducing the time required to find an optimal solution.
 
