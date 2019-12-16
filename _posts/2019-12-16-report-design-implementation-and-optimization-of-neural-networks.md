@@ -136,7 +136,7 @@ The mutations I defined in the tank game are as follows: add a new edge, remove 
 
 ## Fitness Function Engineering
 
-GAs require the developer to define a metric that measures how well a given solution performs. This metric is called the fitness function. The fitness function is arguably the most powerful aspect of GAs, but they also represent the greatest challenge.
+GAs require the developer to define a metric that measures how well a given solution performs. This metric is called the fitness function. The fitness function is arguably the most influential aspect of GAs, but they also represent the greatest challenge.
 
 During the testing phase of this project, I defined and tested a multitude of fitness functions. Each function represents an attempt to define the best description of the task to be solved, and each yielded unique results. There were a few test fitness functions implemented to determine if the GA implementation performed as expected, for example, fitness = number of missiles fired. Each test fitness function was a simple function, similar to the aforementioned number of missiles function, and each yielded the expected results, thus supporting the GA implementation. 
 
