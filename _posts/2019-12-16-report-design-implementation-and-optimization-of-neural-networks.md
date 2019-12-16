@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Report: Design, Implementation, and Optimization of Neural Networks"
-tags: ["csc596", "artificial neural networks", "genetic algorithms", "tank game", "omega gaming project","report"]
+tags: ["csc596", "artificial neural networks", "genetic algorithms", "tank game", "omega gaming project", "report"]
 author: "Anthony Harris"
 ---
 
