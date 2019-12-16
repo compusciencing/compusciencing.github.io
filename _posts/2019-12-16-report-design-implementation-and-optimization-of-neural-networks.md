@@ -130,7 +130,7 @@ At the time of this post, the game that contains the most fit individual from th
 
 As with the standard implementation of GAs, I implemented a crossover function that crossed the traits of 2 "parent" ANNs and produced an offspring. My implementation is somewhat different, however, in that it biases the offspring toward the traits of the more fit parent. That is, when crossing the parents, I define the topology of the offspring to match the topology of the more fit parent, and then each matching edge is a 60/40 contribution split in favor of the same parent. I did this in the hopes of maintaining an acceptable level of diversity, while simultaneously reducing the time required to find an optimal solution.
 
-#### Mutations
+## Mutations
 
 The mutations I defined in the tank game are as follows: add a new edge, remove an existing edge, add a new neuron, change the weight of an edge, and change the bias of an edge. I chose not to remove neurons simply because the removal of an edge would have the same effect and it seemed redundant in the face of my time constraints. Each mutation type has an equal chance of occurring, which would be an area of improvement and/or adjustment for future work.
 
