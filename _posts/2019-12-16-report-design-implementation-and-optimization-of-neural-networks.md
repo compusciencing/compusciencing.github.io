@@ -134,7 +134,7 @@ As with the standard implementation of GAs, I implemented a crossover function t
 
 The mutations I defined in the tank game are as follows: add a new edge, remove an existing edge, add a new neuron, change the weight of an edge, and change the bias of an edge. I chose not to remove neurons simply because the removal of an edge would have the same effect and it seemed redundant in the face of my time constraints. Each mutation type has an equal chance of occurring, which would be an area of improvement and/or adjustment for future work.
 
-#### Fitness Function Engineering
+## Fitness Function Engineering
 
 GAs require the developer to define a metric that measures how well a given solution performs. This metric is called the fitness function. The fitness function is arguably the most powerful aspect of GAs, but they also represent the greatest challenge.
 
