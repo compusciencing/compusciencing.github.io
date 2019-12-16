@@ -8,7 +8,7 @@ author: "Anthony Harris"
 
 Artificial Neural Networks (ANNs) are a form of artificial intelligence (AI) that are widely used in supervised learning tasks; they, as well as their variants, excel in tasks such as image and voice recognition. I intend to use them in a slightly different manner.
 
-Using data abstraction and other process minimization techniques, my goal was to develop a novel ANN that could interpret and respond to an environment in a game scenario in a way that more closely resembles a human player; such an ANN would be representative of the [Omega Gaming Project's (OGP)](https://www.omega-gaming-project.org) proposed AlphaNet. This task was particularly challenging given the complexity of the problems I attempted to solve, but progress was made nonetheless.
+Using data abstraction and other process minimization techniques, my goal was to develop a novel ANN that could interpret and respond to an environment in a game scenario in a way that more closely resembles a human player; such an ANN would represent the [Omega Gaming Project's (OGP)](https://www.omega-gaming-project.org) proposed AlphaNet. This task was particularly challenging given the complexity of the problems I attempted to solve, but progress was made nonetheless.
 
 All project development was done in C#, using the Visual Studio 2019 IDE and GitHub for source control.
 
