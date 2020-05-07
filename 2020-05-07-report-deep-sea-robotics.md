@@ -7,38 +7,34 @@ author: "Fiona Wu"
 include_mathjax: false
 ---
 
-#Abstract
-
+# Abstract
 According to the Smithsonian, the enigmatic deep sea makes up over 95% of the Earth’s living space with an astonishing variety of organisms. It provides ample opportunities for discoveries in fields of medicine, culinary arts, and energy production. Knowledge about the deep sea helps to predict and remediate sea-related hazards such as earthquakes and tsunamis which causes billions of dollars of damage each year. While the deep sea is a growing field of exploration, it has a long way to go before reaching the level of understanding that humans have about the land and the sky. Less than 20% of the sea is explored and mapped (National Oceanic and Atmospheric Administration, 2018). Exploration of the ocean is often difficult due to the high cost, complexity of underwater vehicles, and the limitations of technologies.  This study designs a prototype robot with mobility that can withstand deep sea conditions, navigate the water, and collect biological, chemical, physical, geological, and archaeological data using Gazebo Simulator. The final prototype can withstand 200 atmospheres of pressure (2000 meters below the sea surface), navigate with an Xbox 360 controller or the command line, and collect data with pressure sensors, camera, GPS, and magnometer.
 
-#Introduction
-
+# Introduction
 The ocean and its understanding is essential to mankind, which makes it possible to regulate climate, ship products, and provide services like food, medicine, and much more.  For the fiscal year of 2020, the National Oceanic and Atmospheric Administration (NOAA) allocated $42 million to Ocean Exploration and Research (NOAA, 2019). In the past, we have relied on sonar imaging to collect data from the sea, due to the cost, complexity of underwater vehicles, and the limitations of technologies available. The most efficient way to explore the deep sea are through remotely operated vehicles (ROVs) and automated underwater vehicles (AUVs).
 In modern times, the first step to develop a robot is using a simulator. A simulator is a tool that developers can use to design a robot and its application without a physical machine, and then transfer to and test through the physical world, saving both time and cost.  For underwater vehicles, simulation prior to actual operations is critical. Missions with underwater vehicles are even more costly and time consuming due to the special environment, the salinity, depth, and movement of the sea. The loss of a prototype at sea if communication fails is exactly the scenario that scientists and developers try to avoid.  In this study, I create a deep sea robot with consideration of current deep sea robots, different simulation platforms, operating systems, and shapes. 
 
-#Engineering Goals
-
+# Engineering Goals
 This goal of this project is to design a robot that can withstand deep sea conditions and navigate the waters, which can help to make discoveries and better our understanding about the deep sea.
 
-#Materials
+# Materials
+* Computer 
+* Ubuntu Operating System 
+* Blender
+* Gazebo Simulator
+* ROS Melodic
+* Unmanned Underwater Vehicle Simulator
 
-*Computer 
-*Ubuntu Operating System 
-*Blender
-*Gazebo Simulator
-*ROS Melodic
-*Unmanned Underwater Vehicle Simulator
-
-#Background and Related Work
+# Background and Related Work
 With no previous experience in simulating robots, I devoted a month and a half of initial research time to installing, differentiating, and understanding necessary programs, Gazebo Simulator, Robot Operating System (ROS), Linux distributions, and 3D software. To use these programs, I had to be able to code in XML, C++, and Python. Gazebo Simulator is an open-source dynamic 3D simulator with the capability to simulate populations of robots in complex indoor and outdoor environments (Gazebo, 2019). Working together with Robot Operating System (ROS) that provides necessary interfaces for the robot, Gazebo has become a powerful and popular robot simulator for the roboticists. It has been used as the simulation platform for many national and international contests, such as DARPA Subterranean Challenge (2018-2021), Virtual RobotX Competition (2019), and the NASA Space Robotics Challenge (2016-2017). However, Gazebo and ROS are only compatible on Unix operating systems, and not Microsoft Windows (the operating system on my computer). Thus, I spent time choosing an operating system compatible with both Gazebo and ROS out of MacOS and Linux Distros (Linux Mint and Ubuntu). The biggest difference between Linux Mint and Ubuntu is user interface and support implementations (Devčić, 2016). After experimenting with Linux Mint and Ubuntu, I opted to use Ubuntu 18.04 which proved more efficient to download and run Gazebo. There is also more documentation in context of robot simulation with Ubuntu.  After setting up my computer, I studied 3D software program that I could use to create meshes that simulate the robot. I ended up using Blender over Maya and 3ds Max, because of its price and compatibility with Ubuntu (Educba, n.d.). Then, came the challenge to design a robot through simulation. 
 
-#Methods
+# Methods
 To develop my aquatic robot, I split the task into two parts: the environment and the robot. After setting up my computer, the first four months was devoted to developing the environment that my robot would reside in, with the help of the Unmanned Underwater Vehicle Simulator (UUV Simulator). Next, I spent another four months developing the actual robot and resolving any issues.
 
-##Using the Unmanned Underwater Vehicle (UUV) Simulator
+## Using the Unmanned Underwater Vehicle (UUV) Simulator
 The Unmanned Underwater Vehicle (UUV) Simulator is a package of Gazebo plugins and ROS nodes that facilitate the simulation of underwater vehicles and environments, initially created for the EU ECSEL Project SWARMS (Manhães et al., 2020). My project utilized the UUV simulator to develop the robot and its environment. Although Gazebo has several built in default underwater environments, they are not as sophisticated as the UUV simulator that is appropriate for my research. On the other hand, the UUV Simulator is not very well documented or updated. Some issues exist in the installation and the creation of new vehicles. 
 
-##Environment
+## Environment
 To create a functioning environment for my aquatic robot, I altered, merged, and tested parts of the empty underwater world and the lake environment in the UUV simulator. The empty underwater world is simply a body of water in a rectangular prism (Figure 1). To consider additional depth that would better suit my aquatic robot, I expanded the pose and collision of each of the “walls” of the sea (Figure 2).
 
 
@@ -48,11 +44,11 @@ The depth I defined was 2000 meters. The final dimensions are 8000x8000x2000 met
 
 Afterwards, I combined the lake environment (Figure 4) with the empty underwater world environment to build a deep sea environment with varied topography at the sea floor. 
 
-##Robot
-###Initial Research
+## Robot
+### Initial Research
 Prior to simulating my aquatic robot and making design choices, I studied how different materials and shapes interact with deep sea pressure, existing deep sea robots, and animal adaptations to the deep sea. 
 
-####Shapes and Materials
+#### Shapes and Materials
 One of the biggest challenges to building a robot underwater, as opposed to land is the difference in pressure. Pressure is defined as the force per unit area. Unlike gas, water does not exert equal pressure on all sides. More pressure is exerted on the bottom of the object than the top. Combined with the descent of an object in water, pressure is constantly changing. For each 10 meters of depth, the pressure increases by one atmosphere.  
 	To counteract the forces of pressure on the material, wall tension occurs in the casing of the material.  Wall tension is proportional to the radius and the pressure exerted. The most common shapes used for pressure vessels are spheres and cylinders. The cylinder’s wall tension or hoop stress is calculated as: 
 
@@ -67,7 +63,7 @@ Where ro = inner radius and σa is the axial stress/wall tension.
 Both wall tensions are calculated assuming that the object is at equilibrium; the sum of the forces is 0. The resulting wall tension of a sphere, with a given radius r is two times smaller than that of the cylinder (Bednar, 1981). 
 	Thus, the sphere is the most efficient shape to withstand pressure because of its equal distribution on all sides and its minimal surface area.  Fundamentally, this makes the sphere a better candidate for pressure vessels. However, due to the high cost of manufacturing a sphere vessel, a cylinder is the more common pressure vessel in current existing studies (Geelhoed, 2016).
 
-####Current Deep Sea Robots
+#### Current Deep Sea Robots
 Today, un-manned deep sea robots can be categorized as remotely operated vehicles (ROVs) or autonomous underwater vehicles (AUVs). While ROVs must be physically connected to the ship in order for humans to operate, AUV’s are independent, pre-programmed, and free of cords. ROVs are better at collecting samples and manipulations of the sea floor with human manipulation; however, AUVs are more efficient at creating detailed maps and measuring properties of the water with free movement (Chadwick, 2010). Today, there are even ROV/AUV hybrids.  Some of the most famous and efficient deep sea vehicles used by the National Oceanic and Atmospheric Administration (NOAA, n.d.c) include the AUV Sentry (Figure 7), ROV Deep Discoverer (Figure 5), and ROV Hercules (Figure 6). The most common design for ROVs is a prism frame.
 
 
@@ -80,7 +76,7 @@ However, the AUV Sentry has a more streamline design that allows it to ascend, d
 
 The main purposes of these robots are to collect biological and geological samples, as well as, survey the sea floor with sonar mapping systems. 
 
-####Deep Sea Animals and their adaptations
+#### Deep Sea Animals and their adaptations
 There are many animals with incredible adaptations that can survive the crushing pressure of the deep sea. A few include the blobfish, giant squid, and Cuvier’s beaked whale. Above the sea surface, the blobfish (Figure 8) is often deemed the ugliest creature. But its misshaped, ‘blobby’ appearance is just an example of how drastically deep sea pressure is different from the water at surface.  Living over 600 meters below the sea surface, the pressure is 120 times greater. At the surface, the blobfish may be a little floppy; but deep down, in its habitat, the blobfish would be a regular shaped fish (Figure 9) due to high water pressures. Like the blobfish, other deep sea creatures often lack a swim bladder, a gas filled cavity which acts to keep a fish buoyant in the water. This absence means that the creature will not collapse under the extreme pressure (Schultz, 2013). This is also one of the reasons why super-deep sea fish have minimal skeletons and little muscle (Wittenberg et al., 1980). In the context of deep sea vehicles, the optimal robot would contain very little skeleton and no gas-filled cavities too.
 
 
