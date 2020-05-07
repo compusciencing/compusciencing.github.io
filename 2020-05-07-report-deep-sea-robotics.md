@@ -92,7 +92,7 @@ Finally, the Cuvier’s beaked whale can rapidly adjust to the deep sea pressure
 
 In order to dive so deep, the whale must store enough oxygen for the long trips and endure the crushing pressure of the deep sea. Beaked whales rely on oxygen to breathe, so they must be able to hold their breath for long periods of time. In an aquatic robot, this is not a problem because robots do not breathe. As the beaked whales descends, their lungs shrink and gasses such as nitrogen in their blood and tissues will be compressed. The theory to how the beaker whale adapts to this scenario is by collapsing its lungs to force air away from the alveoli, which transfers gasses into the blood (Pavid, 2017). For an aquatic robot, this may mean having collapsible parts. 
 
-###Prototype 1
+### Prototype 1
 To create my initial model and its meshes, I used Blender, a 3D software program. It took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I studied different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. The first prototype was relatively simple and had no device of movement (Figure 12). The shape at the end became a hemisphere on top of protruding sheets that make an ellipsoid (Figure 13). 
 
 
@@ -100,17 +100,17 @@ To create my initial model and its meshes, I used Blender, a 3D software program
 
 This prototype was modeled as a sdf, a file type in XML format created as part of the Gazebo robot simulator. The sdf file contains objects and/or environments. Some advantages of using the sdf file type are its simplicity and compatibleness with Gazebo Simulator. However, the sdf file type has limitations including the inability to adapt pressure sensors and movement. I moved to the urdf and xacro file formats for Prototype 2, because there is more documentation on how to use urdf files when modeling robots and it has more capabilities such as adding sensors and movement.  
 
-###Prototype 2
+### Prototype 2
 My final product resembles a squid (Figure 14). Unlike Prototype 1, there are fewer sheets/tentacles. The top hemisphere has a radius of 1.44 meters and a width of 0.5 meters. The sheets/tentacles are 4.6 meters in length. All thrusters and sensors are located inside the hemisphere. It uses 5 thrusters to enable its movement. It can be controlled using an Xbox 360 controller and manually controlled through the command line. 
 
 
 
 It has several sensors, including a magnetometer, which measures the magnetic forces, pressure sensors, a camera (Figure 15), sonar, and a GPS (Figure 16). These sensors are all placed underneath the head of the aquatic robot. Please refer to the video for better documentation on how the aquatic robot works. 
-*Camera allows images and videos.
-*Magnometer measures magnetic fields.
-*GPS shows coordinates/location of robot.
-*Pressure sensor gathers pressure data at the depth of the robot.
-*Sonar provides sonar imaging of surroundings.
+* Camera allows images and videos.
+* Magnometer measures magnetic fields.
+* GPS shows coordinates/location of robot.
+* Pressure sensor gathers pressure data at the depth of the robot.
+* Sonar provides sonar imaging of surroundings.
 
 
 
@@ -128,7 +128,7 @@ The product has been moved into a urdf/xacro format. Unlike the sdf format used 
 
 
 
-#Conclusion and Future Work
+# Conclusion and Future Work
 The engineering goals set out at the beginning of this study comprised of designing a robot that can withstand deep sea conditions and navigate the waters. The final prototype, Prototype 2, achieves these goals:
 1.	Prototype 2 does not crush 2000 meters under the sea surface or 200 atmospheres of pressure. The deep sea is defined as below 200 meters (Walker, n.d.). 
 2.	Prototype 2 can navigate the waters through an Xbox 360 controller and the command line.
@@ -136,10 +136,10 @@ The engineering goals set out at the beginning of this study comprised of design
 
 The deep sea is crucial to human’s daily lives in unimaginable ways. The deep sea supports fish populations, decreases the impact of carbon emissions, and contain massive reserves of oil, gasses, and minerals used in new technology. Deep sea environments could lead to new antibiotics and anti-cancer chemicals. Yet, the deep sea is vastly inaccessible and unknown (Smith, 2014). To safely cultivate and not exploit the ocean’s resources, the deep sea must be understood with the help of underwater vehicles like Prototype 2. Prototype 2 is important, as it can help to make discoveries and better our understanding of the deep sea. Although Prototype 2 has reached its initial engineering goals, future advancements can be made including independent navigation, adjustable speeds, more sensors, and expanded robot capabilities. 
 
-#Risk and Safety
+# Risk and Safety
 There is no risk to perform this experiment. 
 
-#References
+# References
 Aderinola, B. (2019, September 18). [ROS in 5 mins] 028 – What is Gazebo simulation? Retrieved from https://www.theconstructsim.com/ros-5-mins-028-gazebo-simulation/
 Ames, H. (2019, November 22). The Physical and Behavioral Adaptions of the Giant Squid. Retrieved from https://sciencing.com/physical-behavioral-adaptions-giant-squid-8462698.html
 Amos, J. (2014, March 26). Beaked whale is deep-dive champion. Retrieved from https://www.bbc.com/news/science-environment-26743090
