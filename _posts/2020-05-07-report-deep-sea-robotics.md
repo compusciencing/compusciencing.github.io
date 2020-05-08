@@ -150,9 +150,10 @@ The product has been moved into a urdf/xacro format. Unlike the sdf format used 
 
 # Conclusion and Future Work
 The engineering goals set out at the beginning of this study comprised of designing a robot that can withstand deep sea conditions and navigate the waters. The final prototype, Prototype 2, achieves these goals:
-1.	Prototype 2 does not crush 2000 meters under the sea surface or 200 atmospheres of pressure. The deep sea is defined as below 200 meters (Walker, n.d.). 
-2.	Prototype 2 can navigate the waters through an Xbox 360 controller and the command line.
-3.	Prototype 2 has pressure sensors, camera, GPS, and a magnometer that aid in its movement and collecting valuable data.
+
+1. Prototype 2 does not crush 2000 meters under the sea surface or 200 atmospheres of pressure. I define the deep sea as below 200 meters (Walker, n.d.). 
+2. Prototype 2 can navigate the waters using an Xbox 360 controller and the command line.
+3. Prototype 2 has pressure sensors, camera, GPS, and a magnetometer that aid in its movement and collecting valuable data.
 
 The deep sea is crucial to human’s daily lives in unimaginable ways. The deep sea supports fish populations, decreases the impact of carbon emissions, and contain massive reserves of oil, gasses, and minerals used in new technology. Deep sea environments could lead to new antibiotics and anti-cancer chemicals. Yet, the deep sea is vastly inaccessible and unknown (Smith, 2014). To safely cultivate and not exploit the ocean’s resources, the deep sea must be understood with the help of underwater vehicles like Prototype 2. Prototype 2 is important, as it can help to make discoveries and better our understanding of the deep sea. Although Prototype 2 has reached its initial engineering goals, future advancements can be made including independent navigation, adjustable speeds, more sensors, and expanded robot capabilities. 
 
