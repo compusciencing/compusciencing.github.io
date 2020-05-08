@@ -31,6 +31,7 @@ However, Gazebo and ROS are only compatible on Unix operating systems, and not M
 After setting up my computer, I studied 3D software program that I could use to create meshes that simulate the robot. I ended up using [Blender](https://www.blender.org/) over Maya and 3ds Max, because of its price and compatibility with Ubuntu (Educba, n.d.). Then, came the challenge to design a robot through simulation. 
 
 # Methods
+
 To develop my aquatic robot, I split the task into two parts: the environment and the robot. After setting up my computer, the first four months was devoted to developing the environment that my robot would reside in, with the help of the Unmanned Underwater Vehicle Simulator (UUV Simulator). Next, I spent another four months developing the actual robot and resolving any issues.
 
 ## Using the Unmanned Underwater Vehicle (UUV) Simulator
