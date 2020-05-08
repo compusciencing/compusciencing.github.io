@@ -144,6 +144,7 @@ I modeled this prototype as an SDF file, which is an XML file type created as pa
 My final product resembles a squid (Figure 14). Unlike Prototype 1, there are fewer sheets/tentacles. The top hemisphere has a radius of 1.44 meters and a width of 0.5 meters. The sheets/tentacles are 4.6 meters in length. All thrusters and sensors are located inside the hemisphere. It uses 5 thrusters to enable its movement. It can be controlled using an Xbox 360 controller and manually controlled through the command line. 
 
 ![figure17](/assets/2020-05-07-report-deep-sea-robotics/17OuterAppearanceofPrototype2.png)
+
 *Figure 14: Outer appearance of Prototype 2.*
 
 ![figure18](/assets/2020-05-07-report-deep-sea-robotics/18ExampleofCameraOutput.png)
