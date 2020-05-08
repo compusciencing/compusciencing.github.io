@@ -110,6 +110,7 @@ The main purposes of these robots are to collect biological and geological sampl
 There are many animals with incredible adaptations that can survive the crushing pressure of the deep sea. A few include the blobfish, giant squid, and Cuvier’s beaked whale. Above the sea surface, the blobfish (Figure 8) is often deemed the ugliest creature. But its misshaped, ‘blobby’ appearance is just an example of how drastically deep sea pressure is different from the water at surface.  Living over 600 meters below the sea surface, the pressure is 120 times greater. At the surface, the blobfish may be a little floppy; but deep down, in its habitat, the blobfish would be a regular shaped fish (Figure 9) due to high water pressures. Like the blobfish, other deep sea creatures often lack a swim bladder, a gas filled cavity which acts to keep a fish buoyant in the water. This absence means that the creature will not collapse under the extreme pressure (Schultz, 2013). This is also one of the reasons why super-deep sea fish have minimal skeletons and little muscle (Wittenberg et al., 1980). In the context of deep sea vehicles, the optimal robot would contain very little skeleton and no gas-filled cavities too.
 
 ![figure11](/assets/2020-05-07-report-deep-sea-robotics/11BlobfishatSeaSurface.jpg)
+
 *Figure 8: Blobfish at sea surface.*
 
 ![figure12](/assets/2020-05-07-report-deep-sea-robotics/12BlobfishinNaturalHabitat.jpg)
