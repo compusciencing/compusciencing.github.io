@@ -140,6 +140,7 @@ To create my initial model and its meshes, I used Blender, a 3D software program
 I modeled this prototype as an SDF file, which is an XML file type created as part of the Gazebo robot simulator. The SDF file contains objects and/or environments. Some advantages of using the SDF file type are its simplicity and compatibleness with Gazebo Simulator. However, the SDF file type has limitations including the inability to adapt pressure sensors and movement. I moved to the URDF and Xacro file formats for Prototype 2, because there is more documentation on how to use URDF files when modeling robots and it has more capabilities such as adding sensors and movement.  
 
 ### Prototype 2
+
 My final product resembles a squid (Figure 14). Unlike Prototype 1, there are fewer sheets/tentacles. The top hemisphere has a radius of 1.44 meters and a width of 0.5 meters. The sheets/tentacles are 4.6 meters in length. All thrusters and sensors are located inside the hemisphere. It uses 5 thrusters to enable its movement. It can be controlled using an Xbox 360 controller and manually controlled through the command line. 
 
 ![figure17](/assets/2020-05-07-report-deep-sea-robotics/17OuterAppearanceofPrototype2.png)
