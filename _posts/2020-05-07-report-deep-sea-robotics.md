@@ -1,6 +1,6 @@
 +---
 layout: post
-title: "Deep Sea Robotics"
+title: "Report: Deep Sea Robotics Part 2"
 categories: ["Missouri State University"]
 tags: ["csc197", "deep sea", "simulation", "robotics","report", "self-study", "gazebo simulator", "ros melodic", "blender", "uuv simulator", "ubuntu"]
 author: "Fiona Wu"
@@ -179,4 +179,3 @@ What is SDFormat. (n.d.). Retrieved from http://sdformat.org/
 Why Gazebo? (n.d.). Retrieved from http://gazebosim.org/
 Wittenberg, J. B., Copeland, D. E., Haedrich, F. R., & Child, J. S. (1980). The swimbladder of deep-sea fish: the swimbladder wall is a lipid-rich barrier to oxygen diffusion. Journal of the Marine Biological Association of the United Kingdom, 60(2), 263-276.
 Wu, F. (2019, December 13). Report: Deep Sea Robotics. Retrieved from https://compusciencing.github.io/report-deep-sea-robotics.html
-
