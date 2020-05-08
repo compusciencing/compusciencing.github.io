@@ -40,7 +40,7 @@ The Unmanned Underwater Vehicle (UUV) Simulator is a package of Gazebo plugins a
 
 ## Environment
 
-To create a functioning environment for my aquatic robot, I altered, merged, and tested parts of the empty underwater world and the lake environment in the UUV simulator. The empty underwater world is simply a body of water in a rectangular prism (Figure 1). To consider additional depth that would better suit my aquatic robot, I expanded the pose and collision of each of the “walls” of the sea (Figure 2).
+To create a functioning environment for my aquatic robot, I altered, merged, and tested parts of the empty underwater world and the lake environment in the UUV simulator. The empty underwater world is a body of water in a rectangular prism (Figure 1). To consider additional depth that would better suit my aquatic robot, I expanded the pose and collision of each of the “walls” of the sea (Figure 2).
 
 ![figure1](/assets/2020-05-07-report-deep-sea-robotics/1theUnderwaterWorldZoomedOut.png)
 *Figure 1: The underwater world zoomed out.*
