@@ -133,6 +133,7 @@ To dive so deep, the whale must store enough oxygen for the lengthy trips and en
 To create my initial model and its meshes, I used Blender, a 3D software program. It took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I studied different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. The first prototype was relatively simple and had no device of movement (Figure 12). The shape at the end became a hemisphere on top of protruding sheets that make an ellipsoid (Figure 13). 
 
 ![figure15](/assets/2020-05-07-report-deep-sea-robotics/15Prototype1movingDownInDeepSeaEnvironment.gif)
+
 *Figure 12: Prototype 1 moving down in the deep sea environment.*
 ![figure16](/assets/2020-05-07-report-deep-sea-robotics/16EllipsoidofPrototype2.png)
 *Figure 13: The ellipsoid of Prototype 1.*
