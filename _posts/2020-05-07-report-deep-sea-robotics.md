@@ -7,6 +7,7 @@ include_mathjax: false
 ---
 
 # Abstract
+
 According to the Smithsonian, the enigmatic deep sea makes up over 95% of the Earth’s living space with an astonishing variety of organisms. It provides ample opportunities for discoveries in fields of medicine, culinary arts, and energy production. Knowledge about the deep sea helps to predict and remediate sea-related hazards such as earthquakes and tsunamis which causes billions of dollars of damage each year. While the deep sea is a growing field of exploration, it has a long way to go before reaching the level of understanding that humans have about the land and the sky. Less than 20% of the sea is explored and mapped (National Oceanic and Atmospheric Administration, 2018). Exploration of the ocean is often difficult due to the high cost, complexity of underwater vehicles, and the limitations of technologies.  This study designs a prototype robot with mobility that can withstand deep sea conditions, navigate the water, and collect biological, chemical, physical, geological, and archaeological data using Gazebo Simulator. The final prototype can withstand 200 atmospheres of pressure (2000 meters below the sea surface), navigate with an Xbox 360 controller or the command line, and collect data with pressure sensors, camera, GPS, and magnometer.
 
 # Introduction
