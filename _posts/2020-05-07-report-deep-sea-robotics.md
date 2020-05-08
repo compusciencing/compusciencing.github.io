@@ -60,7 +60,9 @@ Afterwards, I combined the lake environment (Figure 4) with the empty underwater
 *Figure 4: The sea floor of the deep sea environment*
 
 ## Robot
+
 ### Initial Research
+
 Prior to simulating my aquatic robot and making design choices, I studied how different materials and shapes interact with deep sea pressure, existing deep sea robots, and animal adaptations to the deep sea. 
 
 #### Shapes and Materials
