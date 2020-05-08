@@ -17,6 +17,7 @@ The ocean and its understanding is essential to mankind. A better understanding 
 The first step in robot development typically involves simulation. A simulator is a tool developers use to design and prototype robot hardware and software without a physical device. Designs can then be fabricated and transferred to a real-world system. Use of a simulator in early design stages saves both time and cost.  For underwater vehicles, simulation prior to actual operations is critical. Missions with underwater vehicles are even more costly and time consuming due to the special environment, the salinity, depth, and movement of the sea. Losing a prototype at sea if communication fails is exactly the scenario that scientists and developers try to avoid.  In this study, I create a deep sea robot with consideration of current deep sea robots, different simulation platforms, operating systems, and shapes. 
 
 # Engineering Goals
+
 This goal of this project is to design a robot that can withstand deep sea conditions and navigate the waters, which can help to make discoveries and better our understanding about the deep sea.
 
 # Materials
