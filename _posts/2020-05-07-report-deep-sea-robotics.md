@@ -160,40 +160,40 @@ The deep sea is crucial to our daily lives in unimaginable ways. The deep sea su
 
 # References
 
-Aderinola, B. (2019, September 18). [ROS in 5 mins] 028 – What is Gazebo simulation? Retrieved from https://www.theconstructsim.com/ros-5-mins-028-gazebo-simulation/
-Ames, H. (2019, November 22). The Physical and Behavioral Adaptions of the Giant Squid. Retrieved from https://sciencing.com/physical-behavioral-adaptions-giant-squid-8462698.html
-Amos, J. (2014, March 26). Beaked whale is deep-dive champion. Retrieved from https://www.bbc.com/news/science-environment-26743090
-AUV Sentry. (n.d.). Retrieved from https://ndsf.whoi.edu/sentry/
-Ballard, R. D. (2014, October). Why we must explore the sea. Retrieved from https://www.smithsonianmag.com/science-nature/why-we-must-explore-sea-180952763/
-Bednar, H.H. (1981). Pressure Vessel Design Handbook.
-The Blobfish: 5 Facts About the Ocean's Ugliest Mug. (2019, June 25). Retrieved from https://30a.com/worlds-ugliest-fish-blobfish/
-Chadwick, B. (2010, June 25). Remotely Operated Vehicles (ROVs) and Autonomous Underwater Vehicles (AUVs. Retrieved from https://oceanexplorer.noaa.gov/explorations/02fire/background/rovs_auvs/rov_auv.html
-Davies, E. (n.d.). The deepest diving animal is not what you'd expect. Retrieved from https://ourblueplanet.bbcearth.com/blog/?article=the-oceans-deepest-diving-animals
-Devčić, I. I. (2016, September 30). Linux Mint vs Ubuntu: What is the Difference? Retrieved from https://beebom.com/ubuntu-vs-linux-mint-what-is-the-difference/
-Dixon, C. (2015, September 14). Do Humans Have a Future in Deep Sea Exploration? Retrieved from http://Do Humans Have a Future in Deep Sea Exploration?
-Educba. (n.d.). Difference Between Maya vs 3ds Max vs Blender. Retrieved from https://www.educba.com/maya-vs-3ds-max-vs-blender/
-Geelhoed, J. (2016). Materials and shape of underwater structures. Retrieved from https://www.scribd.com/document/439664241/shapes-and-materials-for-underwater-structures-pdf
-Hylton, W. S. (2020, February). History's Largest Mining Operation Is About to Begin.
-Installation. (n.d.). Retrieved from https://uuvsimulator.github.io/installation/
-Introduction. (n.d.). Retrieved from https://uuvsimulator.github.io/packages/uuv_simulator/intro/
-Kunzig, R. (2001, January 19). The Physics of . . . Deep-sea Animals. Retrieved from https://www.discovermagazine.com/the-sciences/the-physics-of-deep-sea-animals
-Manhães, M.M., Scherer, S.A., Voss, M., Douat, L.R., & Rauschenbach, T. (2016). UUV Simulator: A Gazebo-based package for underwater intervention and multi-robot simulation. OCEANS 2016 MTS/IEEE Monterey, 1-8.
-Manhães, M. M. M. (2018, August 29). Enabling the Simulation of Multi-robot underwater missions with Gazebo. Retrieved from https://roscon.ros.org/2018/presentations/ROSCon2018_uuvsimulator.pdf
-MarineBio Conservation Society. (n.d.). Giant Squid. Retrieved from https://marinebio.org/species/giant-squid/architeuthis-dux/
-McKeon, A. (n.d.). Deep-Sea Exploration Will Unveil a Vast, Unexplored World. Retrieved from http://now.northropgrumman.com/deep-sea-exploration-will-unveil-a-vast-unexplored-world
-NOAA. (n.d.). Autonomous Underwater Vehicle Sentry. Retrieved from https://oceanexplorer.noaa.gov/technology/subs/sentry/sentry.html
-NOAA. (n.d.). Budget Process. Retrieved from https://research.noaa.gov/External-Affairs/Budget
-NOAA. (n.d.). Observation Platforms: Submersibles. Retrieved from https://oceanexplorer.noaa.gov/technology/subs/subs.html
-Ocean Portal Team. (2018, December 18). The Deep Sea. Retrieved from https://ocean.si.edu/ecosystems/deep-sea/deep-sea
-Palmer, J. (2015, January 15). Secrets of the animals that dive deep into the ocean. Retrieved from http://www.bbc.com/earth/story/20150115-extreme-divers-defy-explanation
-Pavid, K. (2017, April 27). Secrets of the deepest-diving whales. Retrieved from https://www.nhm.ac.uk/discover/secrets-of-deep-diving-whales.html
-RJE International. (2017, July 19). What's the difference between an ROV and an AUV? Retrieved from https://www.rjeint.com/whats-difference-rov-auv/
-Robotic simulation scenarios with Gazebo and ROS. (2015, February 26). Retrieved from https://www.generationrobots.com/blog/en/robotic-simulation-scenarios-with-gazebo-and-ros/
-Schultz, C. (2013, September 13). In Defense of the Blobfish: Why the "World's Ugliest Animal" Isn't as Ugly as You Think It Is. Retrieved from https://www.smithsonianmag.com/smart-news/in-defense-of-the-blobfish-why-the-worlds-ugliest-animal-isnt-as-ugly-as-you-think-it-is-6676336/
-Smith, C. (2014, July 30). Deep Sea Crucial to Our Lives, Study Shows. Retrieved from https://ourworld.unu.edu/en/deep-sea-crucial-to-our-lives-study-shows
-US Department of Commerce, & National Oceanic and Atmospheric Administration. (2009, January 1). How much of the ocean have we explored? Retrieved from https://oceanservice.noaa.gov/facts/exploration.html
-Walker, R., & Shank, T. (n.d.). Deep Sea Biology. Retrieved from https://divediscover.whoi.edu/hot-topics/deepsea/
-What is SDFormat. (n.d.). Retrieved from http://sdformat.org/
-Why Gazebo? (n.d.). Retrieved from http://gazebosim.org/
-Wittenberg, J. B., Copeland, D. E., Haedrich, F. R., & Child, J. S. (1980). The swimbladder of deep-sea fish: the swimbladder wall is a lipid-rich barrier to oxygen diffusion. Journal of the Marine Biological Association of the United Kingdom, 60(2), 263-276.
-Wu, F. (2019, December 13). Report: Deep Sea Robotics. Retrieved from https://compusciencing.github.io/report-deep-sea-robotics.html
+- Aderinola, B. (2019, September 18). ROS in 5 mins – What is Gazebo simulation? Retrieved from https://www.theconstructsim.com/ros-5-mins-028-gazebo-simulation/
+- Ames, H. (2019, November 22). The Physical and Behavioral Adaptions of the Giant Squid. Retrieved from https://sciencing.com/physical-behavioral-adaptions-giant-squid-8462698.html
+- Amos, J. (2014, March 26). Beaked whale is deep-dive champion. Retrieved from https://www.bbc.com/news/science-environment-26743090
+- AUV Sentry. (n.d.). Retrieved from https://ndsf.whoi.edu/sentry/
+- Ballard, R. D. (2014, October). Why we must explore the sea. Retrieved from https://www.smithsonianmag.com/science-nature/why-we-must-explore-sea-180952763/
+- Bednar, H.H. (1981). Pressure Vessel Design Handbook.
+- The Blobfish: 5 Facts About the Ocean's Ugliest Mug. (2019, June 25). Retrieved from https://30a.com/worlds-ugliest-fish-blobfish/
+- Chadwick, B. (2010, June 25). Remotely Operated Vehicles (ROVs) and Autonomous Underwater Vehicles (AUVs. Retrieved from https://oceanexplorer.noaa.gov/explorations/02fire/background/rovs_auvs/rov_auv.html
+- Davies, E. (n.d.). The deepest diving animal is not what you'd expect. Retrieved from https://ourblueplanet.bbcearth.com/blog/?article=the-oceans-deepest-diving-animals
+- Devčić, I. I. (2016, September 30). Linux Mint vs Ubuntu: What is the Difference? Retrieved from https://beebom.com/ubuntu-vs-linux-mint-what-is-the-difference/
+- Dixon, C. (2015, September 14). Do Humans Have a Future in Deep Sea Exploration? Retrieved from http://Do Humans Have a Future in Deep Sea Exploration?
+- Educba. (n.d.). Difference Between Maya vs 3ds Max vs Blender. Retrieved from https://www.educba.com/maya-vs-3ds-max-vs-blender/
+- Geelhoed, J. (2016). Materials and shape of underwater structures. Retrieved from https://www.scribd.com/document/439664241/shapes-and-materials-for-underwater-structures-pdf
+- Hylton, W. S. (2020, February). History's Largest Mining Operation Is About to Begin.
+- UUV Installation. (n.d.). Retrieved from https://uuvsimulator.github.io/installation/
+- UUV Introduction. (n.d.). Retrieved from https://uuvsimulator.github.io/packages/uuv_simulator/intro/
+- Kunzig, R. (2001, January 19). The Physics of Deep-sea Animals. Retrieved from https://www.discovermagazine.com/the-sciences/the-physics-of-deep-sea-animals
+- Manhães, M.M., Scherer, S.A., Voss, M., Douat, L.R., & Rauschenbach, T. (2016). UUV Simulator: A Gazebo-based package for underwater intervention and multi-robot simulation. OCEANS 2016 MTS/IEEE Monterey, 1-8.
+- Manhães, M. M. M. (2018, August 29). Enabling the Simulation of Multi-robot underwater missions with Gazebo. Retrieved from https://roscon.ros.org/2018/presentations/ROSCon2018_uuvsimulator.pdf
+- MarineBio Conservation Society. (n.d.). Giant Squid. Retrieved from https://marinebio.org/species/giant-squid/architeuthis-dux/
+- McKeon, A. (n.d.). Deep-Sea Exploration Will Unveil a Vast, Unexplored World. Retrieved from http://now.northropgrumman.com/deep-sea-exploration-will-unveil-a-vast-unexplored-world
+- NOAA. (n.d.). Autonomous Underwater Vehicle Sentry. Retrieved from https://oceanexplorer.noaa.gov/technology/subs/sentry/sentry.html
+- NOAA. (n.d.). Budget Process. Retrieved from https://research.noaa.gov/External-Affairs/Budget
+- NOAA. (n.d.). Observation Platforms: Submersibles. Retrieved from https://oceanexplorer.noaa.gov/technology/subs/subs.html
+- Ocean Portal Team. (2018, December 18). The Deep Sea. Retrieved from https://ocean.si.edu/ecosystems/deep-sea/deep-sea
+- Palmer, J. (2015, January 15). Secrets of the animals that dive deep into the ocean. Retrieved from http://www.bbc.com/earth/story/20150115-extreme-divers-defy-explanation
+- Pavid, K. (2017, April 27). Secrets of the deepest-diving whales. Retrieved from https://www.nhm.ac.uk/discover/secrets-of-deep-diving-whales.html
+- RJE International. (2017, July 19). What's the difference between an ROV and an AUV? Retrieved from https://www.rjeint.com/whats-difference-rov-auv/
+- Robotic simulation scenarios with Gazebo and ROS. (2015, February 26). Retrieved from https://www.generationrobots.com/blog/en/robotic-simulation-scenarios-with-gazebo-and-ros/
+- Schultz, C. (2013, September 13). In Defense of the Blobfish: Why the "World's Ugliest Animal" Isn't as Ugly as You Think It Is. Retrieved from https://www.smithsonianmag.com/smart-news/in-defense-of-the-blobfish-why-the-worlds-ugliest-animal-isnt-as-ugly-as-you-think-it-is-6676336/
+- Smith, C. (2014, July 30). Deep Sea Crucial to Our Lives, Study Shows. Retrieved from https://ourworld.unu.edu/en/deep-sea-crucial-to-our-lives-study-shows
+- US Department of Commerce, & National Oceanic and Atmospheric Administration. (2009, January 1). How much of the ocean have we explored? Retrieved from https://oceanservice.noaa.gov/facts/exploration.html
+- Walker, R., & Shank, T. (n.d.). Deep Sea Biology. Retrieved from https://divediscover.whoi.edu/hot-topics/deepsea/
+- What is SDFormat. (n.d.). Retrieved from http://sdformat.org/
+- Why Gazebo? (n.d.). Retrieved from http://gazebosim.org/
+- Wittenberg, J. B., Copeland, D. E., Haedrich, F. R., & Child, J. S. (1980). The swimbladder of deep-sea fish: the swimbladder wall is a lipid-rich barrier to oxygen diffusion. Journal of the Marine Biological Association of the United Kingdom, 60(2), 263-276.
+- Wu, F. (2019, December 13). Report: Deep Sea Robotics. Retrieved from https://compusciencing.github.io/report-deep-sea-robotics.html
