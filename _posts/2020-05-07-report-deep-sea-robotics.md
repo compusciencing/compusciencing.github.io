@@ -66,6 +66,7 @@ Afterwards, I combined the lake environment (Figure 4) with the empty underwater
 Prior to simulating my aquatic robot and making design choices, I studied how different materials and shapes interact with deep sea pressure, existing deep sea robots, and animal adaptations to the deep sea. 
 
 #### Shapes and Materials
+
 One of the biggest challenges to building a robot underwater, as opposed to land is the difference in pressure. Pressure is defined as the force per unit area. Unlike gas, water does not exert equal pressure on all sides. More pressure is exerted on the bottom of the object than the top. Combined with the descent of an object in water, pressure is constantly changing. For each 10 meters of depth, the pressure increases by one atmosphere.  
 	To counteract the forces of pressure on the material, wall tension occurs in the casing of the material.  Wall tension is proportional to the radius and the pressure exerted. The most common shapes used for pressure vessels are spheres and cylinders. The cylinder’s wall tension or hoop stress is calculated as: 
 	
