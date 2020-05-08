@@ -32,7 +32,7 @@ After setting up my computer, I studied 3D software program that I could use to 
 
 # Methods
 
-To develop my aquatic robot, I split the task into two parts: the environment and the robot. After setting up my computer, the first four months was devoted to developing the environment that my robot would reside in, with the help of the Unmanned Underwater Vehicle Simulator (UUV Simulator). Next, I spent another four months developing the actual robot and resolving any issues.
+To develop my aquatic robot, I split the task into two parts: the environment and the robot. After setting up my computer, I devoted the first four months to developing the environment that my robot would reside in, with the help of the Unmanned Underwater Vehicle Simulator (UUV Simulator). Next, I spent another four months developing the actual robot and resolving any issues.
 
 ## Using the Unmanned Underwater Vehicle (UUV) Simulator
 The Unmanned Underwater Vehicle (UUV) Simulator is a package of Gazebo plugins and ROS nodes that facilitate the simulation of underwater vehicles and environments, initially created for the EU ECSEL Project SWARMS (Manhães et al., 2020). My project utilized the UUV simulator to develop the robot and its environment. Although Gazebo has several built in default underwater environments, they are not as sophisticated as the UUV simulator that is appropriate for my research. On the other hand, the UUV Simulator is not very well documented or updated. Some issues exist in the installation and the creation of new vehicles. 
