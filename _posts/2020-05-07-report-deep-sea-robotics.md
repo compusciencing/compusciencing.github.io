@@ -171,6 +171,7 @@ I moved the product into a URDF/Xacro format. Unlike the SDF format used in Prot
 [![](http://img.youtube.com/vi/Wy12Bud9YRc/0.jpg)](http://www.youtube.com/watch?v=Wy12Bud9YRc "")
 
 # Conclusion and Future Work
+
 The engineering goals set out at the beginning of this study comprised of designing a robot that can withstand deep sea conditions and navigate the waters. The final prototype, Prototype 2, achieves these goals:
 
 1. Prototype 2 does not crush 2000 meters under the sea surface or 200 atmospheres of pressure. I define the deep sea as below 200 meters (Walker, n.d.). 
