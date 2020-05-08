@@ -166,7 +166,7 @@ Prototype 2’s thruster type is of first order. Once the thruster reaches its m
 ![figure20](/assets/2020-05-07-report-deep-sea-robotics/20ThrusterOutput.png)
 *Figure 17: Thruster output; O=((1-e^(-8x)))/2*
 
-The product has been moved into a urdf/xacro format. Unlike the sdf format used in Prototype 1, the xacro allows for parameters to be passed in. Any changes to the sensors and size of the aquatic robot can be made efficiently. Please watch the video detailing the aquatic robot for more information. 
+I moved the product into a URDF/Xacro format. Unlike the SDF format used in Prototype 1, the Xacro allows for parameters to be passed in. Any changes to the sensors or size of the aquatic robot can be made efficiently. Please watch the video detailing the aquatic robot for more information. 
 
 [![](http://img.youtube.com/vi/Wy12Bud9YRc/0.jpg)](http://www.youtube.com/watch?v=Wy12Bud9YRc "")
 
