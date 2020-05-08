@@ -39,6 +39,7 @@ To develop my aquatic robot, I split the task into two parts: the environment an
 The Unmanned Underwater Vehicle (UUV) Simulator is a package of Gazebo plugins and ROS nodes that facilitate the simulation of underwater vehicles and environments, initially created for the EU ECSEL Project SWARMS (Manhães et al., 2020). My project utilized the UUV simulator to develop the robot and its environment. Although Gazebo has several built in default underwater environments, they are not as sophisticated as the UUV simulator that is appropriate for my research. On the other hand, the UUV Simulator is not very well documented or updated. Some issues exist in the installation and the creation of new vehicles. 
 
 ## Environment
+
 To create a functioning environment for my aquatic robot, I altered, merged, and tested parts of the empty underwater world and the lake environment in the UUV simulator. The empty underwater world is simply a body of water in a rectangular prism (Figure 1). To consider additional depth that would better suit my aquatic robot, I expanded the pose and collision of each of the “walls” of the sea (Figure 2).
 
 ![figure1](/assets/2020-05-07-report-deep-sea-robotics/1theUnderwaterWorldZoomedOut.png)
