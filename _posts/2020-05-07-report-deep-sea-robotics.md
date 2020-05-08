@@ -45,6 +45,7 @@ To create a functioning environment for my aquatic robot, I altered, merged, and
 ![figure1](/assets/2020-05-07-report-deep-sea-robotics/1theUnderwaterWorldZoomedOut.png)
 *Figure 1: The underwater world zoomed out.*
 
+
 ![figure2](/assets/2020-05-07-report-deep-sea-robotics/2CodeofDeepSeaEnvironment.png)
 *Figure 2: Code of deep-sea environment.*
 
