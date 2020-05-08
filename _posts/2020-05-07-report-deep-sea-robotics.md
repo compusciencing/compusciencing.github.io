@@ -3,7 +3,7 @@ layout: post
 title: "Report: Deep Sea Robotics Part 2"
 tags: ["csc197", "deep sea", "simulation", "robotics","report", "self-study", "gazebo simulator", "ros melodic", "blender", "uuv simulator", "ubuntu"]
 author: "Fiona Wu"
-include_mathjax: false
+include_mathjax: true
 ---
 
 # Abstract
