@@ -150,7 +150,7 @@ My final product resembles a squid (Figure 14). Unlike Prototype 1, there are fe
 ![figure18](/assets/2020-05-07-report-deep-sea-robotics/18ExampleofCameraOutput.png)
 *Figure 15: An example of the camera output; the blue is the sea. The two black specks   are random objects that I have dropped.*
 
-It has several sensors, including a magnetometer, which measures the magnetic forces, pressure sensors, a camera (Figure 15), sonar, and a GPS (Figure 16). These sensors are all placed underneath the head of the aquatic robot. Please refer to the video for better documentation on how the aquatic robot works. 
+It has several sensors, including a magnetometer to measure magnetic forces, pressure sensors, a camera (Figure 15), sonar, and a GPS (Figure 16). These sensors are all placed underneath the head of the aquatic robot. Please refer to the video for better documentation on how the aquatic robot works. 
 
 * Camera allows images and videos.
 * Magnometer measures magnetic fields.
