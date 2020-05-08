@@ -157,8 +157,6 @@ The engineering goals set out at the beginning of this study comprised of design
 
 The deep sea is crucial to our daily lives in unimaginable ways. The deep sea supports fish populations, decreases the impact of carbon emissions, and contain massive reserves of oil, gasses, and minerals used in new technology. Deep-sea environments could lead to new antibiotics and anti-cancer chemicals. Yet, the deep sea is vastly inaccessible and unknown (Smith, 2014). To safely cultivate and not exploit the ocean’s resources, we must understand the deep sea with the help of underwater vehicles like Prototype 2. Prototype 2 is important, as it can help to make discoveries and better our understanding of the deep sea. Although Prototype 2 has reached its initial engineering goals, I can make future advancements including independent navigation, adjustable speeds, more sensors, and expanded robot capabilities. 
 
-# Risk and Safety
-There is no risk to perform this experiment. 
 
 # References
 
