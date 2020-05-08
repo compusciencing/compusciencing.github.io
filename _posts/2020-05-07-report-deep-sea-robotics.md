@@ -137,7 +137,6 @@ To create my initial model and its meshes, I used Blender, a 3D software program
 *Figure 12: Prototype 1 moving down in the deep sea environment.*
 ![figure16](/assets/2020-05-07-report-deep-sea-robotics/16EllipsoidofPrototype2.png)
 *Figure 13: The ellipsoid of Prototype 1.*
-
 This prototype was modeled as a sdf, a file type in XML format created as part of the Gazebo robot simulator. The sdf file contains objects and/or environments. Some advantages of using the sdf file type are its simplicity and compatibleness with Gazebo Simulator. However, the sdf file type has limitations including the inability to adapt pressure sensors and movement. I moved to the urdf and xacro file formats for Prototype 2, because there is more documentation on how to use urdf files when modeling robots and it has more capabilities such as adding sensors and movement.  
 
 ### Prototype 2
