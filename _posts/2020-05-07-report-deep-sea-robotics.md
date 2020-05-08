@@ -116,7 +116,7 @@ There are many animals with incredible adaptations that can survive the crushing
 ![figure12](/assets/2020-05-07-report-deep-sea-robotics/12BlobfishinNaturalHabitat.jpg)
 *Figure 9: Blobfish in its natural habitat.*
 
-The giant squid (Figure 10) is an elusive deep sea creature that is very rarely captured on camera. Some adaptions that it has to the deep sea include its large eye and lack of bones. Due to the darkness deep underwater, their huge retinas allow them to capture the smallest amount of visible light (Ames, 2019). For a deep sea robot, any pictures or videos, must have its own light source or not use visible light. The giant squid is an invertebrate and lacks bones, very similar to the blobfish’s adaption to the deep sea. 
+The giant squid (Figure 10) is an elusive deep sea creature that is very rarely captured on camera. Some adaptions it has to the deep sea include its large eye and lack of bones. Due to the darkness deep underwater, their huge retinas allow them to capture the smallest amount of visible light (Ames, 2019). For a deep sea robot, any pictures or videos, must have its own light source or not use visible light. The giant squid is an invertebrate and lacks bones, very similar to the blobfish’s adaption to the deep sea. 
 
 ![figure13](/assets/2020-05-07-report-deep-sea-robotics/13GiantSquid.jpg)
 *Figure 10: A giant squid.*
