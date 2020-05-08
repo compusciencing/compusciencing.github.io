@@ -92,6 +92,7 @@ Thus, the sphere is the most efficient shape to withstand pressure because of it
 Today, un-manned deep sea robots can be categorized as remotely operated vehicles (ROVs) or autonomous underwater vehicles (AUVs). While ROVs must be physically connected to the ship in order for humans to operate, AUV’s are independent, pre-programmed, and free of cords. ROVs are better at collecting samples and manipulations of the sea floor with human manipulation; however, AUVs are more efficient at creating detailed maps and measuring properties of the water with free movement (Chadwick, 2010). Today, there are even ROV/AUV hybrids.  Some of the most famous and efficient deep sea vehicles used by the National Oceanic and Atmospheric Administration (NOAA, n.d.c) include the AUV Sentry (Figure 7), ROV Deep Discoverer (Figure 5), and ROV Hercules (Figure 6). The most common design for ROVs is a prism frame.
 
 ![figure8](/assets/2020-05-07-report-deep-sea-robotics/8ROVDeepDiscovererfromNOAA.jpg)
+
 *Figure 5: ROV Deep Discoverer from NOAA.*
 
 ![figure9](/assets/2020-05-07-report-deep-sea-robotics/9ROVHerculesfromNOAA.jpg)
