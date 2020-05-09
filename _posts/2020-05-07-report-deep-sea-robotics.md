@@ -70,15 +70,27 @@ Prior to simulating my aquatic robot and making design choices, I studied how di
 One of the biggest challenges to building a robot underwater, as opposed to land is the difference in pressure. Pressure is defined as the force per unit area. Unlike gas, water does not exert equal pressure on all sides. More pressure is exerted on the bottom of the object than the top. Combined with the descent of an object in water, pressure is constantly changing. For each 10 meters of depth, the pressure increases by one atmosphere.  
 
 To counteract the forces of pressure on the material, wall tension occurs in the material's casing.  Wall tension is proportional to the radius and the pressure exerted. The most common shapes used for pressure vessels are spheres and cylinders. The cylinder’s wall tension or hoop stress is calculated as: 
-	
-![figure5](/assets/2020-05-07-report-deep-sea-robotics/5.png)
 
+'''
+$$\sum F_x=0$$
+$$2 \left(σ_hA\right) -pA_p = 0 = 2\left(σ_h t dy\right) - p 2r dy$$
+or solving for $σ_h$
+$$σ_h = \frac{pr}{t}$$
+'''
 
-Where $A_p=$ projected area, $d_y =$ incremental  length, $t =$ wall  thickness, $r =$  inner  radius,  $p  =$  gauge  pressure, and  $σ_h$ is the hoop stress/wall tension.
+Where $A_p=$ projected area, $d_y=$ incremental  length, $t=$ wall  thickness, $r=$  inner  radius,  $p=$  gauge  pressure, and  $σ_h$ is the hoop stress/wall tension.
 The sphere’s calculated wall tension: 
 
-![figure6](/assets/2020-05-07-report-deep-sea-robotics/6.png)
-
+'''
+$$\sum F_y=0$$
+$$σ_hA - pA_e = 0 = σ_a pi \left(r_o^2 - r^2\right) - p pi r^2$$
+or solving for $σ_a$
+$$σ_a = \fract{p pi r^2}{pi \left(r_o^2 - r^2\right)}$$
+substituting $r_o = r + t$ gives
+$$σ_a = \fract{p pi r^2}{pi \left(\left(r+t\right)^2 - r^2\right)}= \fract{p pi r^2}{pi \left(r^2 + 2rt + t^2 - r^2\right)}= \fract{p r^2}{pi \left(2rt + t^2\right)}
+since this is a thin wall with a small t, t^2 is smaller and can be neglected such that after simplication$$
+$$σ_a = \fract{pr}{2t}$$
+'''
 
 Where $r_o =$ inner radius and $σ_a$ is the axial stress/wall tension. Both wall tensions are calculated assuming that the object is at equilibrium; the sum of the forces is $0$. The resulting wall tension of a sphere, with a given radius r is two times smaller than that of the cylinder (Bednar, 1981). 
 
