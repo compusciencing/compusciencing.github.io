@@ -105,7 +105,6 @@ Thus, the sphere is the most efficient shape to withstand pressure because of it
 Today, un-manned deep sea robots can be categorized as remotely operated vehicles (ROVs) or autonomous underwater vehicles (AUVs). While ROVs must be physically connected to the ship in order for humans to operate, AUV’s are independent, pre-programmed, and free of cords. ROVs are better at collecting samples and manipulations of the sea floor with human manipulation; however, AUVs are more efficient at creating detailed maps and measuring properties of the water with free movement (Chadwick, 2010). Today, there are even ROV/AUV hybrids.  Some of the most famous and efficient deep sea vehicles used by the National Oceanic and Atmospheric Administration (NOAA, n.d.c) include the AUV Sentry (Figure 7), ROV Deep Discoverer (Figure 5), and ROV Hercules (Figure 6). The most common design for ROVs is a prism frame.
 
 ![figure8](/assets/2020-05-07-report-deep-sea-robotics/8ROVDeepDiscovererfromNOAA.jpg)
-
 *Figure 5: ROV Deep Discoverer from NOAA.*
 
 ![figure9](/assets/2020-05-07-report-deep-sea-robotics/9ROVHerculesfromNOAA.jpg)
@@ -123,7 +122,6 @@ The main purposes of these robots are to collect biological and geological sampl
 There are many animals with incredible adaptations that can survive the crushing pressure of the deep sea. A few include the blobfish, giant squid, and Cuvier’s beaked whale. Above the sea surface, the blobfish (Figure 8) is often deemed the ugliest creature. But its misshaped, ‘blobby’ appearance is just an example of how drastically deep sea pressure is different from the water at surface.  Living over 600 meters below the sea surface, the pressure is 120 times greater. At the surface, the blobfish may be a little floppy; but deep down, in its habitat, the blobfish would be a regular shaped fish (Figure 9) due to high water pressures. Like the blobfish, other deep sea creatures often lack a swim bladder, a gas filled cavity which acts to keep a fish buoyant in the water. This absence means that the creature will not collapse under the extreme pressure (Schultz, 2013). This is also one of the reasons why super-deep sea fish have minimal skeletons and little muscle (Wittenberg et al., 1980). In the context of deep sea vehicles, the optimal robot would contain very little skeleton and no gas-filled cavities too.
 
 ![figure11](/assets/2020-05-07-report-deep-sea-robotics/11BlobfishatSeaSurface.jpg)
-
 *Figure 8: Blobfish at sea surface.*
 
 ![figure12](/assets/2020-05-07-report-deep-sea-robotics/12BlobfishinNaturalHabitat.jpg)
@@ -146,10 +144,11 @@ To dive so deep, the whale must store enough oxygen for the lengthy trips and en
 To create my initial model and its meshes, I used Blender, a 3D software program. It took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I studied different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. The first prototype was relatively simple and had no device of movement (Figure 12). The shape at the end became a hemisphere on top of protruding sheets that make an ellipsoid (Figure 13). 
 
 ![figure15](/assets/2020-05-07-report-deep-sea-robotics/15Prototype1movingDownInDeepSeaEnvironment.gif)
-
 *Figure 12: Prototype 1 moving down in the deep sea environment.*
+
 ![figure16](/assets/2020-05-07-report-deep-sea-robotics/16EllipsoidofPrototype2.png)
 *Figure 13: The ellipsoid of Prototype 1.*
+
 I modeled this prototype as an SDF file, which is an XML file type created as part of the Gazebo robot simulator. The SDF file contains objects and/or environments. Some advantages of using the SDF file type are its simplicity and compatibleness with Gazebo Simulator. However, the SDF file type has limitations including the inability to adapt pressure sensors and movement. I moved to the URDF and Xacro file formats for Prototype 2, because there is more documentation on how to use URDF files when modeling robots and it has more capabilities such as adding sensors and movement.  
 
 ### Prototype 2
@@ -157,7 +156,6 @@ I modeled this prototype as an SDF file, which is an XML file type created as pa
 My final product resembles a squid (Figure 14). Unlike Prototype 1, there are fewer sheets/tentacles. The top hemisphere has a radius of 1.44 meters and a width of 0.5 meters. The sheets/tentacles are 4.6 meters in length. All thrusters and sensors are located inside the hemisphere. It uses 5 thrusters to enable its movement. It can be controlled using an Xbox 360 controller and manually controlled through the command line. 
 
 ![figure17](/assets/2020-05-07-report-deep-sea-robotics/17OuterAppearanceofPrototype2.png)
-
 *Figure 14: Outer appearance of Prototype 2.*
 
 ![figure18](/assets/2020-05-07-report-deep-sea-robotics/18ExampleofCameraOutput.png)
