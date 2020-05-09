@@ -79,6 +79,7 @@ $$σ_h = \frac{pr}{t}$$
 '''
 
 Where $A_p=$ projected area, $d_y=$ incremental  length, $t=$ wall  thickness, $r=$  inner  radius,  $p=$  gauge  pressure, and  $σ_h$ is the hoop stress/wall tension.
+
 The sphere’s calculated wall tension: 
 
 '''
