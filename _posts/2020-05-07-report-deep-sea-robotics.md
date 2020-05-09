@@ -74,13 +74,13 @@ To counteract the forces of pressure on the material, wall tension occurs in the
 ![figure5](/assets/2020-05-07-report-deep-sea-robotics/5.png)
 
 
-Where Ap= projected area, dy = incremental  length, t = wall  thickness, r =  inner  radius,  p  =  gauge  pressure, and  σh is the hoop stress/wall tension.
+Where $A_p=$ projected area, $d_y =$ incremental  length, $t =$ wall  thickness, $r =$  inner  radius,  $p  =$  gauge  pressure, and  $σ_h$ is the hoop stress/wall tension.
 The sphere’s calculated wall tension: 
 
 ![figure6](/assets/2020-05-07-report-deep-sea-robotics/6.png)
 
 
-Where ro = inner radius and σa is the axial stress/wall tension. Both wall tensions are calculated assuming that the object is at equilibrium; the sum of the forces is 0. The resulting wall tension of a sphere, with a given radius r is two times smaller than that of the cylinder (Bednar, 1981). 
+Where $r_o =$ inner radius and $σ_a$ is the axial stress/wall tension. Both wall tensions are calculated assuming that the object is at equilibrium; the sum of the forces is $0$. The resulting wall tension of a sphere, with a given radius r is two times smaller than that of the cylinder (Bednar, 1981). 
 
 ![figure7](/assets/2020-05-07-report-deep-sea-robotics/7.png)
 
