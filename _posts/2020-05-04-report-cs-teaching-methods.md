@@ -13,7 +13,7 @@ When teaching a computer science concept, is student understanding increased if 
 
 # Experiment Framework
 
-- Working with a computer science instructor, design as many activities as feasible in line with a course syllabus. The preference is for a computer science course with multiple lab sections in order to have a control group for the experiment.
+- Working with a computer science instructor, design as many activities as feasible in line with a course syllabus. The preference is for a computer science course with multiple lab sections to have a control group for the experiment.
 
 - Each activity should cover a specific course objective such as **Understanding Sorting Algorithms** or **Understanding Error Detection**.
 
