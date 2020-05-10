@@ -62,6 +62,7 @@ Due to the onset of the COVID-19 pandemic, hands-on group activties in a classro
 I do not have answers to these problems but will continue to study and work to figure out some workarounds or solutions.
 
 # Accomplishments
+
 Dr. Jamil Saquer has agreed to work with me on this research for Missouri State's CSC 131 course lab sections. This may not be likely in Fall 2020 since there is only 1 lab section offered and the COVID-19 requirements may move this section online.
 
 An application for this research is in progress for an application for review to Missouri State University's [Institutional Review Board](https://ora.missouristate.edu/IRB.htm).
