@@ -44,6 +44,7 @@ To familiarize students with the concept of flipped-bit error detection and pari
 Students then break into groups of 2 to 3, each group with its own set tile cards, and take turns flipping or finding the "erroneous" bits.
 
 # Challenges
+
 Due to the onset of the COVID-19 pandemic, hands-on group activties in a classroom are put in a different light. There is now a need to switch to online versions of the activies in order to perform the experiment in the fall.
 
 - **Problem:** How to develop online activies that aren't just coding exercises?
