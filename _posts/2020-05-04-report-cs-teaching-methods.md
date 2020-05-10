@@ -76,7 +76,8 @@ Online activies will be discussed with Dr. Saquer and potentially developed for 
 
 As studied by John Aycock in [3], I would like to use my ❤️ for computer science history by working to develop a course that uses the challenges and constraints of past computer scientists/developers/etc. to teach modern students valuable skills for the future.  
 
-## References
+# References
+
 [1] Jamil Saquer. 2016. An Approach To Making Dynamic Programming Easier For Students In The Computer Science Curriculum. The International Journal of E-Learning and Educational Technologies in the Digital Media 2, 4 (2016), 157–165. DOI:http://dx.doi.org/10.17781/p002223
 
 [2] Johanna Pirker, Maria Riffnaller-Schiefer, and Christian Gütl. 2014. Motivational active learning. Proceedings of the 2014 conference on Innovation & technology in computer science education - ITiCSE 14 (2014). DOI:http://dx.doi.org/10.1145/2591708.2591750
