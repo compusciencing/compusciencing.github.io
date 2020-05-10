@@ -15,7 +15,7 @@ When teaching a computer science concept, is student understanding increased if 
 
 - Working with a computer science instructor, design as many activities as feasible in line with a course syllabus. The preference is for a computer science course with multiple lab sections to have a control group for the experiment.
 
-- Each activity should cover a specific course objective such as **Understanding Sorting Algorithms** or **Understanding Error Detection**.
+- Each activity should cover a specific course objective, such as **Understanding Sorting Algorithms** or **Understanding Error Detection**.
 
 - In a multiple lab sections, one section should recieve a traditional lecture and programming exercise for a given topic. The other section(s) should perform an activity in addition to the lecture and programming exercise.
 
