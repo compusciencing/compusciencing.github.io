@@ -17,7 +17,7 @@ When teaching a computer science concept, is student understanding increased if 
 
 - Each activity should cover a specific course objective, such as **Understanding Sorting Algorithms** or **Understanding Error Detection**.
 
-- In a multiple lab sections, one section should recieve a traditional lecture and programming exercise for a given topic. The other section(s) should perform an activity in addition to the lecture and programming exercise.
+- One section should receive a traditional lecture and programming exercise for a topic. The other section(s) should perform an activity in addition to the lecture and programming exercise.
 
 - Non-credit, anonymized surveys should be given throughout the semester to evaluate how the activity (or lack thereof) affected student understanding of a topic.
 
