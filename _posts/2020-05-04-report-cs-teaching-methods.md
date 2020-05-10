@@ -71,6 +71,7 @@ An application for this research is in progress for an application for review to
 Read multiple papers including Dr. Saquer's pedegologcal approaches to simplify Dynamic Programming [1] and a study of engagement in the compuer science classroom [2].
 
 # Future Work
+
 Online activies will be discussed with Dr. Saquer and potentially developed for the Spring 2021 semester.
 
 As studied by John Aycock in [3], I would like to use my ❤️ for computer science history by working to develop a course that uses the challenges and constraints of past computer scientists/developers/etc. to teach modern students valuable skills for the future.  
