@@ -8,6 +8,7 @@ author: "Nathan Hartzler"
 *During the Spring 2020 semester, I worked to develop an experiment to research Pedagogy in Computer Science*.
 
 # Working Hypothesis
+
 When teaching a computer science concept, is student understanding increased if an analogous hands-on activity is performed in addition to the traditional lecture of the concept?
 
 # Experiment Framework
