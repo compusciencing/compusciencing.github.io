@@ -23,7 +23,7 @@ When teaching a computer science concept, is student understanding increased if 
 
 # Sample Activity - Error Detection
 
-To familiarize students with the concept of flipped bit error detection and parity bits, a simple activity is presented on [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/).
+To familiarize students with the concept of flipped-bit error detection and parity bits, a simple activity is presented on [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/).
 
 1. First the instructor has a volunteer student lay out a 5 x 5 grid of black and white square tiles. These are white on one side and black on the other. The student is asked to choose tile colors at random.
 
