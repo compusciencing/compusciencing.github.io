@@ -21,23 +21,23 @@ When teaching a computer science concept, is student understanding increased if 
 
 # Sample Activity - Error Detection
 
-To familiarize students with the concept of flipped bit error detection and parity bits, a simple activity is presented on [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/).
+To familiarize students with the concept of flipped bit error detection and parity bits, I investigated a simple activity found on [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/).
 
-1. First the instructor has a volunteer student lay out a 5 x 5 grid of black and white square tiles. These are white on one side and black on the other. The student is asked to choose tile colors at random.
+1. In a classroom or small group setting, I have a volunteer student lay out a 5 x 5 grid of black and white square tiles. These are white on one side and black on the other. I ask the student to choose tile colors at random.
 
-    ![Example 5 by 5 grid](https://storage.googleapis.com/cs-unplugged.appspot.com/static/img/topics/parity-cards-6x6-grid-step-1.png)
+    ![Example 5 by 5 grid](/assets/2020-05-04-report-cs-teaching-methods/parity-cards-6x6-grid-step-1.png)
 
-    Step 1: Example layout of a 5 x 5 grid set up by the volunteer. [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/)
+    - Example layout of a 5 x 5 grid set up by the volunteer [1]. [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/)
 
-2. Then the instructor adds an additional row and column with "parity bits". The result should be a 6 x 6 with an even number of black tiles in each row and column.
+2. Then I add an additional row and column with "parity bits". The result should be a 6 x 6 with an even number of black tiles in each row and column.
 
-    ![adding a parity bit animation](https://storage.googleapis.com/cs-unplugged.appspot.com/static/img/topics/parity-cards.gif)
+    ![adding a parity bit animation](/assets/2020-05-04-report-cs-teaching-methods/parity-cards.gif)
 
-    Step 2: Adding a parity bit to each row and column. [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/)
+    - Adding a parity bit to each row and column [2]. [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/)
 
-3. *With the instructor not looking*, the student flips one of the squares over, changing its color.
+3. I then turn my back to the grid and the student flips one of the squares over, changing its color.
 
-4. The instructor then looks at the board and silently scans the black tiles in each row. Once an odd number of black tiles is found in a row, the columns can be scanned. When the corresponding column is found the (x,y) point of the flipped tile is known.
+4. Next I look at the board and silently scan the black tiles in each row. Once an odd number of black tiles is found in a row, the columns can be scanned. When the corresponding column is found the (x,y) point of the flipped tile is known.
 
 Students then break into groups of 2 to 3, each group with its own set tile cards, and take turns flipping or finding the "erroneous" bits.
 
@@ -53,8 +53,8 @@ Due to the onset of the COVID-19 pandemic, hands-on group activties in a classro
 
 - **Problem:** How to engage students in the activity when the course is delivered asynchronously online?
     - Part of the engament in the activities was planned to come from group dynamics. 
-        - 2 large groups of classmates racing against each other in a sorting activity
-        - Or many small groups performing the error detection activity
+    - 2 large groups of classmates racing against each other in a sorting activity
+    - Or many small groups performing the error detection activity
     - Without 1 on 1 engagement between the instructor and students, the connections may not be made between the analogous activity and the algorithm or concept being taught.
 
 I do not have answers to these problems but will continue to study and work to figure out some workarounds or solutions.
@@ -64,16 +64,18 @@ Dr. Jamil Saquer has agreed to work with me on this research for Missouri State'
 
 An application for this research is in progress for an application for review to Missouri State University's [Institutional Review Board](https://ora.missouristate.edu/IRB.htm).
 
-Read multiple papers including Dr. Saquer's pedegologcal approaches to simplify Dynamic Programming [1] and a study of engagement in the compuer science classroom [2].
+As part of this investigation, I read multiple papers including Dr. Saquer's pedegologcal approaches to simplify Dynamic Programming [3] and a study of engagement in the computer science classroom [4].
 
 # Future Work
-Online activies will be discussed with Dr. Saquer and potentially developed for the Spring 2021 semester.
+I will discuss online activies with Dr. Saquer and potentially develop them for the Spring 2021 semester.
 
-As studied by John Aycock in [3], I would like to use my ❤️ for computer science history by working to develop a course that uses the challenges and constraints of past computer scientists/developers/etc. to teach modern students valuable skills for the future.  
+As studied by John Aycock in [5], I would like to use my ❤️ for computer science history by working to develop a course that uses the challenges and constraints of past computer scientists/developers/etc. to teach modern students valuable skills for the future.  
 
 ## References
-[1] Jamil Saquer. 2016. An Approach To Making Dynamic Programming Easier For Students In The Computer Science Curriculum. The International Journal of E-Learning and Educational Technologies in the Digital Media 2, 4 (2016), 157–165. DOI:http://dx.doi.org/10.17781/p002223
+[1] Anon. Example layout of a 5 x 5 grid set up by the volunteer, Computer Science Education Research Group, University of Canterbury. https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/
+[2] Anon. Adding a parity bit to each row and column., Computer Science Education Research Group, University of Canterbury. https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/
+[3] Jamil Saquer. 2016. An Approach To Making Dynamic Programming Easier For Students In The Computer Science Curriculum. The International Journal of E-Learning and Educational Technologies in the Digital Media 2, 4 (2016), 157–165. DOI:http://dx.doi.org/10.17781/p002223
 
-[2] Johanna Pirker, Maria Riffnaller-Schiefer, and Christian Gütl. 2014. Motivational active learning. Proceedings of the 2014 conference on Innovation & technology in computer science education - ITiCSE 14 (2014). DOI:http://dx.doi.org/10.1145/2591708.2591750
+[4] Johanna Pirker, Maria Riffnaller-Schiefer, and Christian Gütl. 2014. Motivational active learning. Proceedings of the 2014 conference on Innovation & technology in computer science education - ITiCSE 14 (2014). DOI:http://dx.doi.org/10.1145/2591708.2591750
 
-[3] John Aycock. 2015. Applied Computer History. Proceedings of the 2015 ACM Conference on Innovation and Technology in Computer Science Education - ITiCSE 15 (2015). DOI:http://dx.doi.org/10.1145/2729094.2742583
+[5] John Aycock. 2015. Applied Computer History. Proceedings of the 2015 ACM Conference on Innovation and Technology in Computer Science Education - ITiCSE 15 (2015). DOI:http://dx.doi.org/10.1145/2729094.2742583
