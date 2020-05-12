@@ -8,14 +8,16 @@ author: "Nathan Hartzler"
 *During the Spring 2020 semester, I worked to develop an experiment to research Pedagogy in Computer Science*.
 
 # Working Hypothesis
+
 When teaching a computer science concept, is student understanding increased if an analogous hands-on activity is performed in addition to the traditional lecture of the concept?
 
 # Experiment Framework
-- Working with a computer science instructor, design as many activities as feasible in line with a course syllabus. The preference is for a computer science course with multiple lab sections in order to have a control group for the experiment.
 
-- Each activity should cover a specific course objective such as **Understanding Sorting Algorithms** or **Understanding Error Detection**.
+- Working with a computer science instructor, design as many activities as feasible in line with a course syllabus. The preference is for a computer science course with multiple lab sections to have a control group for the experiment.
 
-- In a multiple lab sections, one section should recieve a traditional lecture and programming exercise for a given topic. The other section(s) should perform an activity in addition to the lecture and programming exercise.
+- Each activity should cover a specific course objective, such as **Understanding Sorting Algorithms** or **Understanding Error Detection**.
+
+- One section should receive a traditional lecture and programming exercise for a topic. The other section(s) should perform an activity in addition to the lecture and programming exercise.
 
 - Non-credit, anonymized surveys should be given throughout the semester to evaluate how the activity (or lack thereof) affected student understanding of a topic.
 
@@ -42,6 +44,7 @@ To familiarize students with the concept of flipped bit error detection and pari
 Students then break into groups of 2 to 3, each group with its own set tile cards, and take turns flipping or finding the "erroneous" bits.
 
 # Challenges
+
 Due to the onset of the COVID-19 pandemic, hands-on group activties in a classroom are put in a different light. There is now a need to switch to online versions of the activies in order to perform the experiment in the fall.
 
 - **Problem:** How to develop online activies that aren't just coding exercises?
@@ -60,7 +63,8 @@ Due to the onset of the COVID-19 pandemic, hands-on group activties in a classro
 I do not have answers to these problems but will continue to study and work to figure out some workarounds or solutions.
 
 # Accomplishments
-Dr. Jamil Saquer has agreed to work with me on this research for Missouri State's CSC 131 course lab sections. This may not be likely in Fall 2020 since there is only 1 lab section offered and the COVID-19 requirements may move this section online.
+
+Dr. Jamil Saquer has agreed to work with me on this research for Missouri State's CSC 131 course lab sections. This may not be possible in Fall 2020 since there is only 1 lab section offered and the COVID-19 requirements may move this section online.
 
 An application for this research is in progress for an application for review to Missouri State University's [Institutional Review Board](https://ora.missouristate.edu/IRB.htm).
 
@@ -71,9 +75,11 @@ I will discuss online activies with Dr. Saquer and potentially develop them for 
 
 As studied by John Aycock in [5], I would like to use my ❤️ for computer science history by working to develop a course that uses the challenges and constraints of past computer scientists/developers/etc. to teach modern students valuable skills for the future.  
 
-## References
+# References
 [1] Anon. Example layout of a 5 x 5 grid set up by the volunteer, Computer Science Education Research Group, University of Canterbury. https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/
+
 [2] Anon. Adding a parity bit to each row and column., Computer Science Education Research Group, University of Canterbury. https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/
+
 [3] Jamil Saquer. 2016. An Approach To Making Dynamic Programming Easier For Students In The Computer Science Curriculum. The International Journal of E-Learning and Educational Technologies in the Digital Media 2, 4 (2016), 157–165. DOI:http://dx.doi.org/10.17781/p002223
 
 [4] Johanna Pirker, Maria Riffnaller-Schiefer, and Christian Gütl. 2014. Motivational active learning. Proceedings of the 2014 conference on Innovation & technology in computer science education - ITiCSE 14 (2014). DOI:http://dx.doi.org/10.1145/2591708.2591750
