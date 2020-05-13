@@ -1,4 +1,4 @@
-+---
+---
 layout: post
 title: "Report: Deep Sea Robotics Part 2"
 tags: ["csc197", "deep sea", "simulation", "robotics","report", "self-study", "gazebo simulator", "ros melodic", "blender", "uuv simulator", "ubuntu"]
@@ -43,20 +43,24 @@ The Unmanned Underwater Vehicle (UUV) Simulator is a package of Gazebo plugins a
 To create a functioning environment for my aquatic robot, I altered, merged, and tested parts of the empty underwater world and the lake environment in the UUV simulator. The empty underwater world is a body of water in a rectangular prism (Figure 1). To consider additional depth that would better suit my aquatic robot, I expanded the pose and collision of each of the “walls” of the sea (Figure 2).
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/1theUnderwaterWorldZoomedOut.png)
+
 *Figure 1: The underwater world zoomed out.*
 
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/2CodeofDeepSeaEnvironment.png)
+
 *Figure 2: Code of deep-sea environment.*
 
 The depth I defined was 2000 meters. The final dimensions are 8000x8000x2000 meters. The underwater world has pressure and density of water. One way that I tested the buoyancy of the simulator was by verifying denser objects sunk (Figure 3). 
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/3CubeSinkinginSeaEnvironment.png)
+
 *Figure 3: Cube sinking in sea environment.*
 
 Afterwards, I combined the lake environment (Figure 4) with the empty underwater world environment to build a deep sea environment with varied topography at the sea floor. 
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/4seaFloorofDeepSeaEnvironment.png)
+
 *Figure 4: The sea floor of the deep sea environment.*
 
 ## Robot
@@ -96,6 +100,7 @@ $$σ_a = \fract{pr}{2t}$$
 Where $r_o =$ inner radius and $σ_a$ is the axial stress/wall tension. Both wall tensions are calculated assuming that the object is at equilibrium; the sum of the forces is $0$. The resulting wall tension of a sphere, with a given radius r is two times smaller than that of the cylinder (Bednar, 1981). 
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/5VesselPressure.png)
+
 *Figure 5: Cylindrical and spherical vessel pressure.*
 
 Thus, the sphere is the most efficient shape to withstand pressure because of its equal distribution on all sides and its minimal surface area.  This makes the sphere a better candidate for pressure vessels. However, due to the high cost of manufacturing a sphere vessel, a cylinder is the more common pressure vessel in current existing studies (Geelhoed, 2016).
@@ -105,14 +110,17 @@ Thus, the sphere is the most efficient shape to withstand pressure because of it
 Today, un-manned deep sea robots can be categorized as remotely operated vehicles (ROVs) or autonomous underwater vehicles (AUVs). While ROVs must be physically connected to the ship in order for humans to operate, AUV’s are independent, pre-programmed, and free of cords. ROVs are better at collecting samples and manipulations of the sea floor with human manipulation; however, AUVs are more efficient at creating detailed maps and measuring properties of the water with free movement (Chadwick, 2010). Today, there are even ROV/AUV hybrids.  Some of the most famous and efficient deep sea vehicles used by the National Oceanic and Atmospheric Administration (NOAA, n.d.c) include the AUV Sentry (Figure 7), ROV Deep Discoverer (Figure 5), and ROV Hercules (Figure 6). The most common design for ROVs is a prism frame.
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/6ROVDeepDiscovererfromNOAA.jpg)
+
 *Figure 6: ROV Deep Discoverer from NOAA.*
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/7ROVHerculesfromNOAA.jpg)
+
 *Figure 7: ROV Hercules from NOAA.*
 
 However, the AUV Sentry has a more streamline design that allows it to ascend, descend, and move through the water quickly.
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/8AUVSentryfromNOAA.jpg)
+
 *Figure 8: AUV Sentry from NOAA.*
 
 The main purposes of these robots are to collect biological and geological samples, as well as, survey the sea floor with sonar mapping systems. 
@@ -121,20 +129,24 @@ The main purposes of these robots are to collect biological and geological sampl
 
 There are many animals with incredible adaptations that can survive the crushing pressure of the deep sea. A few include the blobfish, giant squid, and Cuvier’s beaked whale. Above the sea surface, the blobfish (Figure 8) is often deemed the ugliest creature. But its misshaped, ‘blobby’ appearance is just an example of how drastically deep sea pressure is different from the water at surface.  Living over 600 meters below the sea surface, the pressure is 120 times greater. At the surface, the blobfish may be a little floppy; but deep down, in its habitat, the blobfish would be a regular shaped fish (Figure 9) due to high water pressures. Like the blobfish, other deep sea creatures often lack a swim bladder, a gas filled cavity which acts to keep a fish buoyant in the water. This absence means that the creature will not collapse under the extreme pressure (Schultz, 2013). This is also one of the reasons why super-deep sea fish have minimal skeletons and little muscle (Wittenberg et al., 1980). In the context of deep sea vehicles, the optimal robot would contain very little skeleton and no gas-filled cavities too.
 
-![](/assets/2020-05-07-report-deep-sea-robotics-part2/11BlobfishatSeaSurface.jpg)
+![](/assets/2020-05-07-report-deep-sea-robotics-part2/9BlobfishatSeaSurface.jpg)
+
 *Figure 9: Blobfish at sea surface.*
 
-![](/assets/2020-05-07-report-deep-sea-robotics-part2/12BlobfishinNaturalHabitat.jpg)
+![](/assets/2020-05-07-report-deep-sea-robotics-part2/10BlobfishinNaturalHabitat.jpg)
+
 *Figure 10: Blobfish in its natural habitat.*
 
 The giant squid (Figure 10) is an elusive deep sea creature that is very rarely captured on camera. Some adaptions it has to the deep sea include its large eye and lack of bones. Due to the darkness deep underwater, their huge retinas allow them to capture the smallest amount of visible light (Ames, 2019). For a deep sea robot, any pictures or videos, must have its own light source or not use visible light. The giant squid is an invertebrate and lacks bones, very similar to the blobfish’s adaption to the deep sea. 
 
-![](/assets/2020-05-07-report-deep-sea-robotics-part2/13GiantSquid.jpg)
+![](/assets/2020-05-07-report-deep-sea-robotics-part2/11GiantSquid.jpg)
+
 *Figure 11: A giant squid.*
 
 Finally, the Cuvier’s beaked whale can rapidly adjust to the deep sea pressure, diving over 2,000 meters below the sea surface. Unlike other whales and mammals that dive deep beneath the sea, such as the sperm whale, the beaked whale is relatively small (Amos, 2014). 
 
-![](/assets/2020-05-07-report-deep-sea-robotics-part2/14SizeComparisonBetweenSpermWhaleandBeakedWhale.jpg)
+![](/assets/2020-05-07-report-deep-sea-robotics-part2/12SizeComparisonBetweenSpermWhaleandBeakedWhale.jpg)
+
 *Figure 12: size comparison between sperm whale and beaked whale.*
 
 To dive so deep, the whale must store enough oxygen for the lengthy trips and endure the crushing pressure of the deep sea. Beaked whales rely on oxygen to breathe, so they must be able to hold their breath for long periods of time. In an aquatic robot, this is not a problem because robots do not breathe. As the beaked whales descends, their lungs shrink and gasses such as nitrogen in their blood and tissues will be compressed. The theory to how the beaker whale adapts to this scenario is by collapsing its lungs to force air away from the alveoli, which transfers gasses into the blood (Pavid, 2017). For an aquatic robot, this may mean having collapsible parts. 
@@ -144,9 +156,11 @@ To dive so deep, the whale must store enough oxygen for the lengthy trips and en
 To create my initial model and its meshes, I used Blender, a 3D software program. It took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I studied different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. The first prototype was relatively simple and had no device of movement (Figure 12). The shape at the end became a hemisphere on top of protruding sheets that make an ellipsoid (Figure 13). 
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/13Prototype1MovingDownInDeepSeaEnvironment.gif)
+
 *Figure 13: Prototype 1 moving down in the deep sea environment.*
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/14EllipsoidOfPrototype2.png)
+
 *Figure 14: The ellipsoid of Prototype 1.*
 
 I modeled this prototype as an SDF file, which is an XML file type created as part of the Gazebo robot simulator. The SDF file contains objects and/or environments. Some advantages of using the SDF file type are its simplicity and compatibleness with Gazebo Simulator. However, the SDF file type has limitations including the inability to adapt pressure sensors and movement. I moved to the URDF and Xacro file formats for Prototype 2, because there is more documentation on how to use URDF files when modeling robots and it has more capabilities such as adding sensors and movement.  
@@ -156,9 +170,11 @@ I modeled this prototype as an SDF file, which is an XML file type created as pa
 My final product resembles a squid (Figure 14). Unlike Prototype 1, there are fewer sheets/tentacles. The top hemisphere has a radius of 1.44 meters and a width of 0.5 meters. The sheets/tentacles are 4.6 meters in length. All thrusters and sensors are located inside the hemisphere. It uses 5 thrusters to enable its movement. It can be controlled using an Xbox 360 controller and manually controlled through the command line. 
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/15OuterAppearanceOfPrototype2.png)
+
 *Figure 15: Outer appearance of Prototype 2.*
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/16ExampleOfCameraOutput.png)
+
 *Figure 16: An example of the camera output; the blue is the sea. The two black specks are random objects that I have dropped.*
 
 It has several sensors, including a magnetometer to measure magnetic forces, pressure sensors, a camera (Figure 15), sonar, and a GPS (Figure 16). These sensors are all placed underneath the head of the aquatic robot. Please refer to the video for better documentation on how the aquatic robot works. 
@@ -170,11 +186,13 @@ It has several sensors, including a magnetometer to measure magnetic forces, pre
 * Sonar provides sonar imaging of surroundings.
 
 ![](/assets/2020-05-07-report-deep-sea-robotics-part2/17SensorsInsideHeadOfPrototype2.png)
+
 *Figure 17: Sensors inside the head of Prototype 2*
 
 Prototype 2’s thruster type is of first order. Once the thruster reaches its max speed, it stays at that speed, without increasing (Figure 17). The gain that is specified in the launch file determines the limit of speed for the robot. 
 
-![](/assets/2020-05-07-report-deep-sea-robotics-part2/20ThrusterOutput.png)
+![](/assets/2020-05-07-report-deep-sea-robotics-part2/18ThrusterOutput.png)
+
 *Figure 18: Thruster output; O=((1-e^(-8x)))/2*
 
 I moved the product into a URDF/Xacro format. Unlike the SDF format used in Prototype 1, the Xacro allows for parameters to be passed in. Any changes to the sensors or size of the aquatic robot can be made efficiently. Please watch the video detailing the aquatic robot for more information. 

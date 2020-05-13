@@ -80,6 +80,7 @@ Advancing my goals for representing atmospheric phenomena (e.g., like the buoyan
 Taking what I learned from the prototyping phase to the final 3D representation in the OGP engine was quite straightforward thanks to the generalizations used in the original paper. The simulation is stable in 3 dimensions and responds to external forces like those being introduced in Figure 6. Since the engine is written in C++, I opted to use the highly regarded [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) matrix library for solving the very large matrices involved.
 
 ![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/3d-velocity-field.png)
+
 *Figure 6: Velocity field visualized in the 3D environment of OGP*
 
 ## Future Work
