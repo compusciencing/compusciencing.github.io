@@ -19,25 +19,25 @@ After downloading Gazebo, my first step was to create or find a suitable underwa
 I tested the buoyancy of the simulator by making sure objects sunk when denser.
 
 ![bouyancysinking](/assets/2019-12-13-report-deep-sea-robotics/buoyancysinking.png)
- *sinking cube* 
+*Figure 1: Sinking cube.*
 
 Going into the research, I knew I wanted to make my focus more about the deep sea. Because of this, I would have to alter the default depth of the simulator. To do this, I expanded the pose and collision of each of the "walls" of the sea.
 
 ![pose](/assets/2019-12-13-report-deep-sea-robotics/pose.png)
- *"walls" of the sea* 
+*Figure 2: "walls" of the sea.*
 
 ![pose2newvsoriginal](/assets/2019-12-13-report-deep-sea-robotics/pose2newvsoriginal.png)
- *altered pose numbers vs. original* 
+*Figure 3: Altered pose numbers vs. original.*
 
 # Building Initial Model
 
 To create my initial mode, I used Blender. Never having used Blender before, it took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I learned a lot about different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. Some interesting things that I came upon included the pressure. 
 
 ![blenderpartofmodel](/assets/2019-12-13-report-deep-sea-robotics/blenderpartofmodel.png)
- *part of the model in Blender* 
+*Figure 4: Part of the model in Blender.*
 
 ![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehiclegif.gif)
- *final model sinking* 
+*Figure 5: Final model sinking.*
 
 # Going Forward
 

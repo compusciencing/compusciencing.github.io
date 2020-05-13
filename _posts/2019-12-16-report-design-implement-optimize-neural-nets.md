@@ -22,8 +22,8 @@ The game rendering and logic categories refer to the design and implementation o
 
 # Tank Game Development
 
-`Initialized State`
 ![Initialized State](/assets/2019-12-16-report-design-implement-optimize-neural-nets/initial-state.png)
+*Figure 1: Initialized State*
 
 ## Rendering
 

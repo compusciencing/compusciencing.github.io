@@ -25,11 +25,11 @@ The legs are 30 mm long and 3 mm thick. They have two mounting areas: a 1 mm hol
 
 # Design Images
 
-![Wheel leg hybrid side](/assets/2018-12-10-report-transformable-wheel-leg-hybrid-for-adabot/wheel_side_view.PNG)
-Figure 1: side view of the wheel design
+![Wheel leg hybrid side](/assets/2018-12-10-report-transformable-wheel-leg-hybrid-for-adabot/wheel_side_view.png)
+*Figure 1: side view of the wheel design*
 
-![Wheel leg hybrid corner](/assets/2018-12-10-report-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.PNG)
-Figure 2: corner view of the wheel design
+![Wheel leg hybrid corner](/assets/2018-12-10-report-transformable-wheel-leg-hybrid-for-adabot/wheel_angle_view.png)
+*Figure 2: corner view of the wheel design*
 
 # References
 

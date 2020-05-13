@@ -21,7 +21,7 @@ I implemented an initial approach of representing atmosphere volumes as large el
 seen at the bottom of Figure 1.
 
 ![Particles](/assets/2020-05-10-report-ogp-weather-simulation/particles.gif)
-*Figure 1. A 2D profile of an atmosphere represented by elastic particles*
+*Figure 1: A 2D profile of an atmosphere represented by elastic particles*
 
 ## Conservative Semi-Lagrangian Advection Research
 
@@ -32,12 +32,12 @@ by Michael Lentine∗ , J´on T´omas Gr´etarsson∗ , Ronald Fedkiw∗
 http://physbam.stanford.edu/~fedkiw/papers/stanford2010-01.pdf
 
 ![Advection](/assets/2020-05-10-report-ogp-weather-simulation/advection.gif)
-*Figure 2. Conservative advection of air through a constant velocity field*
+*Figure 2: Conservative advection of air through a constant velocity field*
 
 I then implemented incompressible fluid pressure equations, however I could not solve stability issues in my implementation - these can be seen as "checkerboard" patterns in Figure 3., where pressure quantities are oscillating at a high frequency.
 
 ![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/incompressible.gif)
-*Figure 3. Introducing pressure at various locations*
+*Figure 3: Introducing pressure at various locations*
 
 ## Another Approach to Solving the Navier–Stokes Equations
 
@@ -48,19 +48,19 @@ Cline, David & Cardon, David & Egbert, Parris. (2020). Fluid flow for the rest o
 Implementing this paper required solving large sparse matrix equations in the form Ax=b. I used the [math.js](https://mathjs.org/) JavaScript library for this task. The end result of my implementation can be seen in Figure 4., where I introduce an artificial upward force into the velocity field. The matrix solver is attempting to satisfy the condition of zero divergence, this means velocities must be adjusted so there are no regions where air is created or destroyed--this is also what gives rise to the vortices.
 
 ![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/fluid-flow.gif)
-*Figure 4. Particles (blue) are advected according to the velocity field (white lines), with pressure visualized as red*
+*Figure 4: Particles (blue) are advected according to the velocity field (white lines), with pressure visualized as red*
 
 Advancing my goals for representing atmospheric phenomena (e.g., like the buoyancy of warm air), I introduced a temperature quantity that advects according to the velocity field, but also generates a slight buoyant force on the velocity field when there is a sufficient temperature gradient. This is shown in Figure 5.
 
 ![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/temperature.gif)
-*Figure 5. Warm air rising and carrying particles with it*
+*Figure 5: Warm air rising and carrying particles with it*
 
 ## Transferring to the 3D Environment of OGP
 
 Taking what I learned from the prototyping phase to the final 3D representation in the OGP engine was quite straightforward thanks to the generalizations used in the original paper. The simulation is stable in 3 dimensions and responds to external forces like those being introduced in Figure 6. Since the engine is written in C++, I opted to use the highly regarded [Eigen](http://eigen.tuxfamily.org/index.php?title=Main_Page) matrix library for solving the very large matrices involved.
 
 ![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/3d-velocity-field.png)
-*Figure 6. Velocity field visualized in the 3D environment of OGP*
+*Figure 6: Velocity field visualized in the 3D environment of OGP*
 
 ## Future Work
 

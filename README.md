@@ -10,6 +10,13 @@ Look at the themes found [here](https://talk.jekyllrb.com/t/jekyll-theme-showcas
 
 This one seems OK: https://github.com/artemsheludko/flexible-jekyll
 
+# Add to posting instructions
+
+- Directory structures
+- Filenames
+- image optimization
+- figure names consistency
+
 # Things to do
 
 - Fix the RSS feed button (or remove it)
