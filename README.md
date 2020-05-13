@@ -18,6 +18,7 @@ This one seems OK: https://github.com/artemsheludko/flexible-jekyll
 - Arrow keys to cycle through searched posts
 - Enter to go to post
 - Add tag list that, when an item is clicked, will populate the search box
+- Figure out https://gist-it.appspot.com/
 
 # Other
 
