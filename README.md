@@ -31,3 +31,4 @@ This one seems OK: https://github.com/artemsheludko/flexible-jekyll
 # Other
 
 - https://www.brokenlinkcheck.com/
+- https://www.deadlinkchecker.com/
