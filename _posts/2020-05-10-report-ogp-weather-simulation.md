@@ -31,7 +31,12 @@ An Unconditionally Stable Fully Conservative Semi-Lagrangian Method (2010)
 by Michael Lentine∗ , J´on T´omas Gr´etarsson∗ , Ronald Fedkiw∗ 
 http://physbam.stanford.edu/~fedkiw/papers/stanford2010-01.pdf
 
-![Advection](/assets/2020-05-10-report-ogp-weather-simulation/advection.mp4)
+<!-- ![Advection](/assets/2020-05-10-report-ogp-weather-simulation/advection.mp4) -->
+<video controls>
+    <source src="/assets/2020-05-10-report-ogp-weather-simulation/advection.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 *Figure 2: Conservative advection of air through a constant velocity field*
 
 I then implemented incompressible fluid pressure equations, however I could not solve stability issues in my implementation - these can be seen as "checkerboard" patterns in Figure 3., where pressure quantities are oscillating at a high frequency.
