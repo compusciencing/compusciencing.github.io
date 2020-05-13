@@ -71,11 +71,13 @@ An application for this research is in progress for an application for review to
 As part of this investigation, I read multiple papers including Dr. Saquer's pedegologcal approaches to simplify Dynamic Programming [3] and a study of engagement in the computer science classroom [4].
 
 # Future Work
+
 I will discuss online activies with Dr. Saquer and potentially develop them for the Spring 2021 semester.
 
 As studied by John Aycock in [5], I would like to use my ❤️ for computer science history by working to develop a course that uses the challenges and constraints of past computer scientists/developers/etc. to teach modern students valuable skills for the future.  
 
 # References
+
 [1] Anon. Example layout of a 5 x 5 grid set up by the volunteer, Computer Science Education Research Group, University of Canterbury. https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/
 
 [2] Anon. Adding a parity bit to each row and column., Computer Science Education Research Group, University of Canterbury. https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/
