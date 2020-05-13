@@ -33,7 +33,11 @@ To familiarize students with the concept of flipped bit error detection and pari
 
 2. Then I add an additional row and column with "parity bits". The result should be a 6 x 6 with an even number of black tiles in each row and column.
 
-    ![adding a parity bit animation](/assets/2020-05-04-report-cs-teaching-methods/parity-cards.mp4)
+    <video controls autoplay="true">
+        <source src="/assets/2020-05-04-report-cs-teaching-methods/parity-cards.mp4"
+                type="video/mp4">
+        Sorry, your browser doesn't support embedded videos.
+    </video>
 
     - Adding a parity bit to each row and column [2]. [csunplugged.org](https://csunplugged.org/en/topics/error-detection-and-correction/unit-plan/parity-magic/)
 

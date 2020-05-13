@@ -20,7 +20,11 @@ Since OGP aims to provide many physically based simulation systems, it makes sen
 I implemented an initial approach of representing atmosphere volumes as large elastic particles that need only repulse eachother to give the effect of gravity induced pressure and temperature. Unfortunately, this approach leads to rigid crystalline configurations under high pressure - this can be
 seen at the bottom of Figure 1.
 
-![Particles](/assets/2020-05-10-report-ogp-weather-simulation/particles.gif)
+<video controls autoplay="true">
+    <source src="/assets/2020-05-10-report-ogp-weather-simulation/particles.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 *Figure 1: A 2D profile of an atmosphere represented by elastic particles*
 
 ## Conservative Semi-Lagrangian Advection Research
@@ -31,8 +35,7 @@ An Unconditionally Stable Fully Conservative Semi-Lagrangian Method (2010)
 by Michael Lentine∗ , J´on T´omas Gr´etarsson∗ , Ronald Fedkiw∗ 
 http://physbam.stanford.edu/~fedkiw/papers/stanford2010-01.pdf
 
-<!-- ![Advection](/assets/2020-05-10-report-ogp-weather-simulation/advection.mp4) -->
-<video controls>
+<video controls autoplay="true">
     <source src="/assets/2020-05-10-report-ogp-weather-simulation/advection.mp4"
             type="video/mp4">
     Sorry, your browser doesn't support embedded videos.
@@ -41,7 +44,11 @@ http://physbam.stanford.edu/~fedkiw/papers/stanford2010-01.pdf
 
 I then implemented incompressible fluid pressure equations, however I could not solve stability issues in my implementation - these can be seen as "checkerboard" patterns in Figure 3., where pressure quantities are oscillating at a high frequency.
 
-![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/incompressible.gif)
+<video controls autoplay="true">
+    <source src="/assets/2020-05-10-report-ogp-weather-simulation/incompressible.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 *Figure 3: Introducing pressure at various locations*
 
 ## Another Approach to Solving the Navier–Stokes Equations
@@ -52,12 +59,20 @@ Cline, David & Cardon, David & Egbert, Parris. (2020). Fluid flow for the rest o
 
 Implementing this paper required solving large sparse matrix equations in the form Ax=b. I used the [math.js](https://mathjs.org/) JavaScript library for this task. The end result of my implementation can be seen in Figure 4., where I introduce an artificial upward force into the velocity field. The matrix solver is attempting to satisfy the condition of zero divergence, this means velocities must be adjusted so there are no regions where air is created or destroyed--this is also what gives rise to the vortices.
 
-![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/fluid-flow.gif)
+<video controls autoplay="true">
+    <source src="/assets/2020-05-10-report-ogp-weather-simulation/fluid-flow.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 *Figure 4: Particles (blue) are advected according to the velocity field (white lines), with pressure visualized as red*
 
 Advancing my goals for representing atmospheric phenomena (e.g., like the buoyancy of warm air), I introduced a temperature quantity that advects according to the velocity field, but also generates a slight buoyant force on the velocity field when there is a sufficient temperature gradient. This is shown in Figure 5.
 
-![Pressure](/assets/2020-05-10-report-ogp-weather-simulation/temperature.gif)
+<video controls autoplay="true">
+    <source src="/assets/2020-05-10-report-ogp-weather-simulation/temperature.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 *Figure 5: Warm air rising and carrying particles with it*
 
 ## Transferring to the 3D Environment of OGP

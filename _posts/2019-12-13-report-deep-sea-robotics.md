@@ -36,9 +36,11 @@ To create my initial mode, I used Blender. Never having used Blender before, it 
 ![Blender part of model](/assets/2019-12-13-report-deep-sea-robotics/blenderpartofmodel.png)
 *Figure 4: Part of the model in Blender.*
 
-<!-- ![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehiclegif.gif) -->
-
-![Sinking vehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehicle.mp4)
+<video controls autoplay="true">
+    <source src="/assets/2019-12-13-report-deep-sea-robotics/sinkingvehicle.mp4"
+            type="video/mp4">
+    Sorry, your browser doesn't support embedded videos.
+</video>
 *Figure 5: Final model sinking.*
 
 # Going Forward
