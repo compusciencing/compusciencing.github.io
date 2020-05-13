@@ -33,10 +33,12 @@ Going into the research, I knew I wanted to make my focus more about the deep se
 
 To create my initial mode, I used Blender. Never having used Blender before, it took me a while to get comfortable with the controls and build 3-D shapes. While deciding what shape to use, I learned a lot about different shapes that comprise manmade underwater vehicles such as submarines, cameras, and more. Some interesting things that I came upon included the pressure. 
 
-![blenderpartofmodel](/assets/2019-12-13-report-deep-sea-robotics/blenderpartofmodel.png)
+![Blender part of model](/assets/2019-12-13-report-deep-sea-robotics/blenderpartofmodel.png)
 *Figure 4: Part of the model in Blender.*
 
-![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehiclegif.gif)
+<!-- ![sinkingvehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehiclegif.gif) -->
+
+![Sinking vehicle](/assets/2019-12-13-report-deep-sea-robotics/sinkingvehicle.mp4)
 *Figure 5: Final model sinking.*
 
 # Going Forward
