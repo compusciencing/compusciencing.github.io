@@ -9,7 +9,7 @@ Working with Dr. Clark, I can define my research as the development of a web-bas
 
 - [three.js](https://threejs.org): A lightweight cross-browser JavaScript library/API used to create and display animated 3D computer graphics on a Web browser.
 
-- [cannon.js](http://www.cannonjs.org): A rigid body simulation library written in Javascript used to make objects move and interact in a realistic way. 
+- [cannon.js](https://schteppe.github.io/cannon.js/): A rigid body simulation library written in Javascript used to make objects move and interact in a realistic way. 
 
 # Rendering the World
 
