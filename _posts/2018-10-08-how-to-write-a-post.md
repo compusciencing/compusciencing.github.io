@@ -139,7 +139,7 @@ I encourage you to caption and/or cite your assets. If you do so, please use the
 *Figure 6: Velocity field visualized in the 3D environment of OGP*
 ```
 
-Markdown does not include a convient syntax for adding videos. So you will need to use raw html for that, as in this example:
+Markdown does not include a convenient syntax for adding videos. So you will need to use raw HTML, as in this example:
 
 ```markdown
 <video controls autoplay="true">
@@ -150,4 +150,4 @@ Markdown does not include a convient syntax for adding videos. So you will need 
 *Figure 5: Warm air rising and carrying particles with it*
 ```
 
-One final note. It would be great if you would optimize your images before adding them to the repository. I use [`optipng`](http://optipng.sourceforge.net/) and [`mozjpg`](https://mozjpeg.com/) ([command line version](https://github.com/mozilla/mozjpeg)) for png and jpg files, respectively. You can find similar tools for video, gifs, etc.
+One final note. It would be great if you would optimize your images before adding them to the repository. I use [`optipng`](http://optipng.sourceforge.net/) and [`mozjpg`](https://mozjpeg.com/) ([command line version](https://github.com/mozilla/mozjpeg)) for PNG and JPG files, respectively. You can find similar tools for video, gifs, etc.

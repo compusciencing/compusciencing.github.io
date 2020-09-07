@@ -45,5 +45,56 @@ layout: default
     json: '/search.json',
     searchResultTemplate: '<li><a href="{url}">{title} by {author} ({date})</a></li>',
     fuzzy: false
-  })
+  });
+
+  const searchInput = document.getElementById('search-input');
+  const searchOutput = document.getElementById('results-container');
+  const listItems = searchOutput.getElementsByTagName('li');
+
+  let selectedIndex;
+
+  document.addEventListener('keydown', function (e) {
+    const focused = document.activeElement;
+
+    if (focused !== searchInput && e.key === '/')
+    {
+      e.preventDefault();
+      searchInput.focus();
+    }
+    else if (focused === searchInput && e.key === 'Escape')
+    {
+      searchInput.value = '';
+    }
+    else if (focused === searchInput && e.key === 'ArrowDown')
+    {
+      if (listItems.length > 0)
+      {
+        selectedIndex = 0;
+        listItems[selectedIndex].children[0].focus();
+      }
+    }
+    else if (focused === searchInput && e.key === 'ArrowUp')
+    {
+      if (listItems.length > 0)
+      {
+        selectedIndex = listItems.length - 1;
+        listItems[selectedIndex].children[0].focus();
+      }
+    }
+    else if (searchOutput.contains(focused) && e.key === 'ArrowDown')
+    {
+      selectedIndex = (selectedIndex + 1) % listItems.length;
+      listItems[selectedIndex].children[0].focus();
+    }
+    else if (searchOutput.contains(focused) && e.key === 'ArrowUp')
+    {
+      if (selectedIndex === 0) {
+        searchInput.focus();
+      } else {
+        selectedIndex -= 1;
+        listItems[selectedIndex].children[0].focus();
+      }
+    }
+  });
+
 </script>
