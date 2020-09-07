@@ -5,6 +5,8 @@ tags: ["csc197", "csc596", "csc696", "csc798", "csc799", "uhc396", "work study",
 author: "Anthony J. Clark"
 ---
 
+These requirements were written for students at Missouri State University. Please see [Projects Requirements When Working With Prof. Clark](https://compusciencing.github.io/project-requirements.html) for more up-to-date information.
+
 I really enjoy working with students on independent study projects. For such projects, students:
 
 - come up with their own project plan,
