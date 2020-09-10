@@ -13,10 +13,6 @@ This one seems OK: https://github.com/artemsheludko/flexible-jekyll
 # Things to do
 
 - Fix the RSS feed button (or remove it)
-- Add key to delete current search (`esc`)
-- Add key to start a search (`/`)
-- Arrow keys to cycle through searched posts
-- Enter to go to post
 - Add tag list that, when an item is clicked, will populate the search box
 - Figure out https://gist-it.appspot.com/
 - Add link to repo

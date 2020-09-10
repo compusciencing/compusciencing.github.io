@@ -7,13 +7,13 @@ author: "Anthony J. Clark"
 
 I love working with students on research, theses, and independent study projects. For such projects, students:
 
-- come up with their own project plan,
+- come up with their own project plan (or I pay them to work on my project),
 - work on the project for a semester (or longer), and
 - learn something CS-related while developing a new tool or idea.
 
 These projects are **not** a one-on-one class or tutorial.
 
-I've had students design a programming language and build an interpreter, develop a robot path planning algorithm, [create a new markup language for specifying robots](https://compusciencing.github.io/report-arms.html), and [develop a weather simulation](https://compusciencing.github.io/report-ogp-weather-simulation.html). [You can find past projects (starting fall 2018) on this site](https://compusciencing.github.io/).
+I've had students help me design and build robots, design a programming language and build an interpreter, develop a robot path planning algorithm, [create a new markup language for specifying robots](https://compusciencing.github.io/report-arms.html), and [develop a weather simulation](https://compusciencing.github.io/report-ogp-weather-simulation.html). [You can find past projects (starting fall 2018) on this site](https://compusciencing.github.io/).
 
 Getting course credit for a project (rather than getting paid for research) only benefits you if you:
 
@@ -29,7 +29,7 @@ In general, it is more beneficial for students to get paid for working on resear
 
 I require students to write a project proposal ([search "proposal" for examples](https://compusciencing.github.io/)). Proposals must:
 
-- describe a project that can you can complete in a semester (even for longer-term projects),
+- describe a project that can you can complete in a semester (even if you plan on working for multiple terms),
 - detail enough work that will take 5 to 10 hours of work per week,
 - discuss how the project relates to your academic and/or future career,
 - list your goals and a rough time line, and
@@ -39,7 +39,7 @@ You must complete your proposal before the end of the first week of the semester
 
 # Updates and Meetings
 
-I meet with student researchers weekly. These meetings can take anywhere from five minutes to one hour, and we can occasionally skip a meeting or add additional meetings as needed.
+I meet with students weekly. These meetings can take anywhere from five minutes to one hour, and we can occasionally skip a meeting or add additional meetings as needed.
 
 To prepare for meetings, I require all students to **submit a weekly update the night before we meet**. Updates help me prepare for questions and issues, and they provide you with all the information you'll need for your final report (see below). You should email me your weekly updates (or we can use Slack), and write them following this template (you will delete all text inside square brackets):
 
