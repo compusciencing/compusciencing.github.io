@@ -41,7 +41,11 @@ You must complete your proposal before the end of the first week of the semester
 
 I meet with students weekly. These meetings can take anywhere from five minutes to one hour, and we can occasionally skip a meeting or add additional meetings as needed.
 
-To prepare for meetings, I require all students to **submit a weekly update the night before we meet**. Updates help me prepare for questions and issues, and they provide you with all the information you'll need for your final report (see the [Report section](#report) below). For weekly reports, I would like you to use my [GitHub Reports Template](https://github.com/anthonyjclark/reports-template). Please send me a link on Slack to your report the day before we meet.
+To prepare for meetings, I require all students to **submit a weekly update the night before we meet**. Updates help me prepare for questions and issues, and they provide you with all the information you'll need for your final report (see the [Report section](#report) below).
+
+For weekly reports, I would like you to use my [GitHub Reports Template](https://github.com/anthonyjclark/reports-template). You can also include a similar file structure inside your main project repository in a directory called "reports"--meaning you don't *have* to clone that repository.
+
+**Please send me a link on Slack to your report the day before we meet.**
 
 # Grade Justification
 
