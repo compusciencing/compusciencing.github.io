@@ -41,25 +41,7 @@ You must complete your proposal before the end of the first week of the semester
 
 I meet with students weekly. These meetings can take anywhere from five minutes to one hour, and we can occasionally skip a meeting or add additional meetings as needed.
 
-To prepare for meetings, I require all students to **submit a weekly update the night before we meet**. Updates help me prepare for questions and issues, and they provide you with all the information you'll need for your final report (see below). You should email me your weekly updates (or we can use Slack), and write them following this template (you will delete all text inside square brackets):
-
-```text
-# ACTIVITIES/ACCOMPLISHMENTS AND CONCEPTS/LESSONS LEARNED
-
-[List of items you worked on since our last meeting. Some weeks there may not be any—-that's OK.  Including plots, images or videos is great.]
-
-# ISSUES/PROBLEMS
-
-[Any roadblocks you have encountered or issues that you want to discuss.  Please include as many details as possible.]
-
-# PLANS
-
-[Plans for next week (and beyond, as appropriate).]
-
-# ARTICLE SUMMARIES (OPTIONAL)
-
-[Summarize any research articles you have read in the past week.]
-```
+To prepare for meetings, I require all students to **submit a weekly update the night before we meet**. Updates help me prepare for questions and issues, and they provide you with all the information you'll need for your final report (see the [Report section](#report) below). For weekly reports, I would like you to use my [GitHub Reports Template](https://github.com/anthonyjclark/reports-template). Please send me a link on Slack to your report the day before we meet.
 
 # Grade Justification
 
