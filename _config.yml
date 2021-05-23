@@ -4,7 +4,7 @@ description: A collection of posts from Drs. Clark and Moore and their students.
 
 show_excerpts: false
 
-theme: jekyll-theme-minimal
+theme: minima
 
 exclude: [post-template.md, CONTRIBUTING.md]
 
