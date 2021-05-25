@@ -29,7 +29,7 @@ Below is the SDF code required to create this basic object:
 
 Look at all those tags!  I'm getting a headache already.  Wouldn't it be nice if instead we could write something like this:
 
-```
+```text
 robot_body = Box{
     size = 1 1 1
 }
@@ -37,7 +37,7 @@ robot_body = Box{
 
 Or, let's say we want to make many cubes as obstacles for our robot; what if we could define a template called simple_cube to reduce the code even more to something like this:
 
-```
+```text
 robot_body = simple_cube(1, 1, 1)
 ```
 
