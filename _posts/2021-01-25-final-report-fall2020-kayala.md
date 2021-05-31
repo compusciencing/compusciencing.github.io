@@ -1,14 +1,12 @@
 ---
 layout: post
-title: Final Report - Fall 2020 Semester
-tags: ["kevin", "independent study", "unreal engine", "arcslab"]
+title: "Report: Unreal Engine Robot Simulation"
+tags: ["independent study", "unreal engine", "arcslab"]
 author: "Kevin Ayala"
 include_mathjax: false
 ---
 
-
-# Activities/Accomplishments and Concepts/Lessons Learned #
-Concepts:
+# Concepts:
 
 - Working with Unreal Engine
 
@@ -21,7 +19,7 @@ Concepts:
     - Perlin noise generated maps
     - Transfer to Unreal Engine 4.25
 
-Activities:
+# Activities:
 
 - I started the semester learning about Unreal Engine. I spent time making new materials and 
 - objects, learning about Level Of Detail(LOD) mechanics and best practices for making hyper realistic environments. Part of that was learning about how to efficiently show realistic environments, and that hinged around only loading what is necessary.
