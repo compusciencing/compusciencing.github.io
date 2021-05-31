@@ -10,10 +10,10 @@ Whenever a pull request is merged into this repository, GitHub Pages will automa
 - Add tag list that, when an item is clicked, will populate the search box
 - Figure out https://gist-it.appspot.com/
 - Add link to repo
-- Add privacy-friendly analytics
 - Process images
 
 # Other
 
 - https://www.brokenlinkcheck.com/
 - https://www.deadlinkchecker.com/
+- https://compusciencing.goatcounter.com/
