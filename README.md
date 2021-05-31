@@ -4,18 +4,14 @@ Here are instructions for [How to Write a Post](https://compusciencing.github.io
 
 Whenever a pull request is merged into this repository, GitHub Pages will automatically run [Jekyll](https://jekyllrb.com/) to rebuild the site. You do not need to do anything other than commit a markdown file and your assets.
 
-# Features to add
-
-Look at the themes found [here](https://talk.jekyllrb.com/t/jekyll-theme-showcase-share-your-jekyll-themes/1382/15), [here](https://github.com/topics/jekyll-theme), and [here](https://github.com/jekyll/jekyll/wiki/Themes).
-
-This one seems OK: https://github.com/artemsheludko/flexible-jekyll
-
 # Things to do
 
 - Fix the RSS feed button (or remove it)
 - Add tag list that, when an item is clicked, will populate the search box
 - Figure out https://gist-it.appspot.com/
 - Add link to repo
+- Add privacy-friendly analytics
+- Process images
 
 # Other
 
