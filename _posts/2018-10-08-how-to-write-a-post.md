@@ -5,9 +5,7 @@ tags: ["blog", "how to"]
 author: "Anthony J. Clark"
 ---
 
-Updates:
-
-- *September 2020*, by Anthony Clark
+*Latest update: July 13, 2021*
 
 This is a short description of how to commit a post to this blog. It will be updated as we find better methods or add new features. (Please feel free to make changes to this document and add your name above.)
 
@@ -139,15 +137,6 @@ I encourage you to caption and/or cite your assets. If you do so, please use the
 *Figure 6: Velocity field visualized in the 3D environment of OGP*
 ```
 
-Markdown does not include a convenient syntax for adding videos. So you will need to use raw HTML, as in this example:
-
-```markdown
-<video controls autoplay="true">
-    <source src="/assets/2020-05-10-report-ogp-weather-simulation/temperature.mp4"
-            type="video/mp4">
-    Sorry, your browser doesn't support embedded videos.
-</video>
-*Figure 5: Warm air rising and carrying particles with it*
-```
+[GitHub added support for including videos in markdown files as of May 2021.](https://github.blog/2021-05-13-video-uploads-available-github/).
 
 One final note. It would be great if you would optimize your images before adding them to the repository. I use [`optipng`](http://optipng.sourceforge.net/) and [`mozjpg`](https://mozjpeg.com/) ([command line version](https://github.com/mozilla/mozjpeg)) for PNG and JPG files, respectively. You can find similar tools for video, gifs, etc.
