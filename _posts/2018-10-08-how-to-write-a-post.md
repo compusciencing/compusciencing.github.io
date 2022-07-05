@@ -5,7 +5,7 @@ tags: ["blog", "how to"]
 author: "Anthony J. Clark"
 ---
 
-*Latest update: July 13, 2021*
+*Latest update: July 5, 2022*
 
 This is a short description of how to commit a post to this blog. It will be updated as we find better methods or add new features. (Please feel free to make changes to this document and add your name above.)
 
@@ -23,20 +23,24 @@ git checkout -b post-<YOUR_POST_NAME>
 # Create a new post (see resources below for editing Markdown)
 # - Replace <DATE> with the current date in YYYY-MM-DD format
 # - Replace <YOUR_POST_NAME> with the same value as the branch above
-touch _posts/<DATE>-<YOUR_POST_NAME>.md
+cp post-template.md _posts/<DATE>-<YOUR_POST_NAME>.md
 
 # Edit the post using whatever text or code editor you prefer
+
+# You might also want to add files in the assets directory
+mkdir assets/<DATE>-<YOUR_POST_NAME>
+
+# Optionally, add assets to the above directory
 
 # Add post to repository and commit
 # - Replace <DATE> with the current date in YYYY-MM-DD format
 # - Replace <YOUR_POST_NAME> with the same value as above
 # - Replace <YOUR_COMMIT_MESSAGE> with a brief description of your post
 git add _posts/<DATE>-<YOUR_POST_NAME>.md
+git add assets/<DATE>-<YOUR_POST_NAME>
 git commit -m "<YOUR_COMMIT_MESSAGE>"
 
-# You might also want to add files in the assets directory
-
-# Fork this repository on GitHub (or use https://hub.github.com/)
+# Fork this repository on GitHub (or use https://hub.github.com/ or https://cli.github.com/)
 
 # Add your remote and push your changes
 # - Replace <YOUR_USER> with your GitHub username
@@ -44,7 +48,7 @@ git commit -m "<YOUR_COMMIT_MESSAGE>"
 git remote add <YOUR_USER> https://github.com/<YOUR_USER>/compusciencing.github.io.git
 git push <YOUR_USER> post-<YOUR_POST_NAME>
 
-# Submit a pull request on GitHub (or use https://hub.github.com/)
+# Submit a pull request on GitHub (or use https://hub.github.com/ or https://cli.github.com/)
 ```
 
 Here are links to the GitHub guide for [forking](https://guides.github.com/activities/forking/#fork) and [submitting a pull request](https://guides.github.com/activities/forking/#making-a-pull-request).
@@ -96,7 +100,6 @@ git merge origin/master
 - [Previewing Your Markdown Post](http://lmgtfy.com/?q=markdown+editor) (you can use any Markdown editor to view a version of your post locally before you submit; **the styling will be different though**)
 
 # Repository Structure
-
 
 Below is a listing of the relevant files and directories for creating new posts. You can ignore all other files.
 

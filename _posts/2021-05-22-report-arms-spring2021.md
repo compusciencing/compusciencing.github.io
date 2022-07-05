@@ -35,7 +35,7 @@ robot_body = Box{
 }
 ```
 
-Or, let's say we want to make many cubes as obstacles for our robot; what if we could define a template called simple_cube to reduce the code even more to something like this:
+Or, let's say we want to make many cubes as obstacles for our robot; what if we could define a template called `simple_cube` to reduce the code even more to something like this:
 
 ```text
 robot_body = simple_cube(1, 1, 1)
