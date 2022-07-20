@@ -96,7 +96,7 @@ Although we'll use our Linux server for the heavy lifting, it is nice to test th
     - Replace the target with
 
     ~~~
-    %ProgramFiles%\PowerShell\7\pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'C:\Users\ajcd2020\AppData\Local\mambaforge\shell\condabin\conda-hook.ps1' ; conda activate 'C:\Users\ajcd2020\AppData\Local\mambaforge' "
+    %ProgramFiles%\PowerShell\7\pwsh.exe -WorkingDirectory ~ -ExecutionPolicy ByPass -NoExit -Command "& 'C:\Users\ajcd2020\AppData\Local\mambaforge\shell\condabin\conda-hook.ps1' ; conda activate 'C:\Users\ajcd2020\AppData\Local\mambaforge' "
     ~~~
 
 # Setup UnrealCV
