@@ -151,7 +151,7 @@ We'll first create a conda environment, and then we'll use that to build the Unr
 
 Now we'll put this all together to start an Unreal Engine binary and connect to it from a server.
 
-1. [Modify the specified UE5 config file](https://docs.unrealcv.org/en/master/plugin/package.html#modify-an-ue4-config-file).
+1. [Modify the specified UE5 config file](https://docs.unrealcv.org/en/master/plugin/package.html#modify-an-ue4-config-file). This only needs to be completed one time for the UE5 installation.
 2. Launch UE5 and create a new project using the "Game + Blank + C++" options.
     - The official UnrealCV documentation states to use a "First Person + BluePrint" project, but using a BluePrint leads to errors. You can use "First Person" if it is useful.
 3. Close the project after it opens (it will open Visual Studio as well as UE5).
@@ -180,3 +180,28 @@ Now we'll put this all together to start an Unreal Engine binary and connect to 
     ~~~
 
 If all goes well, you see a confirmation message stating the the connection occurred.
+
+We should also put the project under version control. Here is one method:
+
+1. Create a repository on the host (e.g., GitHub).
+2. Clone the repository to a temporary directory.
+3. Move the contents of the temporary directory into the UE5 project directory.
+4. Install git lfs `git lfs install`.
+5. Add the following `.gitattributes` file (and modify as needed).
+   ~~~bash
+   # UE file types
+   *.uasset filter=lfs diff=lfs merge=lfs -text
+   *.umap filter=lfs diff=lfs merge=lfs -text
+   
+   # Raw Content types
+   *.fbx filter=lfs diff=lfs merge=lfs -text
+   *.3ds filter=lfs diff=lfs merge=lfs -text
+   *.psd filter=lfs diff=lfs merge=lfs -text
+   *.png filter=lfs diff=lfs merge=lfs -text
+   *.mp3 filter=lfs diff=lfs merge=lfs -text
+   *.wav filter=lfs diff=lfs merge=lfs -text
+   *.xcf filter=lfs diff=lfs merge=lfs -text
+   *.jpg filter=lfs diff=lfs merge=lfs -text
+    ~~~
+6. Check for untracked files with: `git -C "$(git rev-parse --show-cdup)" ls-files --others --exclude-standard -z | xargs -0 ls -lR | awk '{sum += $5; print $5 "\t" $9}END{print sum}' | numfmt --field=1 --to=iec | sort -h | column -t`
+7. Use repository normally.
