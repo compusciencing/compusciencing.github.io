@@ -204,4 +204,5 @@ We should also put the project under version control. Here is one method:
    *.jpg filter=lfs diff=lfs merge=lfs -text
     ~~~
 6. Check for untracked files with: `git -C "$(git rev-parse --show-cdup)" ls-files --others --exclude-standard -z | xargs -0 ls -lR | awk '{sum += $5; print $5 "\t" $9}END{print sum}' | numfmt --field=1 --to=iec | sort -h | column -t`
-7. Use repository normally.
+7. Remove all unused assets (Content Drawer -> Add an asset filter. -> Other Filters -> Not Used In Any Level).
+8. Use repository normally.
