@@ -185,7 +185,7 @@ Now we'll put this all together to start an Unreal Engine binary and connect to 
 If all goes well, you see a confirmation message stating the the connection occurred in both terminal and the UE5 output log. You may also want to ensure your able to complete requests via the following command:
 
 ~~~python
-client.request('vget /unrealcv/status')
+    client.request('vget /unrealcv/status')
 ~~~
 
 If you see a message that says something along the lines of "Is Listening", you should be fine. 
