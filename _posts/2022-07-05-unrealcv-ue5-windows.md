@@ -149,8 +149,6 @@ We'll first create a conda environment, and then we'll use that to build the Unr
 
 # Setup a UE5 Binary
 
-# Setup a UE5 Binary
-
 Now we'll put this all together to start an Unreal Engine binary and connect to it from a server.
 
 1. [Modify the specified UE5 config file](https://docs.unrealcv.org/en/master/plugin/package.html#modify-an-ue4-config-file) (section 1 of this article). This only needs to be completed one time for the UE5 installation.
