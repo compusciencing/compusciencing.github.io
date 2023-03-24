@@ -151,14 +151,15 @@ We'll first create a conda environment, and then we'll use that to build the Unr
 
 Now we'll put this all together to start an Unreal Engine binary and connect to it from a server.
 
-1. [Modify the specified UE5 config file](https://docs.unrealcv.org/en/master/plugin/package.html#modify-an-ue4-config-file). This only needs to be completed one time for the UE5 installation.
+1. [Modify the specified UE5 config file](https://docs.unrealcv.org/en/master/plugin/package.html#modify-an-ue4-config-file) (section 1 of this article). This only needs to be completed one time for the UE5 installation.
 2. Launch UE5 and create a new project using the "Game + Blank + C++" options.
     - The official UnrealCV documentation states to use a "First Person + BluePrint" project, but using a BluePrint leads to errors. You can use "First Person" if it is useful.
 3. Close the project after it opens (it will open Visual Studio as well as UE5).
 4. Copy the "Plugins" directory from the unrealcv directory to the newly created project directory.
 5. Reopen the UE5 project.
-    - The UnrealCV plugin should already be enabled at this stage.
+    - The UnrealCV plugin should already be enabled at this stage. But if it is not, manually enable by going to settings in the UE5 project, clicking 'Plugins', and searching for 'Unreal CV'. If it not already enabled, you will have to close and reopen UE5 after enabling it. 
 6. Click the button to package a binary for Windows and wait for it to build.
+    - Note: originally this could be done via the 'File' tab on the taskbar. But on most recent UE5.1 update, this option has been moved and the documentation does not match the UI. You must go to 'Platforms' (near the play button) -> 'Windows' -> 'Package Project'.
 7. Edit the `Windows\PROJECT\Saved\Config\Windows\GameUserSettings.ini` file.
     - Update `ResolutionSizeX` and `Y` to your preferences
     - Update `LastUserConfirmedResolutionSizeX` and `Y` to your preferences
@@ -171,15 +172,28 @@ Now we'll put this all together to start an Unreal Engine binary and connect to 
 11. Once this PuTTY connection is active, you can switch to a terminal of your choice.
     - Make certain that ports match between UnrealCV, PuTTY, and the client on the server.
 12. Activate any needed environment on the server and open a Python REPL.
-13. Test the connection using the following commands:
+13. Press play in your UE5 project.
+    - Requests are not able to be returned if not in play mode.
+14. Test the connection using the following commands:
 
     ~~~python
     from unrealcv import Client
-    client = Client(('localhost', 8000))
+    client = Client(('localhost', 9000))
     client.connect(timeout=5)
     ~~~
 
-If all goes well, you see a confirmation message stating the the connection occurred.
+If all goes well, you see a confirmation message stating the the connection occurred in both terminal and the UE5 output log. You may also want to ensure your able to complete requests via the following command:
+
+    ~~~python
+    client.request('vget /unrealcv/status')
+    ~~~
+
+If you see a message that says something along the lines of "Is Listening", you should be fine. 
+
+If you run into a port connection error:
+1. Check if the client port and UE5 project port are the same.
+    - Search 'Port' in the 'Output Log' of your project and use whatever port it specifies as default in your creation of the Client object.
+2. Check if the port UE5 is using is in use. You may need to [kill the process that is using the port](https://stackoverflow.com/questions/39632667/how-do-i-kill-the-process-currently-using-a-port-on-localhost-in-windows) then restart UE5.
 
 We should also put the project under version control. Here is one method:
 
