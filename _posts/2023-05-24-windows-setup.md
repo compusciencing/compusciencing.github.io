@@ -36,7 +36,11 @@ When I tried to install the Windows Terminal within this updated PowerShell, I g
 
 ![Error Message in installing Windows Terminal](/assets/2023-05-24-windows-setup/errormessage.png)
 
-To mitigate this, right click on the PowerShell icon and hit “Run as Administrator.” Then, copy in the same command line as before but delete “scope machine.” Not sure why, but it should work after this.
+To mitigate this, right click on the PowerShell icon and hit “Run as Administrator.” Then, copy in the following command.
+
+~~~bash
+winget install --id Microsoft.WindowsTerminal --source winget
+~~~
 
 # Visual Studio Code and Git
 
