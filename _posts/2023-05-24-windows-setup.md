@@ -50,7 +50,8 @@ Follow the same procedure for [installing git](https://gitforwindows.org/).
 
 # Epic Games Laucher
 
-You’ll see in Prof Clark’s instructions that it says to “Create a new email address” because he doesn’t want us to use our personal accounts. I’ll put the new email/password on the shared doc.
+Download and install the [Epic Games Launcher using their installer](https://store.epicgames.com/en-US/download). You can find the email and password to use in the Google Doc.
+
 Once you’re all logged in, your Epic Games screen should look like this:
 
 
