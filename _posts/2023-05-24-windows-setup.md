@@ -1,10 +1,12 @@
 ---
 layout: post
 title: "ARCS Lab Windows PC Setup"
-tags: ["list", "of", "tags"]
+tags: ["windows", "setup", "how to","installation"]
 author: "Anjali Nuggehalli"
-"Here's how we set up a Windows PC to use with various applications"
+
 ---
+
+Here's how we set up a Windows PC to use with various applications!
 
 # AppInstaller and WinGet
 
