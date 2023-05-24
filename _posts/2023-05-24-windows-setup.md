@@ -51,9 +51,7 @@ Follow the same procedure for [installing git](https://gitforwindows.org/).
 # Epic Games Laucher
 
 You’ll see in Prof Clark’s instructions that it says to “Create a new email address” because he doesn’t want us to use our personal accounts. I’ll put the new email/password on the shared doc.
-## Login Details
-
-If you need to enter DOB for whatever reason, use 08/23/2004. The display name is ARCS Lab. Once you’re all logged in, your Epic Games screen should look like this:
+Once you’re all logged in, your Epic Games screen should look like this:
 
 
 ![Epic Games Launcher](/assets/2023-05-24-windows-setup/epicgames.png)
