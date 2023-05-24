@@ -6,7 +6,7 @@ author: "Anjali Nuggehalli"
 
 ---
 
-Here's how we set up a Windows PC to use with various applications!
+Here's how we set up a Windows PC to use with Unreal Engine 5 and a proper shell to use when connecting to the Pomona HPCs.
 
 # AppInstaller and WinGet
 
