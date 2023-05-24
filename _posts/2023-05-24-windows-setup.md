@@ -1,9 +1,8 @@
 ---
 layout: post
 title: "ARCS Lab Windows PC Setup"
-tags: ["windows", "setup", "how to","installation"]
+tags: ["windows", "setup", "how to", "installation"]
 author: "Anjali Nuggehalli"
-
 ---
 
 Here's how we set up a Windows PC to use with Unreal Engine 5 and a proper shell to use when connecting to the Pomona HPCs.
