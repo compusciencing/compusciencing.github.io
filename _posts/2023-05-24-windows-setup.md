@@ -68,6 +68,6 @@ Repeat this same process for Twinmotion (The installation tab is also within Epi
 
 # MambaForge
 
-For Mambaforge, you might get a notification that it could be harmful to your device. Just run it anyways!
+Download and install [Mambaforge using their installer](https://github.com/conda-forge/miniforge#Mambaforge), you might get a notification that it could be harmful to your device. Just run it anyways!
 
 
