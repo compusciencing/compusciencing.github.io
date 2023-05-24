@@ -40,7 +40,9 @@ To mitigate this, right click on the PowerShell icon and hit “Run as Administr
 
 # Visual Studio Code and Git
 
-Installing Visual Studio Code is pretty simple. Download it directly from the App Store rather than copying in any command line because Prof. Clark said we get more features this way. For installing Git, I just pressed next on everything - pretty straightforward.
+Download and install [Visual Studio Code using their provided installer](https://code.visualstudio.com/download).
+
+Follow the same procedure for [installing git](https://gitforwindows.org/).
 
 # Epic Games Laucher
 
