@@ -58,7 +58,7 @@ Once you’re all logged in, your Epic Games screen should look like this:
 
 ## Unreal Engine Installation and TwinMotion
 
-Then hit "Install Engine" in the top right corner. We don’t want to install it using `C:` (it’ll take up too much storage), so hit “Browse” and then under the “Devices and Drives” tab within your File Explorer, select the `E:` disk. Right click, create a new folder called “Programs,” and select this folder to be your install location. Once you select it, you should see something like this: (It was `D:` on my computer, but Prof Clark mentioned that it’ll probably be `E:` on the other computer).
+Next hit "Install Engine" in the top right corner. We don’t want to install it using `C:` (it’ll take up too much storage), so hit “Browse” and then under the “Devices and Drives” tab within your File Explorer, select the `E:` disk. Right click, create a new folder called “Programs,” and select this folder to be your install location. Once you select it, you should see something like this: (It was `D:` on my computer, but Prof Clark mentioned that it’ll probably be `E:` on the other computer).
 
 
 ![Installing Unreal Engine](/assets/2023-05-24-windows-setup/unrealengine.png)
