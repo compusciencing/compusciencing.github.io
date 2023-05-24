@@ -67,6 +67,6 @@ Repeat this same process for Twinmotion (The installation tab is also within Epi
 
 # MambaForge
 
-Download and install [Mambaforge using their installer](https://github.com/conda-forge/miniforge#Mambaforge), you might get a notification that it could be harmful to your device. Just run it anyways!
+Download and install [Mambaforge using their installer](https://github.com/conda-forge/miniforge#Mambaforge), you might get a notification that it could be harmful to your device. Just run it anyways! You may need to create a new folder within your Programs folder and title it "Mambaforge." Select that, and then the installation should proceed. Another note is when searching for the application within your Windows search, type in "Miniforge" to access it.
 
 
