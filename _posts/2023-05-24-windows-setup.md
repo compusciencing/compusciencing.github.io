@@ -18,7 +18,13 @@ PowerShell is already installed on your computer, but it’s the older version. 
 
 ![Older version of Powershell](/assets/2023-05-24-windows-setup/powershellOLD.png)
 
-However, this is the older version of PowerShell. Copy in the new command line to get the updated version. It’ll look like this:
+However, this is the older version of PowerShell. Copy in the new command line to get the updated version.
+
+~~~bash
+winget install --scope machine --id Microsoft.Powershell --source winget
+~~~
+
+It’ll look like this when you have it installed:
 
 
 ![Newer version of PowerShell](/assets/2023-05-24-windows-setup/powershellNEW.png)
