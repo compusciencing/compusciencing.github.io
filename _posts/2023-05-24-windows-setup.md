@@ -54,9 +54,29 @@ To mitigate this, right click on the PowerShell icon and hit "Run as Administrat
 winget install --id Microsoft.WindowsTerminal --source winget
 ~~~
 
-# Visual Studio Code and Git
+# MambaForge
 
-Download and install [Visual Studio Code using their provided installer](https://code.visualstudio.com/download).
+Begin by creating a folder named "Programs" on the second drive (not the `C:` where you'll find Windows OS files). On one lab machine the second drive is called the `D:` and on the other it is called the `E:`. Create a folder named "Mambaforge" inside "Programs" and then download and install [Mambaforge using their installer](https://github.com/conda-forge/miniforge#Mambaforge). You might get a notification that it could be harmful to your device. Just run it anyways! When asked for an installation location make sure you choose the non-`C:`.
+
+You can launch the Mambaforge shell by running the `miniforge` prompt, but I recommend using Windows Terminal. You can create a "Mambaforge" profile by
+
+1. Click on the down arrow next to the plus sign (in the top bar to the right of the tabs) and select "Settings."
+2. Scroll down on the left pane and click "Add a new profile."
+3. Duplicate the "PowerShell" profile.
+4. Change the following fields:
+  - Name to `Mambaforge`
+  - Command line to `pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'D:\Programs\Mambaforge\shell\condabin\conda-hook.ps1' ; conda activate 'D:\Programs\Mambaforge' "` 
+
+# Utilities
+
+Install the following applications using their installers
+
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [git for Windows](https://gitforwindows.org/)
+- [7-Zip](https://www.7-zip.org/) (install the 64-bit version onto local drive)
+- [Git LFS](https://git-lfs.com/)
+- [Slack](https://slack.com/downloads/windows)
+- [Zoom](https://zoom.us/download)
 
 You'll also need to download [Open Stage Control](https://openstagecontrol.ammd.net/). It does not come with an installer. Instead, you will download the zip file and extract it to the "Programs" folder that you created earlier.
 
