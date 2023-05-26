@@ -7,6 +7,8 @@ author: "Anjali Nuggehalli"
 
 Here are some instructions on how to set up a Windows PC for use in the ARCS lab. The campus is currently using Windows 10, and the lab machines are on the campus-wide system. You should have permission to install software, but reach out to Prof Clark if you do not.
 
+**Please install software for all users whenever given the chance.**
+
 At the end, you'll end up with:
 
 - PowerShell
@@ -46,21 +48,38 @@ If you attempt to install Windows Terminal without administrator privileges yuo 
 
 ![Error Message in installing Windows Terminal](/assets/2023-05-24-windows-setup/errormessage.png)
 
-To mitigate this, right click on the PowerShell icon and hit “Run as Administrator.” Then, run the following command.
+To mitigate this, right click on the PowerShell icon and hit "Run as Administrator." Then, run the following command.
 
 ~~~bash
 winget install --id Microsoft.WindowsTerminal --source winget
 ~~~
 
-# Visual Studio Code
+# MambaForge
 
-Download and install [Visual Studio Code using their provided installer](https://code.visualstudio.com/download).
+Begin by creating a folder named "Programs" on the second drive (not the `C:` where you'll find Windows OS files). On one lab machine the second drive is called the `D:` and on the other it is called the `E:`. Download and install [Mambaforge using their installer](https://github.com/conda-forge/miniforge#Mambaforge), you might get a notification that it could be harmful to your device. Just run it anyways! When asked for an installation location make sure you choose the non-`C:`.
 
-# git For Windows
+You can launch the Mambaforge shell by running the `miniforge` prompt, but I recommend using Windows Terminal. You can create a "Mambaforge" profile by
 
-Download and install [git for Windows using their provided installer](https://gitforwindows.org/).
+1. Clicking on the down arrow next to the plus sign in the top bar to the right of the tabs and selecting "Settings."
+2. Then create a new profile and set
+  - "commandline" to `pwsh.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\ajcd2020\\AppData\\Local\\mambaforge\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\ajcd2020\\AppData\\Local\\mambaforge' \"` (but change the path to the one on your computer)
+  - "name" to `Mambaforge`
+  - "startingDirectory" to `%USERPROFILE%`
 
-# Epic Games Laucher
+# Utilities
+
+Install the following applications using their installers
+
+- [Visual Studio Code](https://code.visualstudio.com/download)
+- [git for Windows](https://gitforwindows.org/)
+- [7-Zip](https://www.7-zip.org/)
+- [Git LFS](https://git-lfs.com/)
+- [Slack](https://slack.com/downloads/windows)
+- [Zoom](https://zoom.us/download)
+
+You'll also need to download [Open Stage Control](https://openstagecontrol.ammd.net/). It does not come with an installer. Instead, you will download the zip file and extract it to the
+
+# Epic Games Laucher, Unreal Engine, and TwinMotion
 
 Download and install the [Epic Games Launcher using their installer](https://store.epicgames.com/en-US/download). You can find the email and password to use in the lab notes (contact Prof Clark if you can't find them).
 
@@ -68,14 +87,8 @@ Once you’re all logged in, your Epic Games screen should look like this:
 
 ![Epic Games Launcher](/assets/2023-05-24-windows-setup/epicgames.png)
 
-## Unreal Engine Installation and TwinMotion
-
 Next hit "Install Engine" in the top right corner. Since it takes up a bunch of space (over 100 GB) We want to install it on the second drive (not the `C:` where you'll find Windows OS files), so hit “Browse” and then under the “Devices and Drives” tab within your File Explorer, select the non-`C:` disk. Right click, create a new folder called “Programs,” and select this folder to be your install location. Once you select it, you should see something like this: (It was `D:` on my computer, but Prof Clark mentioned that it’ll probably be `E:` on the other computer).
 
 ![Installing Unreal Engine](/assets/2023-05-24-windows-setup/unrealengine.png)
 
 Repeat this same process for Twinmotion (The installation tab is also within Epic Games), which should also be installed on the second drive.
-
-# MambaForge
-
-Download and install [Mambaforge using their installer](https://github.com/conda-forge/miniforge#Mambaforge), you might get a notification that it could be harmful to your device. Just run it anyways! You will need to create a new folder within your Programs folder on the second drive and title it "Mambaforge." Select that, and then the installation should proceed. Another note is when searching for the application within your Windows search, type in "Miniforge" to access it.
