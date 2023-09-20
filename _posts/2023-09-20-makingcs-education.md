@@ -69,7 +69,7 @@ Here is the stuffed version of Trapp.
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
 
-*Figure 2:* Zeus is a good stuffie.
+*Figure 2:* Zeus is a good stuffed animal.
 
 We used [Polycam](https://poly.cam/) on an iPad to create a mesh of the stuffed animal from a series of photos.
 
@@ -97,137 +97,131 @@ For the e-textiles project we were asked to play around with the [Adafruit Gemma
 
 *Figure 4: Adafruit Gemma M0*
 
+### Wiring Diagram
+
 Here is my wiring diagram for the project my daughter and I decided to build.
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/GemmaM0Diagram.png">
+
+*Figure 5:* Wiring diagram for the Gemma M0.
 
 And here is the final working product.
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/WorkingGemmaM0.webp">
 
+*Figure 6:* The final working product.
 
+### Editing and Running Code
 
+I tried the [Mu Editor](https://codewith.mu/) for a bit, but it was not to my taste. Instead I used `screen` at the terminal to handle communication, and [Helix](https://helix-editor.com/) as the text editor. Here are the commands I would execute to get started after plugging in the Gemma M0.
 
+```bash
+# Start screen in one terminal (CTRL-A D to detach; CTRL-A K to kill)
+screen -S circuitpy /dev/tty.usbmodemNUMBER
 
+# The following will reattach to the screen session if it is already running
+screen -r circuitpy
 
+# Start helix in another terminal
+❯ hx /Volumes/CIRCUITPY/code.py
+```
 
+I would change `NUMBER` to whatever appears in the autocompletion list.
 
+Here is an image of this setup:
 
+<div style="display: flex;">
+	<div style="flex: 45%; padding 2px;">
+		<img width="100%" src="/assets/2023-09-20-makingcs-cseducation/Code.png" alt="Coding" />
+	</div>
+	<div style="flex: 45%; padding 2px;">
+		<img width="100%" src="/assets/2023-09-20-makingcs-cseducation/SerialCommunication.png" alt="Serial communication" />
+	</div>
+</div>
 
+*Figure 7:* Coding and serial communication.
 
+The recommended way to interact with CircuitPy was through the MacOS Finder window. I had trouble with running out of space using this method. I found it easier to use the terminal. Here are some useful commands:
 
+```bash
+# Copy a library folder or file to the device
+❯ cp -rX FOLDER /Volumes/CIRCUITPY/lib/
+❯ cp -X FILE /Volumes/CIRCUITPY/lib/
 
+# Copy the script to the host as a backup
+❯ cp /Volumes/CIRCUITPY/code.py .
+```
 
+```text
+# Start from scratch on the Gemma M0
+Code stopped by auto-reload. Reloading soon.
+soft reboot
 
+Auto-reload is on. Simply save files over USB to run them or enter REPL to disable.
+code.py output:
+Traceback (most recent call last):
+  File "code.py", line 65, in <module>
+KeyboardInterrupt:
 
+Code done running.
 
+Press any key to enter the REPL. Use CTRL-D to reload.
 
-
-
-
-
-
-
-
-
-
-
-
-
-# screen -S circuitpy /dev/tty.usbmodem2301
-# ctrl-a d to detach
-# ctrl-a k to kill
-# screen -r circuitpy
-
-
+Adafruit CircuitPython 8.2.6 on 2023-09-12; Adafruit Gemma M0 with samd21e18
 >>> import storage
 >>> storage.erase_filesystem()
+```
 
+```text
+# Check disk usage
+❯ duf /Volumes/CIRCUITPY/
+╭─────────────────────────────────────────────────────────────────────────────────────────╮
+│ 1 local device                                                                          │
+├────────────────────┬───────┬───────┬───────┬─────────────────────┬───────┬──────────────┤
+│ MOUNTED ON         │  SIZE │  USED │ AVAIL │         USE%        │ TYPE  │ FILESYSTEM   │
+├────────────────────┼───────┼───────┼───────┼─────────────────────┼───────┼──────────────┤
+│ /Volumes/CIRCUITPY │ 47.0K │ 13.0K │ 34.0K │ [##........]  27.7% │ msdos │ /dev/disk2s1 │
+╰────────────────────┴───────┴───────┴───────┴─────────────────────┴───────┴──────────────╯
+```
 
-mdutil -i off /Volumes/CIRCUITPY
-cd /Volumes/CIRCUITPY
-rm -rf .{,_.}{fseventsd,Spotlight-V*,Trashes}
-mkdir .fseventsd
-touch .fseventsd/no_log .metadata_never_index .Trashes
-cd -
-
-cp -rX folder_to_copy /Volumes/CIRCUITPY
-
-duf
-
-❯ dust /Volumes/CIRCUITPY/
-❯ df /Volumes/CIRCUITPY/
-
-
-
-❯ cp -X lib/adafruit_dotstar.mpy /Volumes/CIRCUITPY/lib/
-ImportError: no module named 'adafruit_pixelbuf'
-❯ cp -X lib/adafruit_pixelbuf.mpy /Volumes/CIRCUITPY/lib/
-
-Gemma capabilities
-
-- internal RGB led --> `DotStar`
-	+ from rainbowio import colorwheel
-- internal led board.LED --> `digitalio`
-- touch input A0, A1, A2 --> `TouchIn`
-
-python -m pip install circup
-circup list
-circup install --auto
-circup freeze
-
-❯ cp /Volumes/CIRCUITPY/code.py .
-
-❯ df /Volumes/CIRCUITPY/
-Filesystem   512-blocks Used Available Capacity iused ifree %iused  Mounted on
-/dev/disk2s1         94   23        71    25%     512     0  100%   /Volumes/CIRCUITPY
-
+```text
+# Check file sizes
 ❯ dust -c /Volumes/CIRCUITPY/
-  0B     ┌── no_log                │                                                                           ░█ │   0%
-512B   ┌─┴ .fseventsd              │                                                                           ██ │   2%
-512B   ├── boot_out.txt            │                                                                           ██ │   2%
-2.0K   ├── code.py                 │                                                                       ██████ │   7%
-1.0K   │ ┌── adafruit_ticks.mpy    │                                                     ░░░░░░░░░░░░░░░░░░░░░███ │   4%
-1.5K   │ ├── adafruit_dotstar.mpy  │                                                     ░░░░░░░░░░░░░░░░░░░█████ │   5%
-2.5K   │ ├── adafruit_debouncer.mpy│                                                     ░░░░░░░░░░░░░░░░████████ │   9%
-3.0K   │ ├── adafruit_pixelbuf.mpy │                                                     ░░░░░░░░░░░░░░░█████████ │  11%
-8.5K   ├─┴ lib                     │                                                     ████████████████████████ │  31%
- 27K ┌─┴ CIRCUITPY                 │█████████████████████████████████████████████████████████████████████████████ │ 100%
+  0B     ┌── no_log                │                                               █ │   0%
+512B   ┌─┴ .fseventsd              │                                               █ │   2%
+512B   ├── boot_out.txt            │                                               █ │   2%
+3.5K   ├── code.py                 │                                          ██████ │  12%
+1.0K   │ ┌── adafruit_ticks.mpy    │                                 ░░░░░░░░░░░░░██ │   3%
+1.5K   │ ├── adafruit_dotstar.mpy  │                                 ░░░░░░░░░░░░███ │   5%
+2.5K   │ ├── adafruit_debouncer.mpy│                                 ░░░░░░░░░░█████ │   9%
+3.0K   │ ├── adafruit_pixelbuf.mpy │                                 ░░░░░░░░░░█████ │  10%
+8.5K   ├─┴ lib                     │                                 ███████████████ │  29%
+ 29K ┌─┴ CIRCUITPY                 │████████████████████████████████████████████████ │ 100%
+```
 
-dotstar
-- long press -> cycle through modes (off, glow, solid, touch, cycle)
-- fell -> (glow:change-color, solid:change-color, touch:on)
+And here are some commands for automatically managing the device:
 
-leds
-- long press -> cycle through modes (off, solid, touch)
+```bash
+conda activate cli           # Activate an environment in which to install a utility
+python -m pip install circup # Install the circup utility
+circup list                  # List outdated packages on the device
+circup install --auto        # Automatically download and install missing packages
+circup freeze                # List installed packages
+```
 
-long press changes mode:
-- on-press
-- on/off
-- color cycle
-- color picker
+### Gemma M0 Project
 
+The project is idea is pretty simple. My daughter wanted an arm band on which she could control the lights. Here is the setup we coded:
 
+- Controlling the onboard RGB LED
+	- A long press will cycle through modes: OFF, GLOW, ON, TOUCH, and CYCLE
+	- A short press in GLOW mode will cycle through colors
+	- A short press in ON mode will cycle through colors
+	- A short press in TOUCH mode will turn the LED on and off
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Controlling external LED sequins
+  - A long press will cycle through modes: OFF, ON, and TOUCH
+  - A short press in TOUCH mode will turn the LEDs on and off
 
 Useful documentation:
 
@@ -237,6 +231,7 @@ Useful documentation:
 Future improvements:
 
 - Adding a fading mode to the external LEDs using [pwmio](https://docs.circuitpython.org/en/latest/shared-bindings/pwmio/index.html)
+- Dimming with the DotStar is a bit finicky---it is not as smooth as I think it should be. I might need to change the dimming range and update frequency.
 
 ## Reflections
 
