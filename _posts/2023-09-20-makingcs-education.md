@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Making Computer Science: CS Education"
 tags: ["csci181AL.1FA23", "arduino", "circuitpython", "3d printing", "hmc"]
 author: "Anthony J. Clark"
 ---
@@ -45,14 +45,20 @@ I have the following projects in mind. I am not sure while I will complete for t
 
 I started by completing all [HMC Maker Space quizzes](https://make.hmc.edu/?p=quiz-info). I recommend completing these even if you don't see yourself using that particular tool. It was a good way to come up with ideas for what is possible.
 
-<figure>
-    <img src="/assets/2023-09-20-MakingCS-CSEducation/Trapp1.webp" alt="Trapp1" />
-    <figcaption>Caption 1</figcaption>
-</figure>
-
-
-
-
+<div style="display: flex;">
+	<div style="flex: 22%; padding 2px;">
+		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp1.webp" alt="Trapp1" />
+	</div>
+	<div style="flex: 22%; padding 2px;">
+		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp2.webp" alt="Trapp2" />
+	</div>
+	<div style="flex: 22%; padding 2px;">
+		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp3.webp" alt="Trapp3" />
+	</div>
+	<div style="flex: 22%; padding 2px;">
+		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp4.webp" alt="Trapp4" />
+	</div>
+</div>
 
 
 
