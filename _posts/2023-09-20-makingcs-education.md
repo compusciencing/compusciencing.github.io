@@ -232,6 +232,7 @@ Future improvements:
 
 - Adding a fading mode to the external LEDs using [pwmio](https://docs.circuitpython.org/en/latest/shared-bindings/pwmio/index.html)
 - Dimming with the DotStar is a bit finicky---it is not as smooth as I think it should be. I might need to change the dimming range and update frequency.
+- Solder snaps to the board so that it can more easily be removed.
 
 ## Reflections
 
