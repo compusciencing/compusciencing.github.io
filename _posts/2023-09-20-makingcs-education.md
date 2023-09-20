@@ -63,15 +63,15 @@ We modeled four toys, but I'll focus just on one here: a fake version of our dog
 	</div>
 </div>
 
-*Figure 1:* Trapp was a good dog.
+<p style="text-align: center"><emph>Figure 1:</emph> Trapp was a good dog.</p>
 
-Here is the stuffed version of Trapp.
+Here is the stuffed version of Trapp, named Zeus.
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
 
-*Figure 2:* Zeus is a good stuffed animal.
+<p style="text-align: center"><emph>Figure 2:</emph> Zeus is a good stuffed animal.</p>
 
-We used [Polycam](https://poly.cam/) on an iPad to create a mesh of the stuffed animal from a series of photos.
+We used [Polycam](https://poly.cam/) on an iPad to create a mesh of Zeus from a series of photos.
 
 <iframe src="https://poly.cam/capture/0EEDD2E6-C1E3-4767-9812-ECF0BA6BF5AE" title="polycam capture viewer" style="height:100%;width:100%;max-height:720px;max-width:1280px;min-height:280px;min-width:280px" frameborder="0"></iframe>
 
@@ -79,15 +79,18 @@ We exported the mesh as an STL and imported it into [Tinkercad](https://www.tink
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png">
 
-*Figure 3:* Zeus in Tinkercad.
+<p style="text-align: center"><emph>Figure 3:</emph> Zeus in Tinkercad.</p>
 
-Finally, we printed the model using the
+Finally, we printed the model using the FLSUN SR 3D printer
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/3DPrintBed.webp">
+
+<p style="text-align: center"><emph>Figure 4:</emph> 3D printed Zeus/Trapp.</p>
 
 Future improvements:
 
 - The mesh needs supports under the belly and tail.
+- Sand the final part.
 
 ## E-Textiles
 
@@ -95,21 +98,21 @@ For the e-textiles project we were asked to play around with the [Adafruit Gemma
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://cdn-learn.adafruit.com/assets/assets/000/049/776/original/adafruit_gemma_Adafruit_Gemma_M0.png?1514755968" alt="Adafruit Gemma M0">
 
-*Figure 4: Adafruit Gemma M0*
+<p style="text-align: center"><emph>Figure 5: Adafruit Gemma M0</emph></p>
 
 ### Wiring Diagram
 
-Here is my wiring diagram for the project my daughter and I decided to build.
+Here is my wiring diagram for the project my daughter and I decided to build (along with some extra doodles courtesy of my daughter).
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/GemmaM0Diagram.png">
 
-*Figure 5:* Wiring diagram for the Gemma M0.
+<p style="text-align: center"><emph>Figure 6:</emph> Wiring diagram for the Gemma M0.</p>
 
 And here is the final working product.
 
 <img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/WorkingGemmaM0.webp">
 
-*Figure 6:* The final working product.
+<p style="text-align: center"><emph>Figure 7:</emph> The final working product.</p>
 
 ### Editing and Running Code
 
@@ -139,7 +142,7 @@ Here is an image of this setup:
 	</div>
 </div>
 
-*Figure 7:* Coding and serial communication.
+<p style="text-align: center"><emph>Figure 8:</emph> Coding and serial communication.</p>
 
 The recommended way to interact with CircuitPy was through the MacOS Finder window. I had trouble with running out of space using this method. I found it easier to use the terminal. Here are some useful commands:
 
@@ -214,10 +217,10 @@ circup freeze                # List installed packages
 The project is idea is pretty simple. My daughter wanted an arm band on which she could control the lights. Here is the setup we coded:
 
 - Controlling the onboard RGB LED
-	- A long press will cycle through modes: OFF, GLOW, ON, TOUCH, and CYCLE
-	- A short press in GLOW mode will cycle through colors
-	- A short press in ON mode will cycle through colors
-	- A short press in TOUCH mode will turn the LED on and off
+  - A long press will cycle through modes: OFF, GLOW, ON, TOUCH, and CYCLE
+  - A short press in GLOW mode will cycle through colors
+  - A short press in ON mode will cycle through colors
+  - A short press in TOUCH mode will turn the LED on and off
 
 - Controlling external LED sequins
   - A long press will cycle through modes: OFF, ON, and TOUCH
