@@ -45,25 +45,34 @@ I have the following projects in mind. I am not sure while I will complete for t
 
 I started by completing all [HMC Maker Space quizzes](https://make.hmc.edu/?p=quiz-info). I recommend completing these even if you don't see yourself using that particular tool. It was a good way to come up with ideas for what is possible.
 
+We modeled four toys, but I'll focus just on one here: a fake version of our dog Trapp.
+
 <div style="display: flex;">
 	<div style="flex: 22%; padding 2px;">
-		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp1.webp" alt="Trapp1" />
+		<img width="100%" src="/assets/2023-09-20-makingcs-cseducation/Trapp1.webp" alt="Trapp1" />
 	</div>
 	<div style="flex: 22%; padding 2px;">
-		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp2.webp" alt="Trapp2" />
+		<img width="100%" src="/assets/2023-09-20-makingcs-cseducation/Trapp2.webp" alt="Trapp2" />
 	</div>
 	<div style="flex: 22%; padding 2px;">
-		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp3.webp" alt="Trapp3" />
+		<img width="100%" src="/assets/2023-09-20-makingcs-cseducation/Trapp3.webp" alt="Trapp3" />
 	</div>
 	<div style="flex: 22%; padding 2px;">
-		<img width="100%" src="/assets/2023-09-20-MakingCS-CSEducation/Trapp4.webp" alt="Trapp4" />
+		<img width="100%" src="/assets/2023-09-20-makingcs-cseducation/Trapp4.webp" alt="Trapp4" />
 	</div>
 </div>
 
+*Figure 1:* Trapp was a good dog.
+
+Here is the stuffed version of Trapp.
+
+<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp>
+
+*Figure 2:* Zeus is a good stuffie.
 
 
 
-../assets/2023-09-20-MakingCS-CSEducation
+../assets/2023-09-20-makingcs-cseducation
 
 
 
