@@ -66,7 +66,7 @@ We modeled four toys, but I'll focus just on one here: a fake version of our dog
 
 Here is the stuffed version of Trapp.
 
-<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp>
+<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
 
 *Figure 2:* Zeus is a good stuffie.
 
@@ -76,7 +76,7 @@ We used [Polycam](https://poly.cam/) on an iPad to create a mesh of the stuffed 
 
 We exported the mesh as an STL and imported it into [Tinkercad](https://www.tinkercad.com/). In Tinkercad, we removed some visual artifacts and added a base.
 
-<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png>
+<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png">
 
 *Figure 3:* Zeus in Tinkercad.
 
