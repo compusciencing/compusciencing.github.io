@@ -45,6 +45,7 @@ I have the following projects in mind. I am not sure while I will complete for t
 
 I started by completing all [HMC Maker Space quizzes](https://make.hmc.edu/?p=quiz-info). I recommend completing these even if you don't see yourself using that particular tool. It was a good way to come up with ideas for what is possible.
 
+For the 3D-printing assignment, my daughter and I decided to print some of her stuffed animals.
 We modeled four toys, but I'll focus just on one here: a fake version of our dog Trapp.
 
 <div style="display: flex;">
@@ -80,20 +81,13 @@ We exported the mesh as an STL and imported it into [Tinkercad](https://www.tink
 
 *Figure 3:* Zeus in Tinkercad.
 
+Finally, we printed the model using the
 
-My daughter and I decided to model and print a few of her toys.
+<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/3DPrintBed.webp">
 
-- maker space quizzes
-- 3d printing
-	+ photographed four items
-		* zeus, kuromi, pompompuri, black panther
-	+ polycam created a mesh
-	+ exported to STL
-	+ imported into tinkercad
-		* removed artifacts
-		* added base (different for two prints)
-	+ 3d printed
-		* needed supports for tail and belly
+Future improvements:
+
+- The mesh needs supports under the belly and tail.
 
 ## E-Textiles
 
