@@ -208,7 +208,7 @@ Adafruit CircuitPython 8.2.6 on 2023-09-12; Adafruit Gemma M0 with samd21e18
  29K ┌─┴ CIRCUITPY                 │████████████████████████████████████████████████ │ 100%
 ```
 
-And here are some commands for automatically managing the device:
+And here are some commands for automatically managing the device using [circup](https://github.com/adafruit/circup):
 
 ```bash
 conda activate cli           # Activate an environment in which to install a utility
@@ -242,6 +242,7 @@ Future improvements:
 - Adding a fading mode to the external LEDs using [pwmio](https://docs.circuitpython.org/en/latest/shared-bindings/pwmio/index.html)
 - Dimming with the DotStar is a bit finicky---it is not as smooth as I think it should be. I might need to change the dimming range and update frequency.
 - Solder snaps to the board so that it can more easily be removed.
+- Add an indication when a long-press is recorded (flash the LEDs, for example).
 
 ## Reflections
 
@@ -251,9 +252,15 @@ I read the articles and watched the video listed under resources. I did so befor
 
 Look back at your pre-unit prompt. To what extent did you learn the things you said you wanted to during this unit?
 
+> I am very pleased with the time I spent in the maker space and the two projects that I completed (with the help of my daughter). I accomplished the learning objectives I set for myself.
+
 Did you spend (at least) 6 hours a week on focused work for this class?
 
+> Yes, easily. Time goes quickly working with the 3D printer and electronics.
+
 In what ways did your learning look like you expected? In what ways did things go differently?
+
+> Surprisingly, less frustration than I expected. I was pretty lucky with my 3D print based on what I've seen on Discord. Otherwise, I am a "seasoned" enough student to know what to expect.
 
 Reflect on your experience sharing your work with others. How did it feel? Did you get ideas you hadn’t thought of before?
 
