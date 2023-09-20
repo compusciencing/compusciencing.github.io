@@ -70,11 +70,15 @@ Here is the stuffed version of Trapp.
 
 *Figure 2:* Zeus is a good stuffie.
 
+We used [Polycam](https://poly.cam/) on an iPad to create a mesh of the stuffed animal from a series of photos.
 
+<iframe src="https://poly.cam/capture/0EEDD2E6-C1E3-4767-9812-ECF0BA6BF5AE" title="polycam capture viewer" style="height:100%;width:100%;max-height:720px;max-width:1280px;min-height:280px;min-width:280px" frameborder="0"></iframe>
 
-../assets/2023-09-20-makingcs-cseducation
+We exported the mesh as an STL and imported it into [Tinkercad](https://www.tinkercad.com/). In Tinkercad, we removed some visual artifacts and added a base.
 
+<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png>
 
+*Figure 3:* Zeus in Tinkercad.
 
 
 My daughter and I decided to model and print a few of her toys.
