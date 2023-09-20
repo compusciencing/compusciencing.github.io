@@ -67,7 +67,7 @@ We modeled four toys, but I'll focus just on one here: a fake version of our dog
 
 Here is the stuffed version of Trapp.
 
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
 
 *Figure 2:* Zeus is a good stuffie.
 
@@ -77,13 +77,13 @@ We used [Polycam](https://poly.cam/) on an iPad to create a mesh of the stuffed 
 
 We exported the mesh as an STL and imported it into [Tinkercad](https://www.tinkercad.com/). In Tinkercad, we removed some visual artifacts and added a base.
 
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png">
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png">
 
 *Figure 3:* Zeus in Tinkercad.
 
 Finally, we printed the model using the
 
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="/assets/2023-09-20-makingcs-cseducation/3DPrintBed.webp">
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/3DPrintBed.webp">
 
 Future improvements:
 
@@ -91,34 +91,41 @@ Future improvements:
 
 ## E-Textiles
 
-<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="https://cdn-learn.adafruit.com/assets/assets/000/049/776/original/adafruit_gemma_Adafruit_Gemma_M0.png?1514755968" alt="Adafruit Gemma M0">
+For the e-textiles project we were asked to play around with the [Adafruit Gemma M0](https://learn.adafruit.com/adafruit-gemma-m0/overview). The following diagram was extremely helpful in deciding how to use the available pins.
+
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="https://cdn-learn.adafruit.com/assets/assets/000/049/776/original/adafruit_gemma_Adafruit_Gemma_M0.png?1514755968" alt="Adafruit Gemma M0">
 
 *Figure 4: Adafruit Gemma M0*
 
-Useful documentation:
+Here is my wiring diagram for the project my daughter and I decided to build.
 
-- [`adafruit_dotstar`](https://docs.circuitpython.org/projects/dotstar/en/latest/api.html)
-- [`adafruit_debouncer`](https://docs.circuitpython.org/projects/debouncer/en/latest/api.html)
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/GemmaM0Diagram.png">
 
-Future improvements:
+And here is the final working product.
 
-- Adding a fading mode to the external LEDs using [pwmio](https://docs.circuitpython.org/en/latest/shared-bindings/pwmio/index.html)
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/WorkingGemmaM0.webp">
 
-## Reflections
 
-I read the articles and watched the video listed under resources. I did so before I realized there would be a reflection section of the journal entry. Luckily, I am auditing the course so I am giving myself a pass on having a write-up this time.
 
-## Post-Unit Prompt
 
-Look back at your pre-unit prompt. To what extent did you learn the things you said you wanted to during this unit?
 
-Did you spend (at least) 6 hours a week on focused work for this class?
 
-In what ways did your learning look like you expected? In what ways did things go differently?
 
-Reflect on your experience sharing your work with others. How did it feel? Did you get ideas you hadn’t thought of before?
 
-What new ideas, questions, or topics for learning do you have in mind at the end of this unit? Are there things you started here that might be the foundation for a final project?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -199,3 +206,50 @@ long press changes mode:
 - on/off
 - color cycle
 - color picker
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Useful documentation:
+
+- [`adafruit_dotstar`](https://docs.circuitpython.org/projects/dotstar/en/latest/api.html)
+- [`adafruit_debouncer`](https://docs.circuitpython.org/projects/debouncer/en/latest/api.html)
+
+Future improvements:
+
+- Adding a fading mode to the external LEDs using [pwmio](https://docs.circuitpython.org/en/latest/shared-bindings/pwmio/index.html)
+
+## Reflections
+
+I read the articles and watched the video listed under resources. I did so before I realized there would be a reflection section of the journal entry. Luckily, I am auditing the course so I am giving myself a pass on having a write-up this time.
+
+## Post-Unit Prompt
+
+Look back at your pre-unit prompt. To what extent did you learn the things you said you wanted to during this unit?
+
+Did you spend (at least) 6 hours a week on focused work for this class?
+
+In what ways did your learning look like you expected? In what ways did things go differently?
+
+Reflect on your experience sharing your work with others. How did it feel? Did you get ideas you hadn’t thought of before?
+
+What new ideas, questions, or topics for learning do you have in mind at the end of this unit? Are there things you started here that might be the foundation for a final project?
