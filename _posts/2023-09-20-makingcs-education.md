@@ -144,7 +144,13 @@ Here is an image of this setup:
 
 <p style="text-align: center"><emph>Figure 8:</emph> Coding and serial communication.</p>
 
-The recommended way to interact with CircuitPy was through the MacOS Finder window. I had trouble with running out of space using this method. I found it easier to use the terminal. Here are some useful commands:
+The recommended way to interact with CircuitPy was through the MacOS Finder window. I had trouble with running out of space using this method.
+
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50%;" src="/assets/2023-09-20-makingcs-cseducation/GemmaSpaceError.png">
+
+<p style="text-align: center"><emph>Figure 9:</emph> Incorrect error message indicated that the Gemma M0 was out of storage space when it was not.</p>
+
+I found it easier to use the terminal. Here are some useful commands:
 
 ```bash
 # Copy a library folder or file to the device
