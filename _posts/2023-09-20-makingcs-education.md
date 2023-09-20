@@ -67,7 +67,7 @@ We modeled four toys, but I'll focus just on one here: a fake version of our dog
 
 Here is the stuffed version of Trapp.
 
-<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="/assets/2023-09-20-makingcs-cseducation/ZeusReal.webp">
 
 *Figure 2:* Zeus is a good stuffie.
 
@@ -77,13 +77,13 @@ We used [Polycam](https://poly.cam/) on an iPad to create a mesh of the stuffed 
 
 We exported the mesh as an STL and imported it into [Tinkercad](https://www.tinkercad.com/). In Tinkercad, we removed some visual artifacts and added a base.
 
-<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png">
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="/assets/2023-09-20-makingcs-cseducation/ZeusTinkercad.png">
 
 *Figure 3:* Zeus in Tinkercad.
 
 Finally, we printed the model using the
 
-<img width="50%" src="/assets/2023-09-20-makingcs-cseducation/3DPrintBed.webp">
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="/assets/2023-09-20-makingcs-cseducation/3DPrintBed.webp">
 
 Future improvements:
 
@@ -91,16 +91,16 @@ Future improvements:
 
 ## E-Textiles
 
-![Adafruit Gemma M0](https://cdn-learn.adafruit.com/assets/assets/000/049/776/original/adafruit_gemma_Adafruit_Gemma_M0.png?1514755968)
+<img style="display: block; margin-left: auto; margin-right: auto; width: 50;" src="https://cdn-learn.adafruit.com/assets/assets/000/049/776/original/adafruit_gemma_Adafruit_Gemma_M0.png?1514755968" alt="Adafruit Gemma M0">
 
-*Figure TODO: Adafruit Gemma M0*
+*Figure 4: Adafruit Gemma M0*
 
-Documentation:
+Useful documentation:
 
-- [`adafruit_debounce`](https://docs.circuitpython.org/projects/debouncer/en/latest/api.html)
--
+- [`adafruit_dotstar`](https://docs.circuitpython.org/projects/dotstar/en/latest/api.html)
+- [`adafruit_debouncer`](https://docs.circuitpython.org/projects/debouncer/en/latest/api.html)
 
-Not yet completed work:
+Future improvements:
 
 - Adding a fading mode to the external LEDs using [pwmio](https://docs.circuitpython.org/en/latest/shared-bindings/pwmio/index.html)
 
