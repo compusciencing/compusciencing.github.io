@@ -264,4 +264,8 @@ In what ways did your learning look like you expected? In what ways did things g
 
 Reflect on your experience sharing your work with others. How did it feel? Did you get ideas you hadn’t thought of before?
 
+> I really enjoyed listening to everyone discuss their projects. I had ideas for other projects, but I did not have new ideas for my own project based on my time to share.
+
 What new ideas, questions, or topics for learning do you have in mind at the end of this unit? Are there things you started here that might be the foundation for a final project?
+
+> I learned that I should temper my expectations for the 3D printers. It is probably best to focus on simple designs that can be quickly iterated upon. I have some solid ideas for my final project, and they have not changed just yet.
