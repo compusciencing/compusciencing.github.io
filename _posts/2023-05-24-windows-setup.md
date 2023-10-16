@@ -65,7 +65,7 @@ You can launch the Mambaforge shell by running the `miniforge` prompt, but I rec
 3. Duplicate the "PowerShell" profile.
 4. Change the following fields:
   - Name to `Mambaforge`
-  - Command line to `pwsh.exe -ExecutionPolicy ByPass -NoExit -Command \"& 'C:\\Users\\ajcd2020\\AppData\\Local\\mambaforge\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\ajcd2020\\AppData\\Local\\mambaforge' \"` (but change the path to the one on your computer)
+  - Command line to `pwsh.exe -ExecutionPolicy ByPass -NoExit -Command "& 'D:\Programs\Mambaforge\shell\condabin\conda-hook.ps1' ; conda activate 'D:\Programs\Mambaforge' "` 
 
 # Utilities
 
@@ -73,7 +73,7 @@ Install the following applications using their installers
 
 - [Visual Studio Code](https://code.visualstudio.com/download)
 - [git for Windows](https://gitforwindows.org/)
-- [7-Zip](https://www.7-zip.org/)
+- [7-Zip](https://www.7-zip.org/) (install the 64-bit version onto local drive)
 - [Git LFS](https://git-lfs.com/)
 - [Slack](https://slack.com/downloads/windows)
 - [Zoom](https://zoom.us/download)
